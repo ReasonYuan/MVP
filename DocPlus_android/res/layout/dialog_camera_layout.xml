@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp" 
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/dialog_select_img_msg"
+        android:textSize="16sp"
+        android:textColor="@color/btn_general_normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_general_border_h"
+        android:background="@color/item_general_border_shallow" 
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/selector_btn_general_bg"
+        android:text="@string/camera"
+        android:textColor="@drawable/selector_btn_white_text" />
+
+    <Button
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/selector_btn_cancell_bg"
+        android:text="@string/photos"
+        android:textColor="@drawable/selector_btn_white_text" />
+
+</LinearLayout>

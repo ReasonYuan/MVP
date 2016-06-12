@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android用弹出式的菜单 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/holder"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:clickable="true" 
+        android:background="@drawable/shape_dialog_progress_bg">
+
+        <FrameLayout
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_btn_records_popup_bg">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="删除" />
+            </LinearLayout>
+            <FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:background="@android:color/darker_gray"
+				android:layout_gravity="bottom">
+            </FrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/download"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/delete"
+            android:background="@drawable/selector_btn_records_popup_bg" 
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="下载"/>
+            <FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:background="@android:color/darker_gray"
+				android:layout_gravity="bottom">
+            </FrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/tag"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/download"
+            android:background="@drawable/selector_btn_records_popup_bg" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="标签" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

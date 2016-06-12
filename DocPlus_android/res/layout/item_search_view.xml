@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <EditText
+        android:id="@+id/et_search22"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:singleLine="true"
+        android:imeOptions="actionSearch"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/fl_search_frame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_view_h"
+        android:background="@drawable/shape_stroke_search_bg"
+        android:gravity="center_vertical"
+        android:onClick="true" >
+
+        <!--
+ android:focusable="true"
+        android:focusableInTouchMode="true"
+        -->
+
+        <LinearLayout
+            android:id="@+id/ll_edit_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_search_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btn_search_icon" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:ellipsize="end"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/ib_search_cancel"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_del_patient" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_search_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/btn_search_icon" />
+
+            <TextView
+                android:id="@+id/tv_search_hint_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/btn_search"
+                android:textColor="@color/text_hint" />
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

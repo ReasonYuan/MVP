@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/item_kuang_bg_right_no"/>
+    <item android:drawable="@drawable/item_kuang_bg_right_none"/>
+</selector>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.hp.android.halcyon.widgets.RoundImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/app_icon"
+        android:visibility="gone" />
+
+    <ImageView 
+        android:id="@+id/img_my_patient_color"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="bottom"/>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:id="@+id/tv_item_my_patient_dealtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="top|left"
+            android:textSize="12sp"
+            android:alpha="0.6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_img_item_mypatient"
+            android:gravity="bottom"
+            android:orientation="horizontal" 
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_my_patient_name"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="性别"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_my_patient_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:alpha="0.7"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="年龄"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_my_patient_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:alpha="0.7"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

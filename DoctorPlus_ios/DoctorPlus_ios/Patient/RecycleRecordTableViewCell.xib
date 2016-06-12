@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="RecycleRecordTableViewCell" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mku-Ew-UK5">
+                        <rect key="frame" x="0.0" y="10" width="320" height="90"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STn-bE-EYz">
+                                <rect key="frame" x="8" y="8" width="72" height="15"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="5B3-19-6MK"/>
+                                    <constraint firstAttribute="width" constant="72" id="X79-u9-B8j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2KC-rY-1Gb">
+                                <rect key="frame" x="289" y="7" width="16" height="16"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="8jm-qS-vWP"/>
+                                    <constraint firstAttribute="height" constant="16" id="NQQ-eG-I4V"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="unselect_dot.png"/>
+                                <state key="selected" backgroundImage="select_dot.png"/>
+                                <connections>
+                                    <action selector="onRecordSelectedBtnClickListener:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="39E-M0-5bG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiK-mY-V5c">
+                                <rect key="frame" x="8" y="31" width="262" height="15"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WiK-mY-V5c" firstAttribute="leading" secondItem="Mku-Ew-UK5" secondAttribute="leading" constant="8" id="3GB-pz-RpP"/>
+                            <constraint firstItem="2KC-rY-1Gb" firstAttribute="centerY" secondItem="STn-bE-EYz" secondAttribute="centerY" id="3xj-Cw-JXj"/>
+                            <constraint firstItem="WiK-mY-V5c" firstAttribute="top" secondItem="STn-bE-EYz" secondAttribute="bottom" constant="8" id="44f-LE-dMi"/>
+                            <constraint firstItem="STn-bE-EYz" firstAttribute="top" secondItem="Mku-Ew-UK5" secondAttribute="top" constant="8" id="8Oc-pX-ADh"/>
+                            <constraint firstItem="STn-bE-EYz" firstAttribute="leading" secondItem="Mku-Ew-UK5" secondAttribute="leading" constant="8" id="Nlf-xt-owh"/>
+                            <constraint firstAttribute="trailing" secondItem="2KC-rY-1Gb" secondAttribute="trailing" constant="15" id="ebm-eF-dFL"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="WiK-mY-V5c" secondAttribute="bottom" constant="8" id="fV6-1Y-QZi"/>
+                            <constraint firstAttribute="trailing" secondItem="WiK-mY-V5c" secondAttribute="trailing" constant="50" id="wuj-EN-hmh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Mku-Ew-UK5" secondAttribute="bottom" constant="-8" id="MqK-nw-2nV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Mku-Ew-UK5" secondAttribute="trailing" constant="-8" id="Tln-le-x7B"/>
+                    <constraint firstItem="Mku-Ew-UK5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="UVL-Ix-7jB"/>
+                    <constraint firstItem="Mku-Ew-UK5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="gby-ui-CrM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="recordContentText" destination="WiK-mY-V5c" id="zY5-xg-iO5"/>
+                <outlet property="recordTypeNameLabel" destination="STn-bE-EYz" id="1Wq-D0-3lM"/>
+                <outlet property="selectedBtn" destination="2KC-rY-1Gb" id="MkM-rW-uSR"/>
+            </connections>
+            <point key="canvasLocation" x="108" y="243"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="select_dot.png" width="16" height="16"/>
+        <image name="unselect_dot.png" width="16" height="16"/>
+    </resources>
+</document>

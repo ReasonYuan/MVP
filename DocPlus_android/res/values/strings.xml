@@ -1,0 +1,329 @@
+<resources>
+
+    <string name="app_name">医加</string>
+    <string name="btn_sure">确定</string>
+    <string name="btn_upgrade">立即更新</string>
+    <string name="btn_sure_ren">确认</string>
+    <string name="btn_sure_space">确&#160;&#160;定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_add">添加</string>
+    <string name="btn_addnew">新建</string>
+    <string name="btn_done">完成</string>
+    <string name="btn_back">返回</string>
+    <string name="btn_send">发送</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_saveno">不保存</string>
+    <string name="btn_upload">上传</string>
+    <string name="btn_add_peer">添加同行</string>
+    <string name="btn_merge">合并</string>
+    <string name="btn_search">搜索</string>
+    <string name="btn_yes">是</string>
+    <string name="btn_no">否</string>
+    <string name="btn_add_newpeer">新增到医生通讯录</string>
+    <string name="btn_send_info">发消息</string>
+    <string name="hay_share_to">分享给</string>
+    <string name="share_sign_a">\@</string>
+    <string name="info_age">%d岁</string>
+    <string name="btn_add_space">添&#160;&#160;加</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_register_back">返回</string>
+    <string name="btn_register">注册</string>
+	<string name="notify">通知</string>
+	<string name="friend_wait">等待验证</string>
+	<string name="friend_answer">同意</string>
+	<string name="btn_merge_number">确定(%d)</string>
+	<string name="btn_app_auth">申请认证</string>
+	<string name="btn_later">以后再说</string>
+    
+    <!-- login -->
+     <string name="register_ing">注册中，请稍候...</string>
+    <string name="register">免费注册</string>
+    <string name="register_title">注&#160;&#160;册</string>
+    <string name="finding_password">重置密码</string>
+    <string name="loading">登录中&#8230;</string>
+    <string name="password">密码</string>
+    <string name="forget_psd">忘记密码</string>
+    <string name="input_password">密码</string>
+    <string name="reset_password">重置密码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="get_no_verification_code">收不到验证码?</string>
+    <string name="verification_code">验证码</string>
+    <string name="input_telephone">请输入手机号</string>
+    <string name="input_verification_code">请输入验证码</string>
+    <string name="input_new_password">请输入新密码</string>
+    <string name="confirm_new_password">确认密码</string>
+    <string name="set_password">请设定密码</string>
+    <string name="pinput_password">请输入密码</string>
+    <string name="input_again">请再输一次</string>
+    <string name="input_username">手机号/医加号</string>
+    <string name="input_login_phone">帐号</string>
+    <string name="reset_password_successful">密码重置成功</string>
+    <string name="reset_password_load">登录</string>
+    <string name="load_failed">用户名或密码错误！</string>
+    <string name="load_failed_key">密码错误！</string>
+    <string name="load_failed_net">登录失败,网络错误！</string>
+    <string name="regist_phone_exist">该手机号已经注册过了</string>
+    <string name="regist_phone_can">可以通过该手机号注册</string>
+    
+    <string name="man">男</string>
+    <string name="woman">女</string>
+   
+    <string name="fmt_date_1">yyyy/MM/dd HH:mm a</string>
+    <string name="fmt_date_2">yyyy年MM月dd日</string>
+
+    <!-- doctor_info -->
+    <string name="select_department">选择科室</string>
+    <string name="select_hospital">选择医院</string>
+    <string name="personal_profile">个人简介</string>
+    <string name="doctor_profile">医生信息</string>
+    <string name="write_some">写点什么吧&#8230;</string>
+    <string name="real_name">真实姓名</string>
+    <string name="hospital">医院</string>
+    <string name="department">科室</string>
+    <string name="send_message">发送消息</string>
+    <string name="doctor_zone">医生圈</string>
+    
+    <!-- ME -->
+	<string name="me_department_current">当前选择科室</string>
+	<string name="me_department_no">未指定科室</string>
+	<string name="me_department_new">没有我的科室，新建一个吧</string>
+
+    <!-- activity_title -->
+    <string name="activity_title_hospital">医院</string>
+    <string name="activity_title_hospital_school">医学院</string>
+    <string name="activity_title_department">科室</string>
+    <string name="activity_title_addpatient">添加患者</string>
+    <string name="activity_title_addfolder">添加病历夹</string>
+    <string name="activity_title_chosecontacts">选择联系人</string>
+    <string name="activity_title_me_info">个人信息</string>
+    <string name="activity_title_change_phone">修改手机号</string>
+    <string name="activity_title_change_pwd">修改密码</string>
+    <string name="activity_title_tag_homepage">标签</string>
+    <string name="activity_title_tag_person">标签信息</string>
+    <string name="activity_title_tag_new">新建标签</string>
+    <string name="activity_title_home">主页</string>
+
+    <!-- item_title -->
+    <string name="item_title_name">姓名</string>
+    <string name="item_title_label">备注</string>
+    <string name="item_title_folder">病历夹</string>
+
+    <!-- dialog_msg -->
+    <string name="dialog_addfolder_cancel_msg">放弃此次编辑？</string>
+    <string name="dialog_select_img_msg">请选择获取图片的方式</string>
+    <string name="dialog_delete_recored_title">确定要删除此病历夹:</string>
+
+    <!-- search -->
+    <string name="search_hint">搜索</string>
+    <string name="search_hint_hospital">搜索”医院“、”科室“或者”姓名“</string>
+    <string name="search_hint_name">搜索姓名/手机号</string>
+    
+    <!-- my patient -->
+    <string name="patient_title_cloud">云识别</string>
+    <string name="patient_title_tag">标签</string>
+    <string name="patient">患者</string>
+    <string name="new_patient">新的患者</string>
+    <string name="detail_information">详细资料</string>
+    <string name="phone">手&#160;&#160;机</string>
+    <string name="gender">性&#160;&#160;别</string>
+    <string name="born_date">出生年月</string>
+    <string name="remarks">备&#160;&#160;注</string>
+    
+    <string name="add">添加</string>
+    <string name="share">分享</string>
+    <string name="delete">删除</string>
+    <string name="patient_add_folder_hint">点击输入病历信息&#8230;</string>
+    <string name="newpatient_verification">验证</string>
+    <string name="added">已添加</string>
+    <string name="addpatient_border_msg">添加病历</string>
+    <string name="base_info">基本情况</string>
+    <string name="launch_in_info_title">%s医生，欢迎您！</string>
+    <string name="launch_in_info_msg">已经有%1$d位患者，%2$d位医生期待着您的到来，去和大家打个招呼吧！</string>
+	<string name="patient_folder_share">&#160;&#160;分享</string>
+	<string name="patient_folder_delete">&#160;&#160;删除</string>
+    
+	<!-- cloud -->
+    <string name="cloud_page_upload">上传</string>
+    <string name="cloud_page_identify">识别</string>
+    
+    <!-- my peer -->
+    <string name="new_peer">新的同行朋友</string>
+    <string name="peer">同行</string>
+    <string name="team ">团队</string>
+    <string name="consultation ">会诊</string>
+    <string name="peer_friends">新的同行</string>
+    <string name="peer_addpeer_for_hosp">按医院查找</string>
+    <string name="peer_addpeer_contacts">添加手机联系人</string>
+    <string name="peer_addpeer_two_dimen">扫一扫</string>
+    <string name="peer_list_state_add">+ 添加</string>
+    <string name="peer_list_state_added">已添加</string>
+    <string name="peer_list_state_sendMes">消息已发送</string>
+    <string name="peer_list_state_invite">邀请</string>
+    <string name="peer_phone_detail_phone">手机：</string>
+    <string name="peer_phone_detail_add2doccontacts">新增到医生通讯录</string>
+    
+    <string name="brow_title_huayan">化验</string>
+    <string name="brow_title_yingxiang">影像</string>
+    <string name="brow_title_tizheng">体征</string>
+    <string name="brow_title_shoushu">手术</string>
+    <string name="brow_title_chuyuan">出院</string>
+    <string name="brow_title_ruyuan">入院</string>
+    
+    <string name="camera">拍照</string>
+    
+      <string name="photos">从手机相册选取</string>
+        <string name="doctor_add_folder_faild">添加病例夹失败</string>
+    
+    <!-- message -->
+    <string name="msg_patient_name_not_null">病人姓名不能为空！</string>
+    <string name="msg_patient_folder_name_not_null">病历夹还没有名字！</string>
+    
+    <!-- my patient popupwindow-->
+    <string name="add_record">新增病历</string>
+    <string name="merge_record">合并患者</string>
+    <string name="del_record">删除患者</string>
+    <string name="cancel">取消</string>
+    
+    <!-- me  -->
+    <string name="me_share">分享</string>
+    <string name="me_set">设置</string>
+    
+    <!-- set -->
+    <string name="set_phone_num">登录手机</string>
+    <string name="set_change_pwd">修改密码</string>
+    <string name="set_clean">清除缓存</string>
+    <string name="set_about">关于</string>
+    <string name="set_exit">退出登录</string>
+    
+    <!-- personal info -->
+    <string name="personal_info_face">头像</string>
+    <string name="personal_info_name">姓名</string>
+    <string name="personal_info_hospital">医院</string>
+    <string name="personal_info_department">科室</string>
+    <string name="personal_info_gender">性别</string>
+    <string name="personal_info_description">介绍</string>
+    <string name="personal_info_gertification">医生认证</string>
+    
+    <!-- share popup window -->
+    <string name="share_title">分享</string>
+    <string name="share_weixin_haoyou">微信好友</string>
+    <string name="share_weixin_pengyouquan">微信朋友圈</string>
+    <string name="share_message">短信</string>
+    <string name="share_cancel">取&#160;&#160;消</string>
+    
+    <!-- tag -->
+    <string name="tag_new_name">标签名字</string>
+    <string name="tag_new_group">成员</string>
+    <string name="tag_new_exist">标签名已存在</string>
+    <string name="tag_text_putin">输入标签</string>
+    <string name="add_tag">输入标签</string>
+    <string name="all_tag">所有标签</string>
+    <string name="tag_manager">管理</string>
+    <string name="tag_manager_name_label">标签名称</string>
+    <string name="tag_del">删除标签</string>
+    <string name="tag_add_manager_title">选中标签对象</string>
+    
+    <!-- change phone number -->
+    <string name="change_phone_num">手机号</string>
+    <string name="change_phone_pwd">密码</string>
+    <string name="change_phone_re_pwd">确认密码</string>
+    <string name="change_phone_yanzheng">验证码</string>
+    <string name="change_phone_ok">确&#160;&#160;认</string> 
+    <string name="change_phone_get_yanzheng">获取验证码</string> 
+    
+    <!-- change pwd -->
+    <string name="change_pwd_old">原密码</string>
+    <string name="change_pwd_new">新密码</string>
+    <string name="change_pwd_re_new">再次输入</string>
+    <string name="change_pwd_qiang">强</string>
+    <string name="change_pwd_zhong">中</string>
+    <string name="change_pwd_ruo">弱</string>
+    <string name="change_pwd_ok">确认</string>
+    
+    <!-- about -->
+    <string name="about_title">关于行医助手</string>
+    <string name="about_version">行医助手&#160;%s</string>
+    <string name="about_grade">去评分</string>
+    <string name="about_welcome_page">欢迎页</string>
+    <string name="about_function">功能介绍</string>
+    <string name="about_notice">系统通知</string>
+    <string name="about_help">帮助与反馈</string>
+    <string name="about_deal">行医助手软件许可及服务协议</string>
+    <string name="about_yiyi">翼依公司&#160;&#160;版权所有</string>
+    <string name="about_copyright">Copyright©2011-2014&#160;YiYi&#160;Rights&#160;Reserced</string>
+    
+    <!-- certification -->
+    <string name="certification_notice">为了保证您的权益和平台的专业性，\n需要认证您的行医资质，\n请上传%s。\n谢谢支持！上传资料仅用于身份认证，\n患者及第三方不可见，您的信息会得到有效保护。</string>
+    <string name="certification_certificate">医师执业证书</string>
+    <string name="certification_doctor_student">学生证</string>
+    <string name="certification_card">身份证正反面</string>
+    <string name="certification_card_zhengmian">正面</string>
+    <string name="certification_card_fanmian">反面</string>
+            
+    <!-- new record -->
+    <string name="new_record_title">新建病历</string>
+    <string name="new_record_et_name">填写患者姓名</string>
+    <string name="new_record_prompt">亲,为保证识别率请逐份、按顺序拍摄哦, 见证奇迹的时刻!</string>
+    <string-array name="new_record_types">
+        <item>入院记录</item>
+        <item>化验</item>
+        <item>影像</item>
+        <item>手术</item>
+        <item>出院记录</item>
+        <item>其他</item>        
+    </string-array>
+    <string name="copy_index_title">第%d份</string>
+    <string name="str_btn_capture">拍摄</string>
+    <string name="str_btn_closeAndSum">浏览</string>
+    <string name="str_btn_next">下一份(%d)</string>
+    <string name="str_btn_album">从相册中获取</string>
+    <string name="str_btn_close">关闭</string>
+    
+    <!-- 认证 -->
+    <string-array name="certificate_status">
+        <item>初始</item>
+        <item>审核中</item>
+        <item>通过</item>
+        <item>未通过</item>
+    </string-array>
+    
+    <!-- cramer -->
+    <string name="gl_wait">请稍等</string>
+    <string name="gl_choose_title">请选择图片</string>
+    <string name="select_pic_cramer">相机</string>
+    <string name="select_pic_album">相册</string>
+    
+    <!-- browsing records -->
+    <string name="browsing_records_ori_img">原图</string>
+    <string name="str_save">保存</string>
+    <string name="str_all">全部</string>
+    
+    <!-- chart activity -->
+    <string name="str_chart">曲线</string>
+    
+    <!-- new friends -->
+    <string name="new_friends">新的朋友</string>
+    <string name="add_friends">添加朋友</string>
+    
+    <!-- contacts department -->
+    <string name="contacts_department">科室分布</string>
+    
+    <!-- contacts -->
+    <string name="contacts">联系人</string>
+    
+    <!-- contacts  search-->
+    <string name="contacts_search_hint">医加号/手机号/姓名</string>
+    
+    <!-- preview photo -->
+    <string name="preview_photo_retake">重拍</string>
+    <string name="preview_photo_apply">使用照片</string>
+    
+      <!-- follow up -->
+    <string name="send_follow_up">发送\n随访</string>
+    <string name="manage_follow_up">管理\n随访</string>
+    
+    <!-- select  follow up patient -->
+    <string name="select_patient">请选择患者</string>
+    <string name="select_follow_up_plan">发送随访</string>
+    <string name="select_follow_up_temple">请选择要发送的模板</string>
+</resources>

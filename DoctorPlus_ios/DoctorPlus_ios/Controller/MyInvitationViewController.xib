@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyInvitationViewController" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="invitationLabel" destination="gBN-KP-n0a" id="C4p-Xk-0qa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="two_dimension_code_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="7AF-4i-Geg">
+                    <rect key="frame" x="200" y="91" width="200" height="66"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="7LG-kk-IW6"/>
+                        <constraint firstAttribute="height" constant="66" id="rxs-L2-tTf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBN-KP-n0a">
+                    <rect key="frame" x="253" y="103" width="94" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="WpK-If-Pd0"/>
+                        <constraint firstAttribute="width" constant="94" id="yeb-XY-62z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <color key="textColor" red="0.92156862750000001" green="0.3803921569" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提供以上邀请码给好友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJE-wN-yC1">
+                    <rect key="frame" x="228" y="274" width="145" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="15E-UX-OZo"/>
+                        <constraint firstAttribute="width" constant="145" id="rA1-Nr-tMF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="助力更多好医生" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zs-kU-6sp">
+                    <rect key="frame" x="228" y="292" width="145" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="145" id="MzN-aH-fRD"/>
+                        <constraint firstAttribute="height" constant="21" id="QRA-oj-HBE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8zs-kU-6sp" firstAttribute="centerX" secondItem="dJE-wN-yC1" secondAttribute="centerX" id="Jxh-b2-iTH"/>
+                <constraint firstItem="gBN-KP-n0a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="103" id="VH7-PY-Dbz"/>
+                <constraint firstAttribute="centerX" secondItem="7AF-4i-Geg" secondAttribute="centerX" id="X7m-S2-LiP"/>
+                <constraint firstAttribute="centerX" secondItem="gBN-KP-n0a" secondAttribute="centerX" id="bqg-Hs-4dQ"/>
+                <constraint firstItem="dJE-wN-yC1" firstAttribute="top" secondItem="7AF-4i-Geg" secondAttribute="bottom" constant="117" id="d7Z-Vc-T7I"/>
+                <constraint firstAttribute="centerX" secondItem="dJE-wN-yC1" secondAttribute="centerX" id="iGg-mv-UFc"/>
+                <constraint firstItem="7AF-4i-Geg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="91" id="tXu-gz-0eo"/>
+                <constraint firstItem="8zs-kU-6sp" firstAttribute="top" secondItem="7AF-4i-Geg" secondAttribute="bottom" constant="135" id="yrV-di-3e2"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="two_dimension_code_bg.png" width="262" height="86"/>
+    </resources>
+</document>

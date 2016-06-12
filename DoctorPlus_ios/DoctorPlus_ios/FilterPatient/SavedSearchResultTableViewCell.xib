@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="SavedSearchResultTableViewCell" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzI-UH-4II">
+                        <rect key="frame" x="8" y="20" width="252" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBF-at-Xpf">
+                        <rect key="frame" x="274" y="15" width="30" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="hBC-0k-YKX"/>
+                            <constraint firstAttribute="height" constant="30" id="woH-1n-rMf"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="visualization_icon.png"/>
+                    </button>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="EzI-UH-4II" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="59k-I2-Ge0"/>
+                    <constraint firstItem="EzI-UH-4II" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FJB-IH-i49"/>
+                    <constraint firstItem="TBF-at-Xpf" firstAttribute="leading" secondItem="EzI-UH-4II" secondAttribute="trailing" constant="14" id="O9i-LO-LtA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="EzI-UH-4II" secondAttribute="bottom" constant="11" id="RWx-sX-Mtr"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TBF-at-Xpf" secondAttribute="trailing" constant="8" id="Uwz-oH-RcX"/>
+                    <constraint firstItem="TBF-at-Xpf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dYB-ap-oFr"/>
+                    <constraint firstItem="EzI-UH-4II" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="jba-SA-PsB"/>
+                    <constraint firstItem="EzI-UH-4II" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="vr4-6e-E5m"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="FJB-IH-i49"/>
+                        <exclude reference="vr4-6e-E5m"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="savedNameLabel" destination="EzI-UH-4II" id="cI5-PP-45U"/>
+                <outlet property="visualBtn" destination="TBF-at-Xpf" id="S4w-zk-2wQ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="visualization_icon.png" width="26" height="25"/>
+    </resources>
+</document>

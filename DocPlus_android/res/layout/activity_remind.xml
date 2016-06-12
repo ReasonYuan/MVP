@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+  <View 
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+     android:background="#993f3b3a"
+      />
+  <TextView 
+    android:id="@+id/date"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical|right"
+    android:textSize="15sp"
+    android:layout_marginRight="30dp"
+    android:text="2014年10月28日"
+    android:textColor="@color/app_pink"
+   
+    />
+    <View 
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+     android:background="#993f3b3a"
+      />  
+<ListView 
+    android:layout_marginTop="30dp"
+    android:id="@+id/listview"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:divider="#00000000" 
+    android:scrollbars="none"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_weight="1"
+    android:dividerHeight="20dp"
+    android:listSelector="@android:color/transparent"  
+    android:layout_marginBottom="20dp"
+    ></ListView>
+
+</LinearLayout>

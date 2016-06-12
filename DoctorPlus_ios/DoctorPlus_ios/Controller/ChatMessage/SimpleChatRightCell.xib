@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="SimpleChatRightCell" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uod-Y0-Gep">
+                        <rect key="frame" x="272" y="28" width="40" height="40"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="7bZ-lY-xne"/>
+                            <constraint firstAttribute="height" constant="40" id="eiY-aL-K2M"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKM-nE-h8k">
+                        <rect key="frame" x="56" y="38" width="208" height="10"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="NDw-qy-x07"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015/10/15 16:43" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A16-TJ-RNb">
+                        <rect key="frame" x="164" y="25" width="100" height="10"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="n1s-DQ-FG6"/>
+                            <constraint firstAttribute="height" constant="10" id="xJD-BI-v2J"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_right_message.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Ja-cT-O44">
+                        <rect key="frame" x="262" y="44" width="8" height="8"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="ieb-2g-JEM"/>
+                            <constraint firstAttribute="width" constant="8" id="z3S-sP-IWk"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkG-IP-2xm">
+                        <rect key="frame" x="272" y="28" width="40" height="40"/>
+                        <animations/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bs-9Z-QVM">
+                        <rect key="frame" x="8" y="38" width="15" height="15"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="LZX-8D-Y9L"/>
+                            <constraint firstAttribute="width" constant="15" id="NgC-4P-jM4"/>
+                        </constraints>
+                        <state key="normal" image="IM_chat_failed.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="A16-TJ-RNb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="17" id="4AW-Gi-7bg"/>
+                    <constraint firstItem="5bs-9Z-QVM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="8PC-xy-GV1"/>
+                    <constraint firstItem="wKM-nE-h8k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="BU7-Ka-IRc"/>
+                    <constraint firstItem="LkG-IP-2xm" firstAttribute="height" secondItem="uod-Y0-Gep" secondAttribute="height" id="Kni-K2-OMT"/>
+                    <constraint firstItem="uod-Y0-Gep" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="WNu-c6-QJH"/>
+                    <constraint firstItem="uod-Y0-Gep" firstAttribute="leading" secondItem="wKM-nE-h8k" secondAttribute="trailing" constant="8" id="af7-f0-KzT"/>
+                    <constraint firstItem="LkG-IP-2xm" firstAttribute="centerX" secondItem="uod-Y0-Gep" secondAttribute="centerX" id="dFW-78-fzh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uod-Y0-Gep" secondAttribute="trailing" id="eky-9C-OyW"/>
+                    <constraint firstItem="LkG-IP-2xm" firstAttribute="width" secondItem="uod-Y0-Gep" secondAttribute="width" id="ghG-kT-K4R"/>
+                    <constraint firstItem="wKM-nE-h8k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="hZC-IY-zr2"/>
+                    <constraint firstItem="5bs-9Z-QVM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="k4I-bO-FPZ"/>
+                    <constraint firstItem="3Ja-cT-O44" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="36" id="lG1-Et-jU5"/>
+                    <constraint firstItem="LkG-IP-2xm" firstAttribute="centerY" secondItem="uod-Y0-Gep" secondAttribute="centerY" id="t9b-0X-I05"/>
+                    <constraint firstItem="uod-Y0-Gep" firstAttribute="leading" secondItem="3Ja-cT-O44" secondAttribute="trailing" constant="2" id="uRl-Qe-cQ8"/>
+                    <constraint firstItem="uod-Y0-Gep" firstAttribute="leading" secondItem="A16-TJ-RNb" secondAttribute="trailing" constant="8" id="vVh-mf-JTj"/>
+                    <constraint firstItem="wKM-nE-h8k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="48" id="ydM-Za-4PJ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="BU7-Ka-IRc"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="content" destination="wKM-nE-h8k" id="gz0-0X-an7"/>
+                <outlet property="headBtn" destination="LkG-IP-2xm" id="xP8-cq-V9F"/>
+                <outlet property="iconRight" destination="3Ja-cT-O44" id="fLM-39-khy"/>
+                <outlet property="sendFailBtn" destination="5bs-9Z-QVM" id="KhO-mV-4OV"/>
+                <outlet property="sendTimerLabel" destination="A16-TJ-RNb" id="yut-9B-ThU"/>
+                <outlet property="userHead" destination="uod-Y0-Gep" id="toX-Kh-h4N"/>
+            </connections>
+            <point key="canvasLocation" x="221" y="297"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="IM_chat_failed.png" width="23" height="23"/>
+        <image name="icon_right_message.png" width="8" height="8"/>
+    </resources>
+</document>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#67bfb5"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_close_doc_plus" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1986年07月16日"
+                android:textColor="#f5ecc5"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="15:30"
+                android:textColor="#f5ecc5"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="明天有随访"
+                android:textColor="#f5ecc5"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="5" >
+
+        <ListView
+            android:id="@+id/lv_followups"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" 
+            android:listSelector="@color/transparent"
+            android:background="@android:color/transparent"/>
+
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_emeraldtotran_down"/>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_emeraldtotran_up"
+            android:layout_gravity="bottom"/>
+        
+        <FrameLayout
+            android:id="@+id/fl_listFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:visibility="gone">
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

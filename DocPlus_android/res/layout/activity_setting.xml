@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <!-- 登录手机 -->
+
+            <RelativeLayout
+                android:id="@+id/ll_setting_change_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/selector_btn_menu_bg" >
+
+                <ImageView
+                    android:id="@+id/img_setting_change_phone_icon"
+                    android:layout_width="@dimen/setting_icon_image_width"
+                    android:layout_height="@dimen/setting_icon_image_height"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_login_phonenumber"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_setting_change_phone_icon"
+                    android:text="登录手机"
+                    android:textColor="@color/setting_text_color"
+                    android:textSize="@dimen/setting_text_title_size" />
+
+                <ImageView
+                    android:id="@+id/img_setting_change_phone_arrows"
+                    android:layout_width="@dimen/setting_arrow_image_width"
+                    android:layout_height="@dimen/setting_arrow_image_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/selector_image_setting_arrowright" />
+
+                <TextView
+                    android:id="@+id/tv_setting_user_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/img_setting_change_phone_arrows"
+                    android:alpha="0.5"
+                    android:textColor="@color/setting_text_color"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/setting_line_color" />
+            <!-- 医家号 -->
+
+            <RelativeLayout
+                android:id="@+id/ll_setting_change_plus"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/selector_btn_menu_bg"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_setting_change_plus_icon"
+                    android:layout_width="@dimen/setting_icon_image_width"
+                    android:layout_height="@dimen/setting_icon_image_height"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_doctor_plus_id"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_setting_change_plus_icon"
+                    android:text="医加号"
+                    android:textColor="@color/setting_text_color"
+                    android:textSize="@dimen/setting_text_title_size" />
+
+                <ImageView
+                    android:id="@+id/img_setting_change_plus_arrows"
+                    android:layout_width="@dimen/setting_arrow_image_width"
+                    android:layout_height="@dimen/setting_arrow_image_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/selector_image_setting_arrowright" />
+
+                <TextView
+                    android:id="@+id/tv_setting_dp_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/img_setting_change_plus_arrows"
+                    android:alpha="0.5"
+                    android:textColor="@color/setting_text_color"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/setting_line_color" />
+
+            <!-- 修改密码 -->
+
+            <RelativeLayout
+                android:id="@+id/ll_setting_change_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/selector_btn_menu_bg"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_setting_change_pwd_icon"
+                    android:layout_width="@dimen/setting_icon_image_width"
+                    android:layout_height="@dimen/setting_icon_image_height"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_change_password"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_setting_change_pwd_icon"
+                    android:text="修改密码"
+                    android:textColor="@color/setting_text_color"
+                    android:textSize="@dimen/setting_text_title_size" />
+
+                <ImageView
+                    android:id="@+id/img_setting_change_pwd_arrows"
+                    android:layout_width="@dimen/setting_arrow_image_width"
+                    android:layout_height="@dimen/setting_arrow_image_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/selector_image_setting_arrowright" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/setting_line_color" />
+            <!-- 二维码 -->
+
+            <RelativeLayout
+                android:id="@+id/ll_setting_quickmark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/selector_btn_menu_bg" >
+
+                <ImageView
+                    android:id="@+id/img_setting_quickmark_icon"
+                    android:layout_width="@dimen/setting_icon_image_width"
+                    android:layout_height="@dimen/setting_icon_image_height"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_setting_my_twocode"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_setting_quickmark_icon"
+                    android:text="我的二维码"
+                    android:textColor="@color/setting_text_color"
+                    android:textSize="@dimen/setting_text_title_size" />
+
+                <ImageView
+                    android:id="@+id/img_setting_quickmark_arrows"
+                    android:layout_width="@dimen/setting_arrow_image_width"
+                    android:layout_height="@dimen/setting_arrow_image_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/selector_image_setting_arrowright" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/setting_line_color"
+                android:visibility="gone" />
+            <!-- 年费 -->
+
+            <RelativeLayout
+                android:id="@+id/ll_setting_play"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/selector_btn_menu_bg"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_setting_play_icon"
+                    android:layout_width="@dimen/setting_icon_image_width"
+                    android:layout_height="@dimen/setting_icon_image_height"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/app_icon"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_setting_play_icon"
+                    android:text="年费"
+                    android:textColor="@color/setting_text_color"
+                    android:textSize="@dimen/setting_text_title_size" />
+
+                <ImageView
+                    android:id="@+id/img_setting_play_arrows"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/selector_image_setting_arrowright" />
+
+                <TextView
+                    android:id="@+id/tv_setting_annual_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/img_setting_play_arrows"
+                    android:alpha="0.5"
+                    android:text="1,000 积分/年"
+                    android:textColor="@color/setting_text_color"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/setting_line_color" />
+
+            <!-- 仅wifi时上传病历 -->
+
+            <RelativeLayout
+                android:id="@+id/ll_setting_wifi"
+                android:layout_width="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:background="@drawable/selector_btn_menu_bg"
+                android:layout_height="@dimen/setting_item_height" >
+
+                <ImageView
+                    android:id="@+id/img_setting_wifi_icon"
+                    android:layout_width="@dimen/setting_icon_image_width"
+                    android:layout_height="@dimen/setting_icon_image_height"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_setting_wifi_upload"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_setting_wifi_icon"
+                    android:text="仅wifi时上传病历"
+                    android:textColor="@color/setting_text_color"
+                    android:textSize="@dimen/setting_text_title_size" />
+
+                <ImageView
+                    android:id="@+id/img_setting_wifi_arrows"
+                    android:layout_width="@dimen/setting_arrow_image_width"
+                    android:layout_height="@dimen/setting_arrow_image_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/selector_image_setting_arrowright" />
+
+                <ToggleButton
+                    android:id="@+id/mTogBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:layout_toLeftOf="@id/img_setting_wifi_arrows"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/selector_checkbox_wifi"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/setting_line_color" />
+
+            <!-- 清除缓存 -->
+
+            <RelativeLayout
+                android:id="@+id/ll_setting_clean_catch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/selector_btn_menu_bg" >
+
+                <ImageView
+                    android:id="@+id/img_setting_clean_catch_icon"
+                    android:layout_width="@dimen/setting_icon_image_width"
+                    android:layout_height="@dimen/setting_icon_image_height"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_setting_clear_cache"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_setting_clean_catch_icon"
+                    android:text="清除缓存"
+                    android:textColor="@color/setting_text_color"
+                    android:textSize="@dimen/setting_text_title_size" />
+
+                <ImageView
+                    android:id="@+id/img_setting_clean_catch_arrows"
+                    android:layout_width="@dimen/setting_arrow_image_width"
+                    android:layout_height="@dimen/setting_arrow_image_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/selector_image_setting_arrowright" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/setting_line_color" />
+
+            <!-- 关于医家 -->
+
+            <RelativeLayout
+                android:id="@+id/ll_setting_about_plus"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/selector_btn_menu_bg" >
+
+                <ImageView
+                    android:id="@+id/img_setting_about_plus_icon"
+                    android:layout_width="@dimen/setting_icon_image_width"
+                    android:layout_height="@dimen/setting_icon_image_height"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_setting_about_plus_icon"
+                    android:text="关于医加"
+                    android:textColor="@color/setting_text_color"
+                    android:textSize="@dimen/setting_text_title_size" />
+
+                <ImageView
+                    android:id="@+id/img_setting_about_plus_arrows"
+                    android:layout_width="@dimen/setting_arrow_image_width"
+                    android:layout_height="@dimen/setting_arrow_image_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/selector_image_setting_arrowright" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/setting_line_color" />
+            <!-- 反馈 -->
+
+            <RelativeLayout
+                android:id="@+id/ll_setting_tickling"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/selector_btn_menu_bg" >
+
+                <ImageView
+                    android:id="@+id/img_setting_tickling_icon"
+                    android:layout_width="@dimen/setting_icon_image_width"
+                    android:layout_height="@dimen/setting_icon_image_height"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_setting_tickling_icon"
+                    android:text="反馈"
+                    android:textColor="@color/setting_text_color"
+                    android:textSize="@dimen/setting_text_title_size" />
+
+                <ImageView
+                    android:id="@+id/img_setting_tickling_arrows"
+                    android:layout_width="@dimen/setting_arrow_image_width"
+                    android:layout_height="@dimen/setting_arrow_image_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/selector_image_setting_arrowright" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/setting_line_color" />
+
+            <Button
+                android:id="@+id/btn_exit_app"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_btn_emerald_bg"
+                android:text="退出登录"
+                android:textColor="@drawable/selector_btn_emerald_text"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

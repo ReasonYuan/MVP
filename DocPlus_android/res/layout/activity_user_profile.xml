@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_user_profile_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/app_emerald"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_btn_topbar_bg"
+                android:onClick="onToHomeClick" >
+
+                <ImageView
+                    android:id="@+id/img_userinfo_topbar_left"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_back" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:onClick="onToHomeClick"
+            android:text="主页"
+            android:textColor="@drawable/selector_btn_tohome_text_color"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:layout_weight="1.3" >
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal" >
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/shape_rectangle_head"
+                            android:padding="1dp" >
+
+                            <ImageView
+                                android:id="@+id/riv_user_profile_head"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/profile_head_icon" />
+
+                            <View
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/selector_rectangle_head_bg"
+                                android:onClick="onHeadClick" />
+                        </FrameLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_user_profile_rectangle_state"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="bottom|right"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/icon_home_head_v"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="2.2"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/tv_user_profile_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="医生"
+                                android:textColor="#66BAA8"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_user_profile_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="10dp"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:textSize="14sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginRight="@dimen/userinfo_item_line_margin_right"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/app_emerald" />
+                    </LinearLayout>
+
+                    <ScrollView
+                        android:id="@+id/sll_user_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/userinfo_item_line_margin_right"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/item_user_profile_height"
+                                android:background="@drawable/selector_item_general_content_trans_bg"
+                                android:gravity="center_vertical"
+                                android:onClick="onNameClick"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="@dimen/userinfo_icon_width"
+                                    android:layout_height="@dimen/userinfo_icon_height"
+                                    android:layout_marginRight="@dimen/userinfo_icon_margin_right"
+                                    android:background="@drawable/profile_name_icon" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_title_name"
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="姓名"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_content_name"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:gravity="right"
+                                    android:singleLine="true"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_height="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_marginLeft="5dp"
+                                    android:duplicateParentState="true"
+                                    android:src="@drawable/selector_image_setting_arrowright" />
+                                <!-- arrow_right_circle -->
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/item_general_divider_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/item_user_profile_height"
+                                android:background="@drawable/selector_item_general_content_trans_bg"
+                                android:gravity="center_vertical"
+                                android:onClick="onGenderClick"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="@dimen/userinfo_icon_width"
+                                    android:layout_height="@dimen/userinfo_icon_height"
+                                    android:layout_marginRight="@dimen/userinfo_icon_margin_right"
+                                    android:background="@drawable/icon_info_gender" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_title_gender"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="性别"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_content_gender"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:gravity="right"
+                                    android:singleLine="true"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_height="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_marginLeft="5dp"
+                                    android:duplicateParentState="true"
+                                    android:src="@drawable/selector_image_setting_arrowright" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/item_general_divider_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/item_user_profile_height"
+                                android:background="@drawable/selector_item_general_content_trans_bg"
+                                android:gravity="center_vertical"
+                                android:onClick="onHospitalClick"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="@dimen/userinfo_icon_width"
+                                    android:layout_height="@dimen/userinfo_icon_height"
+                                    android:layout_marginRight="@dimen/userinfo_icon_margin_right"
+                                    android:background="@drawable/icon_doctor_detail_hospital" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_title_hosptial"
+                                    android:layout_width="60dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="医院"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_content_hosptial"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:gravity="right"
+                                    android:singleLine="true"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_height="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_marginLeft="5dp"
+                                    android:duplicateParentState="true"
+                                    android:src="@drawable/selector_image_setting_arrowright" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/item_general_divider_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/item_user_profile_height"
+                                android:background="@drawable/selector_item_general_content_trans_bg"
+                                android:gravity="center_vertical"
+                                android:onClick="onDepartClick"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="@dimen/userinfo_icon_width"
+                                    android:layout_height="@dimen/userinfo_icon_height"
+                                    android:layout_marginRight="@dimen/userinfo_icon_margin_right"
+                                    android:background="@drawable/profile_department_icon" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_title_department"
+                                    android:layout_width="60dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="科室"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_content_department"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:gravity="right"
+                                    android:singleLine="true"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_height="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_marginLeft="5dp"
+                                    android:duplicateParentState="true"
+                                    android:src="@drawable/selector_image_setting_arrowright" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/item_general_divider_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/item_user_profile_height"
+                                android:background="@drawable/selector_item_general_content_trans_bg"
+                                android:gravity="center_vertical"
+                                android:onClick="onZhiChengClick"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="@dimen/userinfo_icon_width"
+                                    android:layout_height="@dimen/userinfo_icon_height"
+                                    android:layout_marginRight="@dimen/userinfo_icon_margin_right"
+                                    android:background="@drawable/icon_doctor_detail_zhiwu" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_title_zhicheng"
+                                    android:layout_width="60dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="职称"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_content_zhicheng"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:gravity="right"
+                                    android:singleLine="true"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_height="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_marginLeft="5dp"
+                                    android:duplicateParentState="true"
+                                    android:src="@drawable/selector_image_setting_arrowright" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/item_general_divider_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/item_user_profile_height"
+                                android:background="@drawable/selector_item_general_content_trans_bg"
+                                android:gravity="center_vertical"
+                                android:onClick="onDespClick"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="@dimen/userinfo_icon_width"
+                                    android:layout_height="@dimen/userinfo_icon_height"
+                                    android:layout_marginRight="@dimen/userinfo_icon_margin_right"
+                                    android:background="@drawable/profile_desc_icon" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_title_desp"
+                                    android:layout_width="65dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="个人简介"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_title_desp_xt"
+                                    android:layout_width="45dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="(选填)"
+                                    android:textColor="#727172"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_content_desp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:gravity="right"
+                                    android:singleLine="true"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_height="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_marginLeft="5dp"
+                                    android:duplicateParentState="true"
+                                    android:src="@drawable/selector_image_setting_arrowright" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/item_general_divider_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/item_user_profile_height"
+                                android:background="@drawable/selector_item_general_content_trans_bg"
+                                android:gravity="center_vertical"
+                                android:onClick="onAuthClick"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="@dimen/userinfo_icon_width"
+                                    android:layout_height="@dimen/userinfo_icon_height"
+                                    android:layout_marginRight="@dimen/userinfo_icon_margin_right"
+                                    android:background="@drawable/icon_info_identify" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_title_auth"
+                                    android:layout_width="65dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="医生认证"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_title_auth_xt"
+                                    android:layout_width="45dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="(选填)"
+                                    android:textColor="#727172"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_content_auth"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:gravity="right"
+                                    android:singleLine="true"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_height="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_marginLeft="5dp"
+                                    android:duplicateParentState="true"
+                                    android:src="@drawable/selector_image_setting_arrowright" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/item_general_divider_line" />
+
+                            <LinearLayout
+                                android:id="@+id/my_invitation_code"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/item_user_profile_height"
+                                android:background="@drawable/selector_item_general_content_trans_bg"
+                                android:gravity="center_vertical"
+                                android:onClick="onInviteCodeClick"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="@dimen/userinfo_icon_width"
+                                    android:layout_height="@dimen/userinfo_icon_height"
+                                    android:layout_marginRight="@dimen/userinfo_icon_margin_right"
+                                    android:background="@drawable/profile_code_icon" />
+
+                                <TextView
+                                    android:layout_width="85dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="我的邀请码"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp" />
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1" >
+
+                                    <TextView
+                                        android:id="@+id/tv_user_profile_invient"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical|right"
+                                        android:background="#E6F3F1"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:text=""
+                                        android:textColor="#EB6100"
+                                        android:textSize="18sp" />
+                                </FrameLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/my_invitation_code_line"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/item_general_divider_line" />
+
+                            <LinearLayout
+                                android:id="@+id/my_scan"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/item_user_profile_height"
+                                android:background="@drawable/selector_item_general_content_trans_bg"
+                                android:gravity="center_vertical"
+                                android:onClick="onScanClick"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="@dimen/userinfo_icon_width"
+                                    android:layout_height="@dimen/userinfo_icon_height"
+                                    android:layout_marginRight="@dimen/userinfo_icon_margin_right"
+                                    android:background="@drawable/profile_scan_icon" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_title_scan"
+                                    android:layout_width="85dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="扫一扫"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_content_scan"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:gravity="right"
+                                    android:singleLine="true"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_height="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_marginLeft="5dp"
+                                    android:duplicateParentState="true"
+                                    android:src="@drawable/selector_image_setting_arrowright" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/my_scan_line"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/item_general_divider_line" />
+
+                            <LinearLayout
+                                android:id="@+id/my_twodimention_code"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/item_user_profile_height"
+                                android:background="@drawable/selector_item_general_content_trans_bg"
+                                android:gravity="center_vertical"
+                                android:onClick="onQuickCodeClick"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="@dimen/userinfo_icon_width"
+                                    android:layout_height="@dimen/userinfo_icon_height"
+                                    android:layout_marginRight="@dimen/userinfo_icon_margin_right"
+                                    android:background="@drawable/icon_setting_my_twocode" />
+
+                                <TextView
+                                    android:layout_width="85dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="我的二维码"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_profile_my_quickcode"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:gravity="right"
+                                    android:singleLine="true"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_height="@dimen/image_arrow_right_circle_wh"
+                                    android:layout_marginLeft="5dp"
+                                    android:duplicateParentState="true"
+                                    android:src="@drawable/selector_image_setting_arrowright" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/my_twodimention_code_line"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/item_general_divider_line" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_tobe_doc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_general_h"
+                android:layout_margin="20dp"
+                android:background="@drawable/selector_btn_emerald_bg"
+                android:onClick="onToBeDoctorClick"
+                android:textColor="@drawable/selector_btn_emerald_text"
+                android:textSize="@dimen/btn_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

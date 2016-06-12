@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotosGroupCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fs9-ac-kJe" customClass="PhotosGroupLargeCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DsR-vf-RT6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8uo-lN-3Q8" customClass="DraggableCollectionViewFlowLayout">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="friend_unselect.png" translatesAutoresizingMaskIntoConstraints="NO" id="uDG-S0-xb1">
+                                <rect key="frame" x="578" y="3" width="19" height="19"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="19" id="4xB-EN-1C4"/>
+                                    <constraint firstAttribute="height" constant="19" id="zCm-uO-IWv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19607844948768616" green="0.19607844948768616" blue="0.19607844948768616" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="DsR-vf-RT6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2Dc-sz-yyH"/>
+                            <constraint firstAttribute="trailing" secondItem="uDG-S0-xb1" secondAttribute="trailing" constant="3" id="Syl-cG-lyj"/>
+                            <constraint firstAttribute="trailing" secondItem="DsR-vf-RT6" secondAttribute="trailing" id="XDO-7E-qiN"/>
+                            <constraint firstAttribute="bottom" secondItem="DsR-vf-RT6" secondAttribute="bottom" id="e1n-VP-x4y"/>
+                            <constraint firstItem="DsR-vf-RT6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="k4V-1w-SB3"/>
+                            <constraint firstItem="uDG-S0-xb1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="kAB-Vg-ME0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="top" secondItem="fs9-ac-kJe" secondAttribute="top" id="aeP-I0-vf4"/>
+                <constraint firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="jBh-fE-PAv"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="leading" secondItem="fs9-ac-kJe" secondAttribute="leading" id="ofc-Xf-KrT"/>
+                <constraint firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="z7h-fX-hBT"/>
+            </constraints>
+            <connections>
+                <outlet property="checkbox" destination="uDG-S0-xb1" id="mpH-o0-Mhq"/>
+                <outlet property="collectionView" destination="DsR-vf-RT6" id="azp-XM-mrz"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="friend_unselect.png" width="19" height="19"/>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StructuredViewController">
+            <connections>
+                <outlet property="collectionView" destination="bhi-b1-Ei2" id="1wP-5Z-dAK"/>
+                <outlet property="leftScrollView" destination="FWt-gN-jzC" id="RMT-Gq-cGx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sda-IU-r19" customClass="StructuredTitleView">
+                    <rect key="frame" x="44" y="0.0" width="556" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="RuL-Pm-tE5"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bhi-b1-Ei2">
+                    <rect key="frame" x="44" y="44" width="556" height="556"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewLayout key="collectionViewLayout" id="KSw-Ug-UFD" customClass="StructuredLayout"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="COj-Uw-nt8"/>
+                        <outlet property="delegate" destination="-1" id="Fq6-Bd-Wqq"/>
+                    </connections>
+                </collectionView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWt-gN-jzC" customClass="StructuredTimeScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pb-uy-9Pf">
+                    <rect key="frame" x="43" y="0.0" width="1" height="600"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="syO-zs-VBV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="FWt-gN-jzC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0NE-fq-5Ve"/>
+                <constraint firstAttribute="bottom" secondItem="7pb-uy-9Pf" secondAttribute="bottom" id="6kG-Xh-oYV"/>
+                <constraint firstItem="sda-IU-r19" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ATp-Xh-I4g"/>
+                <constraint firstItem="bhi-b1-Ei2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="44" id="END-65-XTa"/>
+                <constraint firstItem="FWt-gN-jzC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HwP-2n-a4b"/>
+                <constraint firstItem="sda-IU-r19" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="44" id="KAq-iF-wLJ"/>
+                <constraint firstAttribute="bottom" secondItem="FWt-gN-jzC" secondAttribute="bottom" id="Miw-b3-HFJ"/>
+                <constraint firstItem="bhi-b1-Ei2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="Q0Z-BW-xDb"/>
+                <constraint firstItem="bhi-b1-Ei2" firstAttribute="leading" secondItem="FWt-gN-jzC" secondAttribute="trailing" id="a4K-XW-ru5"/>
+                <constraint firstAttribute="bottom" secondItem="bhi-b1-Ei2" secondAttribute="bottom" id="cHx-6W-gfW"/>
+                <constraint firstAttribute="trailing" secondItem="bhi-b1-Ei2" secondAttribute="trailing" id="fem-QU-jTG"/>
+                <constraint firstItem="7pb-uy-9Pf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pDg-7y-UN6"/>
+                <constraint firstItem="7pb-uy-9Pf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="43" id="qKb-yO-GBX"/>
+                <constraint firstAttribute="trailing" secondItem="sda-IU-r19" secondAttribute="trailing" id="sXW-Nx-kgw"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

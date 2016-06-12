@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" 
+    android:background="@drawable/selector_item_general_content_trans_bg">
+    
+    <ImageView 
+        android:id="@+id/iv_photo_bucket_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"/>
+    
+    <TextView 
+        android:id="@+id/tv_photo_bucket_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:singleLine="true"
+        android:ellipsize="start"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+    
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/arrow_right"/>
+
+</LinearLayout>

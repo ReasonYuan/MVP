@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_corner_record_item_samp"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/tv_recort_item_photo_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="2dp"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:text="图片  张"
+        android:textColor="#707070"
+        android:textStyle="bold"/>
+    <TextView 
+        android:id="@+id/tv_record_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:textSize="10sp"
+        android:singleLine="true"
+        android:textColor="#707070"/>
+    
+    <TextView 
+        android:id="@+id/tv_record_item_recstate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="3dp"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:text="识别中..."/>
+
+</LinearLayout>

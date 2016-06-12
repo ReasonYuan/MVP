@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchHospitalViewController" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="hospitalTableView" destination="qJc-Qb-Zhj" id="JHJ-uh-u8f"/>
+                <outlet property="searchBar" destination="ST3-JI-o3F" id="4dY-VO-ch6"/>
+                <outlet property="statelabel" destination="4jw-mR-6U9" id="d35-7W-9UJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="请输入医院名称" scopeBarBackgroundImage="btn_search_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ST3-JI-o3F">
+                    <rect key="frame" x="0.0" y="7" width="600" height="44"/>
+                    <animations/>
+                    <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="GM9-wG-a9l"/>
+                    </connections>
+                </searchBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无搜索结果" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jw-mR-6U9">
+                    <rect key="frame" x="258" y="290.5" width="85" height="20.5"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qJc-Qb-Zhj">
+                    <rect key="frame" x="0.0" y="58" width="600" height="535"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="MNr-82-Rg9"/>
+                        <outlet property="delegate" destination="-1" id="rKN-Nd-0Gn"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qJc-Qb-Zhj" firstAttribute="top" secondItem="ST3-JI-o3F" secondAttribute="bottom" constant="7" id="1nE-Kx-qvY"/>
+                <constraint firstAttribute="centerY" secondItem="4jw-mR-6U9" secondAttribute="centerY" id="1xW-oV-iF3"/>
+                <constraint firstAttribute="trailing" secondItem="qJc-Qb-Zhj" secondAttribute="trailing" constant="50" id="4De-Xu-3bU"/>
+                <constraint firstAttribute="bottom" secondItem="qJc-Qb-Zhj" secondAttribute="bottom" id="6HN-K9-HKz"/>
+                <constraint firstItem="qJc-Qb-Zhj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6KJ-Tk-Onw"/>
+                <constraint firstItem="qJc-Qb-Zhj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BwO-Te-fx9"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qJc-Qb-Zhj" secondAttribute="trailing" id="FRK-gs-Ldv"/>
+                <constraint firstItem="qJc-Qb-Zhj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="LMK-xU-z1i"/>
+                <constraint firstAttribute="bottom" secondItem="qJc-Qb-Zhj" secondAttribute="bottom" constant="7" id="Pd7-U6-puS"/>
+                <constraint firstAttribute="trailing" secondItem="qJc-Qb-Zhj" secondAttribute="trailing" id="UqI-7T-rhn"/>
+                <constraint firstItem="ST3-JI-o3F" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bZC-8C-am2"/>
+                <constraint firstAttribute="centerX" secondItem="4jw-mR-6U9" secondAttribute="centerX" id="hiu-Yk-Q91"/>
+                <constraint firstItem="ST3-JI-o3F" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="7" id="qXV-do-6E7"/>
+                <constraint firstItem="qJc-Qb-Zhj" firstAttribute="top" secondItem="ST3-JI-o3F" secondAttribute="bottom" id="snK-BD-oQh"/>
+                <constraint firstAttribute="trailing" secondItem="ST3-JI-o3F" secondAttribute="trailing" id="wyu-Wu-Rkl"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4De-Xu-3bU"/>
+                    <exclude reference="6HN-K9-HKz"/>
+                    <exclude reference="BwO-Te-fx9"/>
+                    <exclude reference="FRK-gs-Ldv"/>
+                    <exclude reference="LMK-xU-z1i"/>
+                    <exclude reference="snK-BD-oQh"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="140" y="155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_search_icon.png" width="11" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="新增病历"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_create_record_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_stroke_edit_bg"
+        android:hint="输入病历名称"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true"
+        android:textColorHint="#B5B5B5" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_create_record_mz"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:background="@drawable/selector_btn_record_type"
+            android:text="门诊"
+            android:textColor="@drawable/selector_btn_record_type_text"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#b5b5b5" />
+
+        <Button
+            android:id="@+id/btn_create_record_zy"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:background="@drawable/selector_btn_record_type"
+            android:text="住院"
+            android:textColor="@drawable/selector_btn_record_type_text"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_create_record_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_dialog_left"
+            android:text="创建"
+            android:textColor="@drawable/selector_btn_emerald_text"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_create_record_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.8"
+            android:background="@drawable/selector_btn_dialog_right"
+            android:text="取消"
+            android:textColor="@drawable/selector_btn_back_text"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>

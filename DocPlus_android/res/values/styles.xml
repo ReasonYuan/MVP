@@ -1,0 +1,149 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+
+    <!-- Application theme. -->
+    <style name="AppPlusTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:textColor">@color/app_text_normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+    <style name="AnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_open_push_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_open_push_right_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_close_push_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_close_push_left_out</item>
+        <item name="android:taskOpenEnterAnimation">@anim/activity_open_push_right_in</item>
+        <item name="android:taskOpenExitAnimation">@anim/activity_open_push_right_out</item>
+        <item name="android:taskCloseEnterAnimation">@anim/activity_close_push_left_in</item>
+        <item name="android:taskCloseExitAnimation">@anim/activity_close_push_left_out</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/activity_open_push_right_in</item>
+        <item name="android:taskToFrontExitAnimation">@anim/activity_open_push_right_out</item>
+        <item name="android:taskToBackEnterAnimation">@anim/activity_close_push_left_in</item>
+        <item name="android:taskToBackExitAnimation">@anim/activity_close_push_left_out</item>
+    </style>
+
+    <style name="DialogFullScreen" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <!-- <item name="android:backgroundDimEnabled">true</item> -->
+    <!-- <item name="android:windowNoTitle">true</item> -->
+    <!-- <item name="android:windowIsFloating">true</item> -->
+    <!--
+      <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    -->
+    <!-- <item name="android:windowFullscreen">true</item> -->
+    <!-- <item name="android:windowBackground">@null</item> -->
+
+
+    <!-- 全屏幕拉伸 -->
+    <style name="layout_full">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- 固定自身大小 -->
+    <style name="layout_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 横向分布 -->
+    <style name="layout_horizontal" parent="layout_full">
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="layout_horizontal_full" parent="layout_full">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <!-- 纵向分布 -->
+    <style name="layout_vertical" parent="layout_full">
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="layout_vertical_full" parent="layout_full">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="edit_text_style">
+        <item name="android:singleLine">true</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="main_tab_bottom">
+
+        <!-- <item name="android:textSize">@dimen/bottom_tab_font_size</item> -->
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/topbar_bg_normal</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <!-- <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item> -->
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <!-- 单选按钮 -->
+    <style name="SingleRadio">
+        <item name="android:background">@drawable/selector_single_radio</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!-- 弹出框 -->
+    <style name="btnListAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/btn_list_enter</item>
+        <item name="android:windowExitAnimation">@anim/btn_list_exit</item>
+    </style>
+
+    <!-- popupwindow默认弹出动画 -->
+    <style name="popupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_enter</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_exit</item>
+    </style>
+
+    <!-- popupwindow从底部弹出动画 -->
+    <style name="popupAnimationUp" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_up_enter</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_down_exit</item>
+    </style>
+
+    <!-- 标签编辑框背景 -->
+    <style name="tag_edittext_style" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/shape_edt_tag_bg</item>
+    </style>
+
+    <!--
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog"> 
+        <item name="android:windowBackground">@color/dialog_light_bg</item>
+        是否有标题 
+        <item name="android:windowNoTitle">true</item>  
+        是否浮现在activity之上 
+        <item name="android:windowIsFloating">true</item>  
+        是否模糊 
+        <item name="android:backgroundDimEnabled">true</item>  
+    </style>
+    -->
+
+</resources>

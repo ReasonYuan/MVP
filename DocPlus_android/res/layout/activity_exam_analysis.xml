@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 当前医院 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_item_general_content_trans_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/item_divider_margin_lr"
+            android:paddingRight="@dimen/item_divider_margin_lr" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_hospital_search" />
+
+            <EditText
+                android:id="@+id/et_hosp_current"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="当前医院"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_hospital_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="选择医院"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_general_border_h"
+            android:background="@color/line_divide" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_item_general_content_trans_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/item_divider_margin_lr"
+            android:paddingRight="@dimen/item_divider_margin_lr" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_hospital_search" />
+
+            <EditText
+                android:id="@+id/et_search_exam"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="搜索化验项"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_exam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="选择化验项"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_general_border_h"
+            android:background="@color/line_divide" />
+        <!-- 热门医院列表 -->
+
+        <ListView
+            android:id="@+id/lv_hot_hospital"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:fadeScrollbars="false"
+            android:listSelector="#00000000"
+            android:paddingTop="2dp"
+            android:scrollbarSize="2dp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarThumbVertical="@color/app_emerald"
+            android:scrollbarTrackVertical="@color/line_divide" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_general_border_h"
+            android:background="@color/line_divide" />
+
+        <Button
+            android:id="@+id/btn_hospital_sure"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/item_divider_margin_lr"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_btn_emerald_bg"
+            android:enabled="false"
+            android:onClick="onHospitalSureClick"
+            android:text="@string/btn_sure_ren"
+            android:textColor="@drawable/selector_btn_emerald_text"
+            android:textSize="@dimen/btn_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

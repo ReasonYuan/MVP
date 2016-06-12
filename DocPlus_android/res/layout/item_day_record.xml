@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rv_item_day_record_name"
+        android:layout_width="54dp"
+        android:layout_height="54dp" 
+        android:layout_gravity="center"
+        android:descendantFocusability="blocksDescendants">
+
+        <Button
+            android:id="@+id/btn_item_day_record_name"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_btn_day_record_name_bg"
+            android:textSize="16sp" 
+            android:focusable = "false"
+            android:textColor="#91918F"
+            android:layout_marginTop="5dp"
+            android:clickable="false"/>
+
+        <ImageView
+            android:id="@+id/img_item_day_record_unread"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_name_unread" />
+    </RelativeLayout>
+
+</FrameLayout>

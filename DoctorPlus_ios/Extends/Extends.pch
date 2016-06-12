@@ -1,0 +1,17 @@
+//
+//  Extends.pch
+//  Extends
+//
+//  Created by 廖敏 on 15/5/6.
+//  Copyright (c) 2015年 廖敏. All rights reserved.
+//
+
+#ifndef Extends_Extends_pch
+#define Extends_Extends_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#endif

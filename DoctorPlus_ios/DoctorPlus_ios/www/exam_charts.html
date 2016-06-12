@@ -1,0 +1,158 @@
+﻿<!DOCTYPE HTML>
+<html>
+<header>
+	<meta charset="utf-8">
+</header>
+<body>
+
+<div id="main" ></div><!-- style="width:680px;height:480px" -->
+<script src="http://echarts.baidu.com/build/dist/echarts.js" type="application/javascript"></script>
+<script type="text/javascript">
+
+<!-- js/echarts/echarts.js -->
+
+//window.jsObj.showMsg(window.jsObj.width());
+var dv = document.getElementById('main');
+//dv.style.height = window.jsObj.height();
+//dv.style.height = '400px';
+// 路径配置
+require.config({
+  paths: {
+    echarts: 'http://echarts.baidu.com/build/dist'//'/www/js/echarts'//'http://echarts.baidu.com/build/dist'
+  }
+});
+
+function GetRandomNum(Min,Max)
+{
+    var Range = Max - Min;
+    var Rand = Math.random();
+    return(Min + Math.round(Rand * Range));
+}
+
+// 使用
+function drawChart(name, times, values){
+	//var time = JSON.parse(times);
+	//var value = JSON.parse(values);
+    var time = new Array();
+    var value = new Array();
+    
+    for(var i = 0; i < 24 ; i++){
+        time[i] = "2014-01-" + i;
+    }
+    for(var i = 0; i < 30; i++){
+        value[i] = 10 + GetRandomNum(10,40);
+    }
+	
+	
+		require(
+	  [
+	    'echarts',
+	    'echarts/chart/line',
+	  //'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+	  ],
+	  function (ec) {
+	    // 基于准备好的dom，初始化echarts图表
+	    var myChart = ec.init(dv); 
+	    //设置数据
+	    var option = {
+	       //标题
+	//     title:{
+	//     		text:name
+	////     		subtext:'测试案例，纯属乱整'
+	//     },
+	       //滚动
+	//	dataZoom : {
+	//      show : true,
+	//      realtime : true,
+	//      orient: 'horizontal',   // 'horizontal'
+	//      x: 1,
+	//      //y: 36,
+	//      width: 400,
+	//      //height: 20,
+	//      backgroundColor: 'rgba(221,160,221,0.5)',
+	//      dataBackgroundColor: 'rgba(138,43,226,0.5)',
+	//      fillerColor: 'rgba(38,143,26,0.6)',
+	//      handleColor: 'rgba(128,43,16,0.8)',
+	//      //xAxisIndex:[],
+	//      //yAxisIndex:[],
+	//      start : 40,
+	//      end : 60
+	//  },
+	       
+	       //设置提示
+	       tooltip:{
+	       		show:true
+	       },
+	       //设置图例
+	       legend:{
+	       	data:['化验值']
+	       },
+			grid:{
+				x:35,
+				x2:35,
+			},
+	
+	      //设置坐标轴
+	      xAxis : [
+	        {
+	          type : 'category',
+	          boundaryGap : false,
+	          data : time,
+	          axisLabel : {
+	//              show:true,
+	                interval: 0
+	                //rotate: 45,
+	            }
+	        }
+	      ],
+	      yAxis : [
+	        {
+	          type : 'value'
+	        }
+	      ],
+	      color:['87cefa','red','green','black','blue'], 
+	      //设置数据
+	      series : [
+	      	//柱状图
+	//      {
+	//        "name":"销量",
+	//        "type":"bar",
+	//        "data":[5, 20, 40, 10, 24, 20,24,32],
+	//      },
+	        //折线图
+	         {
+	          "name":"化验结果",
+	          "type":"line",
+	          "data":value,
+	           //绘制平均线
+	           markLine : {
+	             data : [
+	               {type : 'average', name: '平均值'}
+	             ]
+	           },
+	          //绘制最高最低点
+	          markPoint : {
+	            data : [
+	              {type : 'max', name: '最大值'},
+	              {type : 'min', name: '最小值'}
+	            ]
+	          }
+	
+	        }
+	      ]
+	    };
+	
+	    // 为echarts对象加载数据 
+	    myChart.setOption(option); 
+	  }
+	);
+};
+
+function setWidth(width){
+	dv.style.width = width;
+};
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StructuredTimeItemView">
+            <connections>
+                <outlet property="monthDayLabel" destination="Jgc-gF-wt8" id="8YA-Oy-8nZ"/>
+                <outlet property="yearLabel" destination="lH6-da-7Bz" id="Hql-RH-q6w"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2gt-2x-tap">
+            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lH6-da-7Bz">
+                    <rect key="frame" x="0.0" y="-2" width="44" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="3Jk-O0-4OK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3/15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgc-gF-wt8">
+                    <rect key="frame" x="0.0" y="20" width="44" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="g95-LU-1eb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jgc-gF-wt8" secondAttribute="trailing" id="3rv-KT-LA0"/>
+                <constraint firstAttribute="trailing" secondItem="lH6-da-7Bz" secondAttribute="trailing" id="GsE-KK-mBH"/>
+                <constraint firstItem="lH6-da-7Bz" firstAttribute="leading" secondItem="2gt-2x-tap" secondAttribute="leading" id="ITL-ak-arK"/>
+                <constraint firstItem="lH6-da-7Bz" firstAttribute="top" secondItem="2gt-2x-tap" secondAttribute="top" constant="-2" id="N7C-Kz-QRP"/>
+                <constraint firstItem="Jgc-gF-wt8" firstAttribute="top" secondItem="2gt-2x-tap" secondAttribute="top" constant="20" id="vET-0o-6Gy"/>
+                <constraint firstItem="Jgc-gF-wt8" firstAttribute="leading" secondItem="2gt-2x-tap" secondAttribute="leading" id="xh0-9c-Emj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="306" y="-385"/>
+        </view>
+    </objects>
+</document>

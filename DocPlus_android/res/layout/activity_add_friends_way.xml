@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_friends_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="请选取添加方式" />
+
+    <FrameLayout
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="#00000000"
+        android:onClick="add" >
+
+        <TextView
+            android:id="@+id/add_friends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_btn_follow_up_bg"
+            android:gravity="center"
+            android:text="添加\n朋友"
+            android:textColor="@drawable/selector_text_follow_up_bg"
+            android:textSize="24sp" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="85dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp"
+        android:background="#a1d3c5" />
+
+    <FrameLayout
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp"
+        android:background="#00000000"
+        android:onClick="finding" >
+
+        <TextView
+            android:id="@+id/finding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_btn_follow_up_bg"
+            android:gravity="center"
+            android:text="扫一扫"
+            android:textColor="@drawable/selector_text_follow_up_bg"
+            android:textSize="24sp" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_login_h"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/selector_btn_emerald_bg"
+        android:onClick="cancel"
+        android:text="取消"
+        android:textColor="@drawable/selector_btn_emerald_text"
+        android:textSize="24sp" />
+
+</LinearLayout>

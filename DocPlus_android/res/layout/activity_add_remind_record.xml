@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     ><!-- android:background="@drawable/loading_bg" -->
+
+    <FrameLayout
+        android:id="@+id/btn_add_close"
+        android:layout_width="@dimen/topbar_h"
+        android:layout_height="@dimen/topbar_h"
+        android:layout_gravity="right"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/selector_item_general_content_trans_bg" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="2dp"
+            android:layout_marginBottom="3dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_wrong" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btn_add_timer"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/selector_btn_pink_light_bg"
+                android:padding="30dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_new_timer" />
+
+            <ImageButton
+                android:id="@+id/btn_add_record"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/selector_btn_green_light_bg"
+                android:padding="30dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_new_record" />
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

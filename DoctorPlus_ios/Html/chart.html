@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript" src="require.js" ></script>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="main" style="width:480px;height:800px;"></div>
+</body>
+<script type="text/javascript">
+    screenWidth = 480;
+    require.config({
+        packages: [
+            {
+                name: 'zrender',
+                location: 'zrender',
+                main: 'zrender'
+            }
+        ]
+    });
+    require(
+            [
+                "zrender",
+                'zrender/shape/Circle',
+                "zrender/shape/Line",
+                'zrender/shape/Ellipse',
+                'zrender/shape/Text',
+                "ChartLayer"
+            ],
+            function(zrender) {
+                var CircleShape = require('zrender/shape/Circle');
+                var zr = zrender.init(document.getElementById('main'));
+                zr.addShape(new CircleShape({
+                            style : {
+                                x : 100,
+                                y : 100,
+                                r : 50,
+                                color : 'rgba(220, 20, 60, 0.8)'
+                            }
+                        })
+                );
+                var Line = require('zrender/shape/Line');
+                var line = new Line({
+                    style: {
+                        xStart: 10,
+                        yStart: 10,
+                        xEnd: 100,
+                        yEnd: 100,
+                        strokeColor: '#000',
+                        lineWidth: 10
+                    }
+                });
+                zr.addShape(line);
+                var Ellipse = require('zrender/shape/Ellipse');
+                var shape = new Ellipse({
+                    style: {
+                        x: 100,
+                        y: 100,
+                        a: 40,
+                        b: 20,
+                        brushType: 'both',
+                        color: 'blue',
+                        strokeColor: 'red',
+                        lineWidth: 3,
+                        text: 'Ellipse'
+                    }
+                });
+                zr.addShape(shape);
+
+                var Text = require('zrender/shape/Text');
+                var text = new Text({
+                    style: {
+                        text: 'text test',
+                        x: 100,
+                        y: 100,
+                        textFont: '14px Arial'
+                    }
+                });
+                zr.addElement(text);
+                zr.render();
+                var ChartLayer = require("ChartLayer");
+
+                new ChartLayer().setData([2,5]);
+
+                for(var i=0;i<1000;i++){
+                    var tmpText = new Text({
+                        style: {
+                            text: 'text test'+i,
+                            x: 100,
+                            y: 50*i,
+                            textFont: '14px Arial'
+                        }
+                    });
+                    zr.addElement(tmpText);
+                }
+            }
+    );
+</script>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <ImageView
+        
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_tag_remove"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/iv_user_remove"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_btn_delete_record"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@drawable/selector_btn_record_type_text" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="12sp" />
+
+</LinearLayout>

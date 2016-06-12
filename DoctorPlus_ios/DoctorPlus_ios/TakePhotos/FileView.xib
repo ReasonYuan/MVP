@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FileView" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="closeBtn" destination="m3c-zL-pNC" id="Ip3-Z6-hDJ"/>
+                <outlet property="searchBar" destination="AAp-ds-ozg" id="gKZ-LB-0aJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="搜索病人" translatesAutoresizingMaskIntoConstraints="NO" id="AAp-ds-ozg">
+                    <rect key="frame" x="12" y="25" width="576" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ZIi-D1-yVH"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gh-Yf-IAv">
+                    <rect key="frame" x="12" y="85" width="576" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="efw-on-fbY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="+ 新建病人">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onCreatePatientClickListener:" destination="-1" eventType="touchUpInside" id="je8-rp-1qJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxb-vf-jFo">
+                    <rect key="frame" x="12" y="131" width="576" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="HwF-sn-9Aj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="更多筛选条件">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3c-zL-pNC">
+                    <rect key="frame" x="561" y="39" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="3md-4b-q7q"/>
+                        <constraint firstAttribute="width" constant="16" id="e3C-MW-Ral"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="dialog_cancel.png"/>
+                    <connections>
+                        <action selector="onCloseBtnClickListener:" destination="-1" eventType="touchUpInside" id="p3p-Eg-uwv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.15686274509803921" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="m3c-zL-pNC" secondAttribute="trailing" constant="23" id="257-6U-qbG"/>
+                <constraint firstItem="AAp-ds-ozg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="CAN-bz-sM3"/>
+                <constraint firstItem="AAp-ds-ozg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="CgM-fo-AbK"/>
+                <constraint firstItem="hxb-vf-jFo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="Dev-Aw-cgV"/>
+                <constraint firstItem="hxb-vf-jFo" firstAttribute="top" secondItem="1gh-Yf-IAv" secondAttribute="bottom" constant="16" id="Kz4-bl-3vF"/>
+                <constraint firstAttribute="trailing" secondItem="1gh-Yf-IAv" secondAttribute="trailing" constant="12" id="Pf5-AB-DBm"/>
+                <constraint firstAttribute="trailing" secondItem="hxb-vf-jFo" secondAttribute="trailing" constant="12" id="SSL-gN-g74"/>
+                <constraint firstAttribute="trailing" secondItem="AAp-ds-ozg" secondAttribute="trailing" constant="12" id="m2y-53-PsY"/>
+                <constraint firstItem="1gh-Yf-IAv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="qPJ-wk-Q8d"/>
+                <constraint firstItem="m3c-zL-pNC" firstAttribute="centerY" secondItem="AAp-ds-ozg" secondAttribute="centerY" id="rqi-Pa-8Ua"/>
+                <constraint firstItem="1gh-Yf-IAv" firstAttribute="top" secondItem="AAp-ds-ozg" secondAttribute="bottom" constant="16" id="vQR-nO-xB0"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="dialog_cancel.png" width="40" height="40"/>
+    </resources>
+</document>

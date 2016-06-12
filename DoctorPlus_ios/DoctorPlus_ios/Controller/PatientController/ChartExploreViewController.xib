@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChartExploreViewController" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="contentTableView" destination="UvH-3a-OhU" id="2xt-fb-5ZB"/>
+                <outlet property="searchBar" destination="48k-Sa-Ejt" id="4Vw-Do-0Jc"/>
+                <outlet property="tableview" destination="UvH-3a-OhU" id="4x1-Rr-ujF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="48k-Sa-Ejt">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="8Aw-jT-kH2"/>
+                    </connections>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NU-ng-j1t">
+                    <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                    <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="lZp-cy-XIC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="发送">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sureClicked:" destination="-1" eventType="touchUpInside" id="hKD-oN-r6s"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="UvH-3a-OhU">
+                    <rect key="frame" x="0.0" y="44" width="600" height="506"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rcc-gY-pTl"/>
+                        <outlet property="delegate" destination="-1" id="iBz-LO-rah"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UvH-3a-OhU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="325-gG-P8P"/>
+                <constraint firstItem="48k-Sa-Ejt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="901-TQ-XGk"/>
+                <constraint firstItem="48k-Sa-Ejt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9FD-aE-dHz"/>
+                <constraint firstAttribute="trailing" secondItem="7NU-ng-j1t" secondAttribute="trailing" id="A4Z-GE-fjC"/>
+                <constraint firstAttribute="trailing" secondItem="48k-Sa-Ejt" secondAttribute="trailing" id="DwU-TY-lBg"/>
+                <constraint firstAttribute="bottom" secondItem="7NU-ng-j1t" secondAttribute="bottom" id="GsN-f4-cea"/>
+                <constraint firstAttribute="trailing" secondItem="UvH-3a-OhU" secondAttribute="trailing" id="bZP-xr-shu"/>
+                <constraint firstItem="7NU-ng-j1t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gFw-ev-Jc6"/>
+                <constraint firstItem="7NU-ng-j1t" firstAttribute="top" secondItem="UvH-3a-OhU" secondAttribute="bottom" id="q06-Pe-BsY"/>
+                <constraint firstItem="UvH-3a-OhU" firstAttribute="top" secondItem="48k-Sa-Ejt" secondAttribute="bottom" id="ym9-hZ-f5x"/>
+            </constraints>
+            <point key="canvasLocation" x="368" y="290"/>
+        </view>
+    </objects>
+</document>

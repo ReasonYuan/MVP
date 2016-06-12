@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99ffffff"
+    android:clickable="true"
+    android:onClick="onViewDismisss"
+    android:id="@+id/fl_view_long">
+
+    <RelativeLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:background="@drawable/shape_settag_rectangle_radiu" >
+
+        <TextView
+            android:id="@+id/tv_contacts_long_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/app_yellow"
+            android:textSize="26sp" 
+            android:text="Jack"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:id="@+id/btn_contact_set_tag"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/tv_contacts_long_name"
+            android:background="@drawable/selector_botton_radiu"
+            android:text="设置标签"
+            android:textColor="@drawable/selector_btn_contacts_settag_text"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+</FrameLayout>

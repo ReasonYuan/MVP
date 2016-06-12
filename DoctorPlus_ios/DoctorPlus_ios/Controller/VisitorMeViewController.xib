@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VisitorMeViewController" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="loginBtn" destination="GaM-N3-aXO" id="vLy-tA-KfK"/>
+                <outlet property="shareBtn" destination="dIQ-4v-bYu" id="3gK-S7-TUq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitor_me.png" translatesAutoresizingMaskIntoConstraints="NO" id="HDk-Uk-WYk">
+                    <rect key="frame" x="10" y="10" width="580" height="470"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIQ-4v-bYu">
+                    <rect key="frame" x="10" y="494" width="580" height="42"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.3294117647" green="0.34901960780000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="0NS-gE-y1H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="分享">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shareButtonClicked:" destination="-1" eventType="touchUpInside" id="cgb-Zo-s2q"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaM-N3-aXO">
+                    <rect key="frame" x="10" y="544" width="580" height="42"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.3294117647" green="0.34901960780000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="eLh-dL-RBd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="返回登录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginButtonClicked:" destination="-1" eventType="touchUpInside" id="vVD-if-Nfb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GaM-N3-aXO" firstAttribute="trailing" secondItem="dIQ-4v-bYu" secondAttribute="trailing" id="37z-fv-WLu"/>
+                <constraint firstAttribute="bottom" secondItem="GaM-N3-aXO" secondAttribute="bottom" constant="14" id="DbQ-EU-eWx"/>
+                <constraint firstItem="HDk-Uk-WYk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="EKu-S8-m6h"/>
+                <constraint firstItem="HDk-Uk-WYk" firstAttribute="leading" secondItem="dIQ-4v-bYu" secondAttribute="leading" id="Xlt-Ma-22x"/>
+                <constraint firstItem="dIQ-4v-bYu" firstAttribute="top" secondItem="HDk-Uk-WYk" secondAttribute="bottom" constant="14" id="fvO-p5-Sdy"/>
+                <constraint firstItem="dIQ-4v-bYu" firstAttribute="trailing" secondItem="HDk-Uk-WYk" secondAttribute="trailing" id="goP-Hu-5Zm"/>
+                <constraint firstItem="GaM-N3-aXO" firstAttribute="leading" secondItem="dIQ-4v-bYu" secondAttribute="leading" id="mkZ-ze-8aO"/>
+                <constraint firstItem="GaM-N3-aXO" firstAttribute="top" secondItem="dIQ-4v-bYu" secondAttribute="bottom" constant="8" symbolic="YES" id="oHJ-zw-yX2"/>
+                <constraint firstItem="GaM-N3-aXO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="z6f-Y7-jtF"/>
+                <constraint firstItem="HDk-Uk-WYk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="zP0-7R-25D"/>
+            </constraints>
+            <point key="canvasLocation" x="284" y="147"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="visitor_me.png" width="1242" height="1411"/>
+    </resources>
+</document>

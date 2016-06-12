@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout 
+        android:id="@+id/fl_item_record_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_img_record_title_item_bg">
+    
+    <TextView 
+        android:id="@+id/tv_item_record_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:singleLine="true"
+        android:maxWidth="60dp"
+        android:textColor="@drawable/selector_text_record_title_bg"/>
+</FrameLayout>
+</LinearLayout>

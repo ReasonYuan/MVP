@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="取消随访"
+        android:textColor="@color/app_yellow"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/current"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:background="@drawable/selector_btn_record_type"
+            android:text="本次"
+            android:textColor="@drawable/selector_btn_record_type_text"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#b5b5b5" />
+
+        <Button
+            android:id="@+id/all"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:background="@drawable/selector_btn_record_type"
+            android:text="全部"
+            android:textColor="@drawable/selector_btn_record_type_text"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_dialog_left"
+            android:text="确认"
+            android:textColor="@drawable/selector_btn_emerald_text"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/dismiss"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.8"
+            android:background="@drawable/selector_btn_dialog_right"
+            android:text="取消"
+            android:textColor="@drawable/selector_btn_back_text"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>

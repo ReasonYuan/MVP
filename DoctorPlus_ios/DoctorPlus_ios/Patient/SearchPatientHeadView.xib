@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchPatientHeadView" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="headIcon" destination="KPq-kn-e37" id="y2h-JI-MYA"/>
+                <outlet property="patientSelectBtn" destination="1MM-vm-p4G" id="QOw-VR-8Dx"/>
+                <outlet property="patientTitleLabel" destination="SdI-os-Rfs" id="zsu-2G-tTH"/>
+                <outlet property="recordAbstractLabel" destination="HX2-LI-YQT" id="BoG-Of-ds8"/>
+                <outlet property="recordTitleLabel" destination="8H4-zG-Lkr" id="ZL2-2R-wQ5"/>
+                <outlet property="statusIcon" destination="mBi-io-5Hk" id="ggH-1Y-ffb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fy1-s1-ogX">
+            <rect key="frame" x="0.0" y="0.0" width="570" height="156.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uEK-mc-ba5" userLabel="as">
+                    <rect key="frame" x="0.0" y="0.0" width="570" height="20"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="S9M-d5-1Sp"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ylf-OI-S7c" userLabel="bs">
+                    <rect key="frame" x="0.0" y="22" width="570" height="126.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HX2-LI-YQT" customClass="myUILabel">
+                            <rect key="frame" x="8" y="45" width="488" height="73"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1MM-vm-p4G">
+                            <rect key="frame" x="526" y="46" width="36" height="36"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="Li7-Rk-Zgj"/>
+                                <constraint firstAttribute="width" constant="36" id="jpw-ux-y2R"/>
+                            </constraints>
+                            <state key="normal" image="friend_select.png"/>
+                            <connections>
+                                <action selector="btnClicked:" destination="-1" eventType="touchUpInside" id="vw6-4D-rWL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="HX2-LI-YQT" secondAttribute="bottom" constant="8.5" id="3h0-k6-qba"/>
+                        <constraint firstAttribute="trailing" secondItem="1MM-vm-p4G" secondAttribute="trailing" constant="8" id="DsL-S8-L1t"/>
+                        <constraint firstItem="HX2-LI-YQT" firstAttribute="leading" secondItem="Ylf-OI-S7c" secondAttribute="leading" constant="8" id="HKf-NH-awD"/>
+                        <constraint firstAttribute="trailing" secondItem="HX2-LI-YQT" secondAttribute="trailing" constant="74" id="Rx1-I5-ncb"/>
+                        <constraint firstItem="1MM-vm-p4G" firstAttribute="centerY" secondItem="Ylf-OI-S7c" secondAttribute="centerY" id="ij4-mn-9jG"/>
+                        <constraint firstItem="HX2-LI-YQT" firstAttribute="top" secondItem="Ylf-OI-S7c" secondAttribute="top" constant="45" id="o6d-o6-cOQ"/>
+                        <constraint firstItem="1MM-vm-p4G" firstAttribute="leading" secondItem="HX2-LI-YQT" secondAttribute="trailing" constant="30" id="si9-uK-pEa"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Rx1-I5-ncb"/>
+                        </mask>
+                    </variation>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="胡小福－男－19901030" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdI-os-Rfs">
+                    <rect key="frame" x="46" y="34" width="211" height="12"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="Lev-Gu-dJh"/>
+                        <constraint firstAttribute="width" constant="211" id="WzX-hp-pxS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="诊断" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8H4-zG-Lkr">
+                    <rect key="frame" x="9" y="56" width="211" height="10"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="211" id="9Pi-OI-Fiu"/>
+                        <constraint firstAttribute="height" constant="10" id="eSm-m1-KOA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bl.png" translatesAutoresizingMaskIntoConstraints="NO" id="mBi-io-5Hk">
+                    <rect key="frame" x="46" y="24" width="8" height="8"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="8" id="4jP-9o-6AU"/>
+                        <constraint firstAttribute="width" constant="8" id="pnB-HP-lIA"/>
+                    </constraints>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="icon_patient_default_head.png" translatesAutoresizingMaskIntoConstraints="NO" id="KPq-kn-e37">
+                    <rect key="frame" x="9" y="16" width="30" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Oed-q2-6f2"/>
+                        <constraint firstAttribute="width" constant="30" id="UFR-iR-X6h"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="KPq-kn-e37" firstAttribute="leading" secondItem="fy1-s1-ogX" secondAttribute="leading" constant="9" id="2Q3-Zj-qjF"/>
+                <constraint firstItem="8H4-zG-Lkr" firstAttribute="leading" secondItem="fy1-s1-ogX" secondAttribute="leading" constant="9" id="9OT-Nw-UtV"/>
+                <constraint firstItem="uEK-mc-ba5" firstAttribute="top" secondItem="fy1-s1-ogX" secondAttribute="top" id="Ari-V5-UMa"/>
+                <constraint firstItem="Ylf-OI-S7c" firstAttribute="top" secondItem="uEK-mc-ba5" secondAttribute="bottom" constant="2" id="Mga-Ww-hZR"/>
+                <constraint firstItem="uEK-mc-ba5" firstAttribute="leading" secondItem="fy1-s1-ogX" secondAttribute="leading" id="QKl-yt-y0k"/>
+                <constraint firstItem="SdI-os-Rfs" firstAttribute="top" secondItem="mBi-io-5Hk" secondAttribute="bottom" constant="2" id="R6l-d7-iS5"/>
+                <constraint firstItem="8H4-zG-Lkr" firstAttribute="top" secondItem="KPq-kn-e37" secondAttribute="bottom" constant="10" id="bwk-YV-JrL"/>
+                <constraint firstItem="mBi-io-5Hk" firstAttribute="top" secondItem="fy1-s1-ogX" secondAttribute="top" constant="24" id="caK-PI-lEM"/>
+                <constraint firstAttribute="bottom" secondItem="Ylf-OI-S7c" secondAttribute="bottom" constant="8" id="fw2-l9-7HB"/>
+                <constraint firstItem="Ylf-OI-S7c" firstAttribute="leading" secondItem="fy1-s1-ogX" secondAttribute="leading" id="l1O-hm-MmJ"/>
+                <constraint firstItem="KPq-kn-e37" firstAttribute="top" secondItem="fy1-s1-ogX" secondAttribute="top" constant="16" id="l4H-ib-t5c"/>
+                <constraint firstItem="KPq-kn-e37" firstAttribute="top" secondItem="fy1-s1-ogX" secondAttribute="top" constant="16" id="nNx-wl-Npb"/>
+                <constraint firstAttribute="trailing" secondItem="Ylf-OI-S7c" secondAttribute="trailing" id="nlM-hs-yGe"/>
+                <constraint firstItem="mBi-io-5Hk" firstAttribute="leading" secondItem="KPq-kn-e37" secondAttribute="trailing" constant="7" id="pxf-68-EnI"/>
+                <constraint firstItem="SdI-os-Rfs" firstAttribute="leading" secondItem="KPq-kn-e37" secondAttribute="trailing" constant="7" id="qX3-dz-DU0"/>
+                <constraint firstAttribute="trailing" secondItem="uEK-mc-ba5" secondAttribute="trailing" id="ssf-RX-1GF"/>
+                <constraint firstItem="8H4-zG-Lkr" firstAttribute="top" secondItem="SdI-os-Rfs" secondAttribute="bottom" constant="10" id="wdu-8O-NIA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="nNx-wl-Npb"/>
+                    <exclude reference="bwk-YV-JrL"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="130" y="166.25"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bl.png" width="8" height="8"/>
+        <image name="friend_select.png" width="16" height="16"/>
+        <image name="icon_patient_default_head.png" width="36" height="36"/>
+    </resources>
+</document>

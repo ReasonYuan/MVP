@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProtocolViewController" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="detailTextView" destination="AeE-jd-kW5" id="yVp-kV-wAf"/>
+                <outlet property="scrollView" destination="dFX-0p-72n" id="Bv3-YP-tcl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="BdY-IB-5rh">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFX-0p-72n">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="x4h-jK-9ks">
+                            <rect key="frame" x="45" y="40" width="510" height="180"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="180" id="fXH-Qb-2sn"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="隐私条款" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbW-Ol-meH">
+                            <rect key="frame" x="266" y="268" width="68" height="21"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="J6X-77-XAJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="关于叶面关于叶面关于叶面关于叶面关于叶面关于叶面关于叶面关于叶面关于叶面关于叶面关于叶面关于叶面关于叶面关于叶面关于叶面关于叶面关于叶面关于叶面关于叶面" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeE-jd-kW5">
+                            <rect key="frame" x="45" y="309" width="510" height="66.5"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="274" id="7is-Tm-nPz"/>
+                            </constraints>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="7is-Tm-nPz"/>
+                                </mask>
+                            </variation>
+                        </textView>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="x4h-jK-9ks" secondAttribute="trailing" constant="45" id="0S7-MF-kCM"/>
+                        <constraint firstItem="AeE-jd-kW5" firstAttribute="trailing" secondItem="x4h-jK-9ks" secondAttribute="trailing" id="4bo-Vp-68R"/>
+                        <constraint firstItem="x4h-jK-9ks" firstAttribute="centerX" secondItem="GbW-Ol-meH" secondAttribute="centerX" id="MOX-Tz-Cgd"/>
+                        <constraint firstAttribute="bottom" secondItem="AeE-jd-kW5" secondAttribute="bottom" constant="46" id="TUk-5A-v2P"/>
+                        <constraint firstItem="GbW-Ol-meH" firstAttribute="top" secondItem="x4h-jK-9ks" secondAttribute="bottom" constant="48" id="UC1-h7-fj1"/>
+                        <constraint firstItem="AeE-jd-kW5" firstAttribute="top" secondItem="GbW-Ol-meH" secondAttribute="bottom" constant="20" id="bEH-9z-PTE"/>
+                        <constraint firstItem="x4h-jK-9ks" firstAttribute="leading" secondItem="AeE-jd-kW5" secondAttribute="leading" id="bHB-ou-MfR"/>
+                        <constraint firstAttribute="bottom" secondItem="AeE-jd-kW5" secondAttribute="bottom" constant="20" id="eBY-VO-sqf"/>
+                        <constraint firstItem="x4h-jK-9ks" firstAttribute="centerX" secondItem="dFX-0p-72n" secondAttribute="centerX" id="gOJ-gU-L3m"/>
+                        <constraint firstItem="x4h-jK-9ks" firstAttribute="leading" secondItem="dFX-0p-72n" secondAttribute="leading" constant="45" id="kHH-jb-cK3"/>
+                        <constraint firstItem="x4h-jK-9ks" firstAttribute="top" secondItem="dFX-0p-72n" secondAttribute="top" constant="40" id="rcB-DC-GGv"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="TUk-5A-v2P"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dFX-0p-72n" secondAttribute="bottom" id="1Ll-dw-avO"/>
+                <constraint firstItem="dFX-0p-72n" firstAttribute="top" secondItem="BdY-IB-5rh" secondAttribute="top" id="7JL-bg-RfO"/>
+                <constraint firstAttribute="trailing" secondItem="dFX-0p-72n" secondAttribute="trailing" id="M3D-Lv-wSe"/>
+                <constraint firstItem="dFX-0p-72n" firstAttribute="leading" secondItem="BdY-IB-5rh" secondAttribute="leading" id="saw-C0-Ws3"/>
+            </constraints>
+            <point key="canvasLocation" x="342" y="432"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo2.png" width="516" height="516"/>
+    </resources>
+</document>

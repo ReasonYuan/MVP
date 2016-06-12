@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no" />
+		<title>报告文档</title>
+
+		<style type="text/css">
+			html{
+				/*background-color: rgba(0,0,255,0.1);*/
+			}
+			body{
+	    			/*background: #1c1f27;*/
+	    			padding: 0px;
+	    			margin: 0px;
+	    			align-content: center;
+	    			/*background-color: rgba(0,0,255,0.1);*/
+	    		}
+	    		/*上方表格容器*/
+	    		.excel-container{
+	    			height: 220px;
+	    			padding: 15px 12px 15px 12px;
+	    			/*background-color: #1c1f27;*/
+	    		}
+	    		table{
+	    			border: 0px;
+	    			border-spacing: 0px;
+	    			text-align: center;
+	    			table-layout:fixed;
+	    		}
+	    		/*表格标题容器*/
+	    		.div-head-container{
+	    			width: 100%;
+	    			height: 35px;
+	    			color: #fff;
+	    			font-size: 15px;
+	    		}
+	    		/*表格内容容器*/
+	    		.div-content-container{
+	    			height: 185px;
+	    			overflow-y: auto;
+	    			font-size: 14px;
+	    			color: #333333;/*//#4d4d4d*/
+	    		}
+	    		th,td{
+	    			font-weight: normal;
+	    			word-wrap: break-word;
+	    		}
+	    		.column-first{
+	    			width:34%
+	    		}
+	    		.column-other{
+	    			width:22%
+	    		}
+	    		/*表格内容高度*/
+	    		.tab-item{
+	    			width: 100%;
+	    			height: 30px;
+	    		}
+	    		/*表格标题背景色1*/
+	    		.head-singl{
+	    			background: #265f69;
+	    		}
+	    		/*表格标题背景色2*/
+	    		.head-double{
+	    			background: #246976;
+	    		}
+	    		/*表格内容背景色1*/
+	    		.item-singl{
+	    			background-color: #f1f1f1;
+	    		}
+	    		/*表格内容背景色1*/
+	    		.item-double{
+	    			background-color: #e9e8e8;
+	    		}
+	    		/*化验值异常*/
+	    		.value-abnormal{
+	    			background-color: #f2706c;
+	    			color:#f1f1f1;
+	    		}
+	    		
+	    		/*间隔线*/
+	    		.divier-line{
+	    			height: 5px;
+	    			margin: 0px;
+                    background: #f1f1f1;
+	    			border: none;
+	    		}
+	    		
+	    		/*统一：各详情的外边距*/
+	    		.content-container{
+	    			padding: 6px 8px 6px 8px;
+	    			/*background-color: #1c1f27;*/
+	    		}
+	    		
+	    		/*统一：详情里各标题的样式*/
+	    		.content-title{
+	    			color: #226977;
+	    			font-size: 14px;
+	    			font-weight: bold;
+	    		}
+	    		
+	    		/*统一：详情里各内容的样式*/
+	    		.content-des{
+	    			color: #333333;
+	    			font-size: 14px;
+	    		}
+	    		.doctor-name{
+	    			display: inline-block;
+	    			width: 80px;
+	    		}
+	    		
+	    		/*如果详情里内容为多行时，下方的外边距会增大*/
+	    		.more-line{
+	    			display: inline-block;
+	    			margin-bottom: 16px;
+	    		}
+	    		
+	    		.last-container{
+	    			width: 100%;
+	    			position: relative;
+    				top: 0px;
+    				bottom: 0px;
+    				left: 0px;
+    				padding: 0px;
+    				background-color: #1c1f27;
+	    		}
+	    		.doc-container{
+	    			background-color: rgba(0,0,0,0)
+	    		}
+	    		#tab-content{
+	    			width: 100%;
+	    		}
+		</style>
+	</head>
+
+	<body>
+		<!--上方表格部分-->
+		<div class="excel-container">
+			<!--表格的标题部分，因为表格内容为可滑动，所以标题与内容分为两个表格处理-->
+			<table class="div-head-container">
+				<tr id="tab-head">
+					<!--<th class="head-singl cloum-first">项目</th>
+					<th class="head-double cloum-other">结果</th>-->
+				</tr>
+			</table>
+			
+			<!--表格的内容部分-->
+			<div class="div-content-container">
+				<table id="tab-content">
+					<!--<tr class="tab-item">
+						<td class="item-singl">锄禾日当午，汗滴禾下土</td>
+						<td class="item-double">完全搞不懂，汗滴禾下土</td>
+					</tr>
+					<tr class="tab-item">
+						<td class="item-double">天王盖地虎</td>
+						<td class="item-singl">小鸡炖蘑菇</td>
+					</tr>
+					<tr class="tab-item">
+						<td class="item-singl">日照香炉生紫烟，遥看瀑布挂前川。</td>
+						<td class="item-double">想起当年被强奸，跳下悬崖上西天。</td>
+					</tr>
+					<tr class="tab-item">
+						<td class="item-double">摩擦，摩擦</td>
+						<td class="item-singl">似魔鬼的步伐</td>
+					</tr>
+					<tr class="tab-item">
+						<td class="item-singl">一入糗百深似海</td>
+						<td class="item-double">从此节操是路人</td>
+					</tr>
+					<tr class="tab-item">
+						<td class="item-double">仙，妖，鬼</td>
+						<td class="item-singl">毛毛虫</td>
+					</tr>
+					<tr class="tab-item">
+						<td class="item-singl">念去去，千里烟波，雾霭沉沉楚天阔</td>
+						<td class="item-double">嚯嚯嚯嚯，嚯嚯</td>
+					</tr>
+					<tr class="tab-item">
+						<td class="item-double">老子明天不上班</td>
+						<td class="item-singl">爽翻，巴适得板</td>
+					</tr>-->
+				</table>
+			</div>
+		</div>
+		<div id="doc-container" class="doc-container">
+		
+		<!--<hr class="divier-line" />-->
+		
+		<!--检查打分-->
+		<!--<div class="content-container">
+			<label class="content-title">检查打分：</label>
+			<label id="lab-point" class="content-des">B</label>
+		</div>
+		<hr class="divier-line" />-->
+		
+		<!--检查所见-->
+		<!--<div class="content-container">
+			<label class="content-title">检查所见：</label>
+			<br/>
+			<label id="lab-check-info" class="content-des more-line">头部不是一般的痛，哎喔哟！好痛哇，怎么啦？用头敲鸡蛋，结果鸡蛋没碎，头流血啦
+				<br/>你说怎么办....</label>
+		</div>
+		<hr class="divier-line" />-->
+		
+		<!--诊断信息-->
+		<!--<div class="content-container">
+			<label class="content-title">诊断信息：</label>
+			<br/>
+			<label id="lab-diagnosis-info" class="content-des more-line">我说呀，活该，哪叫你一天这么笨啊....</label>
+		</div>
+		<hr class="divier-line" />-->
+		
+		<!--检查医生 审核医生-->
+		<!--<div class="content-container">
+			<label class="content-title">检查医生：</label>
+			<label id="lab-check-doctor" class="content-des doctor-name">张三</label>
+			<label class="content-title">审核医生：</label>
+			<label id="lab-review-doctor" class="content-des">李四</label>
+		</div>
+		<hr class="divier-line" />-->
+		
+		<!--备注-->
+		<!--<div class="content-container">
+			<label class="content-title">备注：</label><br/>
+			<label class="content-des more-line">怎么滴？作死是不？弄你哦.....</label>
+		</div>
+		<div class="last-container"></div>
+		</div>-->
+	</body>
+
+	<script type="text/javascript">
+        
+        function log(message, data) {
+            var log = document.getElementById('lab-point')
+            var el = document.createElement('div')
+            el.innerHTML = message
+            log.appendChild(el)
+        }
+
+		var column = 2;
+		
+        
+        function fillChartHead(headjson){
+        		var tr = document.getElementById('tab-head');
+                tr.innerHTML = "";
+            column = headjson.length
+
+            for(var i = 0; i < column; i++){
+            	var th = document.createElement('th');
+            	th.innerText = headjson[i];
+            		
+            		var clsname = (i%2 == 0?"head-singl ": "head-double ")
+            	
+            		if(column == 2){
+            			th.className = clsname
+            		}else{
+            			th.className = clsname + (i==0?"column-first":"column-other")
+            		}
+            		tr.appendChild(th);
+            }
+        }
+        
+        function fillChartBody(bodyjson){
+        		var tab = document.getElementById('tab-content');
+                tab.innerHTML = "";
+        		for(var l = 0; l < bodyjson.length; l++){
+        			var tr = document.createElement('tr');
+        			tr.className = "tab-item";
+        			tab.appendChild(tr);
+        			
+        			var item = bodyjson[l];
+
+				//第一位为化验值状态，只作为标志，不作为文字显示在界面上
+        			for(var c = 1; c < item.length; c++){
+        				var td = document.createElement('td');
+    					td.innerText = item[c];
+    					
+    					//通过class设置背景色
+    					var cn = "";
+    					if(c == 1 && item[0] != 0){//item[0]!=0,表示为异常项，需要设置红色背景
+    						cn = "value-abnormal"
+    					}else if(l%2 == 0){
+    						cn = (c%2 == 0?"item-singl": "item-double")
+    					}else{
+    						cn = (c%2 == 0?"item-double": "item-singl")
+    					}
+
+	            		if(column == 2){
+	            			td.className = cn
+	            		}else{
+	            			td.className = cn + (c==1?" column-first":" column-other")
+	            		}
+	            		tr.appendChild(td);
+		         }
+        		}
+        	}
+        
+        function fillDocument(doc){
+
+			var div = document.getElementById('doc-container');
+            div.innerHTML = "";
+
+        		for(var i = 0; i < doc.length; i++){
+
+        			var data = doc[i];
+        			var des = data[1];
+        			var count = 0;
+        			if(des){
+        				count = des.length
+        			}
+        			
+        			if(count == 0) continue;
+        			
+        			var line = document.createElement('hr');
+        			line.className = 'divier-line';
+        			div.appendChild(line);
+        			
+        			var br = "";
+        			var morecls = "";
+        			if(count > 20){
+        				br = "<br/>";
+        				morecls = " more-line"
+        			}
+        			var container = document.createElement('div');
+        			container.className = 'content-container';
+        			container.innerHTML = '<label class="content-title">'+data[0]+'：</label>'+br+'<label class="content-des'+morecls+'">'+des+'</label>';
+        			div.appendChild(container);
+        		}
+        }
+    
+	</script>
+
+</html>

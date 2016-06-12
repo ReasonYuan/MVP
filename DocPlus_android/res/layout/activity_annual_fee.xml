@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+     android:layout_marginBottom="30dp"
+    >
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:orientation="vertical"
+     >
+
+    <ListView
+        android:id="@+id/lv_annual_fee_chose"
+        android:layout_width="match_parent" 
+        android:layout_height="315dp"
+        android:layout_marginTop="40dp"
+        android:divider="#00FFFFFF"
+        android:dividerHeight="3dp"
+        android:listSelector="@android:color/transparent"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:textStyle="bold"
+        android:textColor="#993f3b3a"
+        android:text="健康无价，医疗有价。\n请选择您愿意接受的服务年费。"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#553f3b3a"
+        android:text="您可以选择免费或者设定不同的年费标准\n来设定为不同患者提供不同的服务。"/>
+</LinearLayout>
+</ScrollView>

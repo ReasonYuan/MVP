@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" >
+
+        <uk.co.senab.photoview.PhotoImageView
+            android:id="@+id/img_preview_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#585552" >
+
+        <TextView
+            android:id="@+id/btn_preview_photo_retake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:textColor="#E0E0DA"
+            android:text="@string/preview_photo_retake"
+            android:textSize="20sp"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/btn_preview_photo_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_preview_photo_retake"
+            android:layout_alignBottom="@+id/btn_preview_photo_retake"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:padding="6dp"
+            android:text="@string/preview_photo_apply"
+            android:textColor="#E0E0DA"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    
+</LinearLayout>

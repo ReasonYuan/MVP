@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_bg">#FFFFFF</color>
+    <color name="edit_bg">#ffffff</color>
+    <color name="line_divide">#a0a0a0</color>
+
+    <color name="app_color_green">#66baa8</color>
+    <color name="app_head_pink">#fdedf0</color>
+    <color name="app_progress_dialog_bg">#44ffffff</color>
+    
+    <!-- item -->
+    <color name="item_general_bg_normal">#ffffff</color>
+    <color name="item_general_bg_pressed">#55999999</color>
+    <color name="item_general_border_shallow">#c6d5d2</color>
+    <color name="item_general_border_deep">#b5b5b5</color>
+    <color name="item_general_divider_line">#b5b5b5</color>
+    <color name="item_info_head_bg">#f1f1f1</color>
+    <color name="item_info_no_fill">#b5b5b5</color>
+    <color name="item_user_profile_border">#aa333333</color>
+    
+    <!-- button -->
+    <color name="btn_general_normal">#4394d0</color>
+    <color name="btn_general_pressed">#3583bc</color><!-- aa4394d0 -->
+    <color name="btn_cancel_normal">#b5b5b7</color>
+    <color name="btn_cancel_pressed">#bbb5b5b7</color>
+    <color name="btn_dialog_normal">#99000000</color>
+    <color name="btn_dialog_pressed">#999999</color>
+    <color name="btn_text_normal">#ffffff</color>
+    <color name="btn_text_pressed">#999999</color>
+    <color name="btn_text_unenable">#1d799e</color>
+    <color name="btn_text_tab_normal">#999999</color>
+    <color name="btn_text_tab_selected">#4394d0</color>
+    
+    <!-- item -->
+	<color name="item_info_title_lab">#99999999</color>
+
+    <!-- topbar -->
+    <color name="topbar_bg_normal">#4394d0</color>
+    <color name="topbar_bg_pressed">#aadddddd</color><!-- #196c8e -->
+    <color name="topbar_text_title">#ffffff</color><!-- 615d5e -->
+    <color name="topbar_title_bg">#66baa8</color>
+    <color name="topbar_top_line">#ea5283</color>
+    
+    
+    <!-- text -->
+    <color name="app_text_normal">#595757</color>
+    <color name="text_clickable">#0000ff</color>
+    <color name="text_hint">#99999999</color>
+    <color name="text_head">#c8caca</color>
+    <color name="text_peer_group">#5e6468</color>
+    <color name="text_info">#4394d0</color>
+    <color name="text_input_error">#EB6100</color>
+    <color name="text_zhicheng_selected">#A7DBD1</color>
+    <color name="text_zhicheng_nomarl">#C7CFB1</color>
+    <color name="text_hosp_item_normal">#000000</color>
+    
+    <!-- login -->
+     <color name="login_text_normal">#3a6b7b</color>
+     <color name="login_text_pressed">#999999</color>
+     <color name="login_item_border">#1d799e</color>
+    
+    
+    <color name="peer_list_item_add_add">#009900</color>
+    <color name="peer_list_item_add_added">#000000</color>
+    <color name="peer_list_item_add_invite">#929292</color>
+    
+    <color name="transparent">#00000000</color>
+    <color name="guide_join_btn_normal">#db0e0e</color>
+    <color name="guide_join_btn_select">#970a0a</color>
+    <color name="hospital_letter">#4169E1</color>
+    
+    <!-- take photo for record -->
+    <color name="take_photos_4_records">#11EE11</color>
+    <color name="take_photos_button_tv_color">#EEEEEE</color>
+    
+    <!-- test items -->
+    <color name="test_key">#1111EE</color>
+    
+    <!-- tag -->
+    <color name="tag_text_green">#7CCD7C</color>
+    <color name="tag_text_back">#000000</color>
+    
+    <!-- password level -->
+    <color name="pwd_level_strong">#7CCD7C</color>
+    <color name="pwd_level_middle">#FFA500</color>
+    <color name="pwd_level_weak">#AAAAAA</color>
+      
+      <!-- menu -->
+      <color name="menu_text">#898989</color>
+      
+      <!-- setting -->
+      <color name="setting_text_color">#353535</color>
+      <color name="setting_line_color">#A2A2A2</color>
+      
+      <!-- pink -->
+      <color name="app_pink">#E95383</color>
+      <!-- green -->
+      <color name="app_green">#66BAA8</color>
+      <color name="app_emerald">#62C0B4</color><!-- 5BC3B6 祖母绿 2015.3.28 改为松石绿 by Lc-->
+      <color name="app_yellow">#F1D7BD</color>
+      <color name="app_gray">#9f9fa0</color>
+      <color name="app_white">#ffffff</color>
+      <color name="app_trans_pressed">#aadddddd</color>
+       <color name="white">#FFFFFF</color>
+       
+       <!-- List Menu color -->
+       <color name="item_light_gray">#cac9ce</color>
+       <color name="item_light_green">#62c0b4</color>
+       
+       <color name="text_view_select_check">#f3dfc3</color>
+       
+       <!-- dialog bg -->
+       <color name="dialog_light_bg">#77eeeeee</color>
+       
+       <color name="examination_normal">#FF9A9A9A</color>
+       <color name="examination_unnormal">#FFEB6100</color>
+</resources>

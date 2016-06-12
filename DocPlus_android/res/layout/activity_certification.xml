@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/item_divider_margin_lr"
+        android:paddingRight="@dimen/item_divider_margin_lr" >
+
+        <TextView
+            android:id="@+id/tv_certificate_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textColor="#99999999"  />
+        <!-- android:text="@string/certification_notice" -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_auth_zhizhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/certification_certificate"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="(上传精度小于1M,jpg格式)"
+                android:textColor="#99999999" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="vertical"
+            android:paddingTop="15dp" >
+
+            <!-- 医师执业证书 -->
+
+            <FrameLayout
+                android:id="@+id/fl_certificate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1.5dp" >
+ <!-- @drawable/selector_auth_img_bg 以前说认证成功后有红框 -->
+
+
+                <!--
+                     <ImageView
+                    android:id="@+id/iv_certificate_label"
+                    android:layout_width="@dimen/certification_image_wh"
+                    android:layout_height="@dimen/certification_image_wh"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/btn_add_circle" />
+                -->
+
+                <com.hp.android.halcyon.widgets.RoundedImageView
+                    android:id="@+id/iv_certificate"
+                    android:layout_width="@dimen/certification_image_wh"
+                    android:layout_height="@dimen/certification_image_wh"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector_certification_add_bg" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#99000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/certification_card"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="(上传精度小于1M,jpg格式)"
+                android:textColor="#99999999" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:visibility="gone" >
+
+            <!-- 身份证 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:id="@+id/fl_card_zheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_auth_img_bg"
+                    android:padding="1.5dp" >
+
+                    <!--
+                     <ImageView
+                    android:id="@+id/btn_card_zheng"
+                    android:layout_width="@dimen/certification_image_wh"
+                    android:layout_height="@dimen/certification_image_wh"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/btn_add_circle" 
+                    android:visibility="gone"/>
+                    -->
+
+                    <com.hp.android.halcyon.widgets.CircleImageView
+                        android:id="@+id/iv_card_zheng"
+                        android:layout_width="@dimen/certification_image_wh"
+                        android:layout_height="@dimen/certification_image_wh"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/btn_add_circle" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_card_fan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/selector_auth_img_bg"
+                    android:padding="1.5dp" >
+
+                    <!--
+                     <ImageView
+                    android:id="@+id/btn_card_fan"
+                    android:layout_width="@dimen/certification_image_wh"
+                    android:layout_height="@dimen/certification_image_wh"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/btn_add_circle" 
+                    android:visibility="gone"/>
+                    -->
+
+                    <com.hp.android.halcyon.widgets.CircleImageView
+                        android:id="@+id/iv_card_fan"
+                        android:layout_width="@dimen/certification_image_wh"
+                        android:layout_height="@dimen/certification_image_wh"
+                        android:layout_gravity="center_vertical"
+                        android:padding="1.5dp"
+                        android:src="@drawable/btn_add_circle" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#66000000" />
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/item_divider_margin_lr"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+
+                <FrameLayout
+                    android:id="@+id/fl_card_zheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/item_general_padding_t"
+                    android:background="@drawable/shape_oval" >
+
+                    <TextView
+                        android:id="@+id/tv_label_card_zheng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/certification_card_zhengmian"
+                        android:textColor="#FFFFFF" />
+
+                    <com.hp.android.halcyon.widgets.CircleImageView
+                        android:id="@+id/iv_card_zheng"
+                        android:layout_width="@dimen/certification_image_wh"
+                        android:layout_height="@dimen/certification_image_wh"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/fl_card_fan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_general_padding_l"
+                    android:layout_marginTop="@dimen/item_general_padding_t"
+                    android:background="@drawable/shape_oval" >
+
+                    <TextView
+                        android:id="@+id/tv_label_card_fan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/certification_card_fanmian"
+                        android:textColor="#FFFFFF" />
+
+                    <com.hp.android.halcyon.widgets.CircleImageView
+                        android:id="@+id/iv_card_fan"
+                        android:layout_width="@dimen/certification_image_wh"
+                        android:layout_height="@dimen/certification_image_wh"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>-->
+
+
+        <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_do_cert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="申请认证"
+            android:textSize="32sp" 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_certification_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="PASS"
+            android:textColor="#00ff00"
+            android:textSize="32sp"
+            android:visibility="invisible" />
+    </FrameLayout> -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="40dp" >
+
+            <TextView
+                android:id="@+id/tv_certification_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#770000ff"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/bt_do_cert"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_general_h"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/activity_general_padding_tb"
+                android:layout_marginLeft="@dimen/activity_general_padding_lr"
+                android:layout_marginRight="@dimen/activity_general_padding_lr"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/selector_btn_emerald_bg"
+                android:text="@string/btn_send"
+                android:textColor="@drawable/selector_btn_emerald_text"
+                android:textSize="@dimen/btn_text_size" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

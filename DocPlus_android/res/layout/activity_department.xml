@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 当前医院 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_item_general_content_trans_bg"
+            android:gravity="center_vertical"
+            android:onClick="search_dep"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/item_divider_margin_lr"
+            android:paddingRight="@dimen/item_divider_margin_lr" >
+
+            <ImageView
+                android:layout_width="@dimen/userinfo_icon_width"
+                android:layout_height="@dimen/userinfo_icon_height"
+                android:layout_marginRight="@dimen/userinfo_icon_margin_right"
+                android:background="@drawable/icon_address_department_unselected" />
+
+            <TextView
+                android:id="@+id/tv_depart_current"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="当前选择科室"
+                android:textColor="@color/item_info_title_lab" />
+
+            <TextView
+                android:id="@+id/tv_current_depart_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="未指定科室"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_general_border_h"
+            android:background="@color/line_divide" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_general_border_h"
+            android:layout_marginTop="20dp"
+            android:background="@color/line_divide" />
+
+        <!-- 热门医院列表 -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8" >
+
+            <LinearLayout
+                android:id="@+id/ll_depart_list_zone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_depart_host_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="热\n门\n科\n室"
+                    android:textColor="@color/app_green"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_general_border_h"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/line_divide"
+                        android:visibility="gone" />
+
+                    <ListView
+                        android:id="@+id/lv_hot_depart"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="@dimen/item_divider_margin_lr"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:divider="#00000000"
+                        android:dividerHeight="0dp"
+                        android:fadeScrollbars="false"
+                        android:listSelector="#00000000"
+                        android:paddingTop="2dp"
+                        android:scrollbarSize="2dp"
+                        android:scrollbarStyle="outsideInset"
+                        android:scrollbarThumbVertical="@color/app_emerald"
+                        android:scrollbarTrackVertical="@color/line_divide" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_general_border_h"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/line_divide"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_general_border_h"
+            android:background="@color/line_divide" />
+
+        <Button
+            android:id="@+id/btn_depart_sure"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/item_divider_margin_lr"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/selector_btn_emerald_bg"
+            android:enabled="false"
+            android:onClick="onDepartSureClick"
+            android:text="@string/btn_sure_ren"
+            android:textColor="@drawable/selector_btn_emerald_text"
+            android:textSize="@dimen/btn_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

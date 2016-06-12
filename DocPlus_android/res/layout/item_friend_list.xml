@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/selector_item_general_content_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_friend_info"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/item_info_padding_l"
+        android:paddingRight="@dimen/item_info_padding_r" >
+
+	        <com.hp.android.halcyon.widgets.RoundImageView
+	            android:id="@+id/riv_friend_head"
+	            android:layout_width="@dimen/default_head_wh"
+	            android:layout_height="@dimen/default_head_wh"
+	            android:scaleType="centerCrop"
+	            android:layout_centerVertical="true"
+	            android:background="@drawable/default_patient_head" />
+
+            <TextView
+                android:id="@+id/tv_friend_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/riv_friend_head"
+                android:layout_toLeftOf="@+id/tv_friend_date"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="代呆呆"
+                android:singleLine="true"
+                android:maxLines="10"
+                android:textColor="@color/app_text_normal"
+                android:textSize="@dimen/item_general_main_font" />
+
+            <TextView
+                android:id="@+id/tv_friend_date"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/info_num_wh"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="right|center_vertical"
+                android:text="14-08-25"
+                android:textColor="#999999"
+                android:textSize="16sp" 
+                android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

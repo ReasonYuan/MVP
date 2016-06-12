@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThreeBtnOptionalView" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="firstBtn" destination="vSa-DN-mkC" id="Kr3-ls-1TZ"/>
+                <outlet property="secondBtn" destination="qE9-Pc-wm8" id="FUF-6d-bT8"/>
+                <outlet property="threadBtn" destination="bwk-hu-Hz6" id="xVf-IQ-OUX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSa-DN-mkC">
+                    <rect key="frame" x="203" y="83" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="3ZY-Ba-snM"/>
+                        <constraint firstAttribute="width" constant="48" id="beW-MF-wgc"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="screening.png"/>
+                    <connections>
+                        <action selector="onFirstItemClickListener:" destination="-1" eventType="touchUpInside" id="0aC-YN-FwQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwk-hu-Hz6">
+                    <rect key="frame" x="349" y="83" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="2tZ-fN-QwR"/>
+                        <constraint firstAttribute="width" constant="48" id="tc4-kY-ml9"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="new_add_patient.png"/>
+                    <connections>
+                        <action selector="onThreadItemClickListener:" destination="-1" eventType="touchUpInside" id="ISm-37-F0J"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qE9-Pc-wm8">
+                    <rect key="frame" x="276" y="83" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="hIV-zf-i5i"/>
+                        <constraint firstAttribute="height" constant="48" id="yeU-kS-uQv"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="share.png"/>
+                    <connections>
+                        <action selector="onSecondItemClickListener:" destination="-1" eventType="touchUpInside" id="l2G-9c-Y5i"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qE9-Pc-wm8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="83" id="9tN-6z-0ye"/>
+                <constraint firstItem="vSa-DN-mkC" firstAttribute="centerY" secondItem="qE9-Pc-wm8" secondAttribute="centerY" id="BqJ-1i-f0e"/>
+                <constraint firstItem="bwk-hu-Hz6" firstAttribute="leading" secondItem="qE9-Pc-wm8" secondAttribute="trailing" constant="25" id="QdG-1T-Y2w"/>
+                <constraint firstItem="bwk-hu-Hz6" firstAttribute="centerY" secondItem="qE9-Pc-wm8" secondAttribute="centerY" id="Xh6-QD-lrJ"/>
+                <constraint firstItem="qE9-Pc-wm8" firstAttribute="leading" secondItem="vSa-DN-mkC" secondAttribute="trailing" constant="25" id="kxi-r6-xj3"/>
+                <constraint firstItem="qE9-Pc-wm8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qsj-fh-tkD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="new_add_patient.png" width="44" height="44"/>
+        <image name="screening.png" width="44" height="44"/>
+        <image name="share.png" width="44" height="44"/>
+    </resources>
+</document>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView 
+        android:id="@+id/tv_tag_list_data_none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textColor="#BDBDBD"
+        android:text="您还没有标签，请点击右上角添加"
+        android:visibility="gone"/>
+    
+    <LinearLayout
+        android:id="@+id/ll_tag_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#FBF9F9" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/line_divide" />
+
+        <ExpandableListView
+            android:id="@+id/lv_tag_home_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:drawSelectorOnTop="false"
+            android:groupIndicator="@null"
+            android:listSelector="@drawable/selector_item_general_content_trans_deep_bg"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</FrameLayout>

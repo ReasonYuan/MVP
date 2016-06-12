@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="topbar_h">50dp</dimen> 
+    <dimen name="margin_topbar_h">-50dp</dimen>
+    <dimen name="title_font">18sp</dimen> 
+    <dimen name="menu_h">60dp</dimen>
+    <dimen name="dialog_w">285dp</dimen>
+    <dimen name="dialog_progress_w">180dp</dimen>
+    <dimen name="topbar_top_line_h">3dp</dimen>
+
+    <dimen name="activity_general_padding">15dp</dimen>
+    <dimen name="activity_general_padding_tb">15dp</dimen>
+    <dimen name="activity_general_padding_lr">15dp</dimen>
+    <dimen name="activity_general_padding_t">15dp</dimen>
+    <dimen name="activity_general_padding_l">15dp</dimen>
+    <dimen name="activity_general_padding_r">15dp</dimen>
+    
+    <dimen name="item_general_border_h">1dp</dimen> 
+    <dimen name="item_general_h">55dp</dimen>
+    <dimen name="item_general_info_h">55dp</dimen>
+    <dimen name="item_addfolder_info_h">45dp</dimen>
+    <dimen name="item_general_head_padding">0.5dp</dimen>
+    <dimen name="item_general_padding_l">15dp</dimen>
+    <dimen name="item_general_padding_r">10dp</dimen>
+    <dimen name="item_general_padding_t">5dp</dimen>
+    <dimen name="item_general_padding_b">5dp</dimen>
+    <dimen name="item_general_title_w">90dp</dimen>
+    <dimen name="item_general_main_font">16sp</dimen>
+    <dimen name="item_general_des_font">12sp</dimen>
+    <dimen name="item_divider_margin_top">5dp</dimen>
+    <dimen name="item_divider_margin_lr">20dp</dimen>
+    <dimen name="item_detailinfo_padding_l">20dp</dimen>
+    <dimen name="item_info_padding_l">15dp</dimen>
+    <dimen name="item_info_padding_r">10dp</dimen>
+    <dimen name="item_info_height">40dp</dimen>
+    <dimen name="item_margin_top">10dp</dimen>
+    
+    <dimen name="login_item_h">45dp</dimen>
+    <dimen name="general_item_h">40dp</dimen>
+    <dimen name="default_head_wh">48dp</dimen>
+    <dimen name="search_view_h">30dp</dimen>
+    <dimen name="edit_padding_l">8dp</dimen>
+    <dimen name="info_num_wh">27dp</dimen>
+    <dimen name="info_num_font">16sp</dimen>
+    <dimen name="person_detail_head_h">150dp</dimen>
+    <dimen name="person_detail_info_h">40dp</dimen>
+    <dimen name="folder_icon_wh">50dp</dimen>
+    
+    <dimen name="btn_text_size">24sp</dimen>
+    <dimen name="btn_general_h">40dp</dimen>
+    <dimen name="btn_login_h">40dp</dimen>
+    <dimen name="btn_search_wh">20dp</dimen>
+    <dimen name="arrow_right_w">12dp</dimen>
+    <dimen name="arrow_right_h">21dp</dimen>
+    
+    <dimen name="register_margin_t">10dp</dimen>
+    <dimen name="peer_list_item_h">60dp</dimen>
+    
+    <dimen name="bowr_head_margin">10dp</dimen>
+     
+    <dimen name="item_tv_detail_information">20dp</dimen>
+    
+    <dimen name="face_imageview_width">48dp</dimen>
+    <dimen name="face_imageview_height">48dp</dimen>
+    <dimen name="view_default_margin_top">32dp</dimen>
+    <dimen name="image_arrow_right_width">12dp</dimen>
+    <dimen name="image_arrow_right_height">32dp</dimen>
+    <dimen name="image_arrow_right_circle_wh">16dp</dimen>
+    <dimen name="phone_margin_right">16dp</dimen>
+    <dimen name="item_personal_info_padding_t">8dp</dimen>
+    <dimen name="item_personal_info_padding_b">8dp</dimen>
+    
+    <dimen name="popup_window_btn_margin_lr">10dp</dimen>
+    <dimen name="popup_window_btn_margin_tb">20dp</dimen>
+    <dimen name="popup_window_btn_margin_t">10dp</dimen>
+    <dimen name="popup_window_btn_padding">15dp</dimen>
+    
+    <dimen name="item_user_profile_height">45dp</dimen>
+    
+    <dimen name="certification_image_wh">80dp</dimen>
+    
+     <!-- 主界面菜单数据 -->
+    <dimen name="home_right_menu_icon_wdith">24dp</dimen>
+    <dimen name="home_right_menu_icon_height">24dp</dimen>
+    <dimen name="home_right_menu_icon_padding_top">12dp</dimen>
+    <dimen name="home_right_menu_icon_padding_bottom">12dp</dimen>
+    <dimen name="home_right_menu_icon_margin_left">25dp</dimen>
+    <dimen name="home_right_menu_icon_margin_top">24dp</dimen>
+    <dimen name="home_right_menu_text_margin_left">12dp</dimen>
+    <dimen name="home_right_menu_text_size">18sp</dimen>
+    <dimen name="home_right_menu_margin_top">60dp</dimen>
+    
+    <!-- 修改手机号码界面 -->
+    <dimen name="change_phone_label_width">80dp</dimen>
+    <dimen name="change_phone_padding_left">20dp</dimen>
+    
+    <!-- 病历浏览界面 -->
+    <dimen name="browse_record_info_text_size">14sp</dimen>
+    
+    <!-- 设置界面 -->
+    <dimen name="setting_arrow_image_width">16dp</dimen>
+    <dimen name="setting_arrow_image_height">16dp</dimen>
+    <dimen name="setting_text_title_size">16sp</dimen>
+    <dimen name="setting_icon_image_width">20dp</dimen>
+    <dimen name="setting_icon_image_height">20dp</dimen>
+    <dimen name="setting_item_height">45dp</dimen>
+    <dimen name="setting_button_radius">10dp</dimen>
+    
+    <!-- 个人信息界面 -->
+    <dimen name="userinfo_item_line_margin_right">15dp</dimen>
+    <dimen name="userinfo_item_img_margin_right">12dp</dimen>
+    <dimen name="userinfo_icon_width">20dp</dimen>
+    <dimen name="userinfo_icon_height">20dp</dimen>
+    <dimen name="userinfo_icon_margin_right">10dp</dimen>
+    
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/send_follow"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/selector_btn_follow_up_bg"
+        android:text="@string/send_follow_up"
+        android:textColor="@drawable/selector_text_follow_up_bg"
+        android:textSize="28sp" />
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="1dp"
+        android:background="@color/app_emerald"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/manage_follow"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_btn_follow_up_bg"
+        android:text="@string/manage_follow_up"
+        android:textColor="@drawable/selector_text_follow_up_bg"
+        android:textSize="28sp" />
+
+</LinearLayout>

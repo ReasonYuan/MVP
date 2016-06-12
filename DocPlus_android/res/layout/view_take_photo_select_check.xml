@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#63c0b5">
+    
+    <!-- <TextView 
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/text_view_select_check"/> -->
+    <ListView 
+        android:id="@+id/lv_select_check_item"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:listSelector="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"/>
+
+</FrameLayout>

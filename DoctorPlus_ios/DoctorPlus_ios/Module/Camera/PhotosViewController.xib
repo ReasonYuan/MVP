@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotosViewController">
+            <connections>
+                <outlet property="bottomView" destination="kQa-bF-ZEp" id="gqO-kA-DcA"/>
+                <outlet property="cView" destination="i5M-Pr-FkT" id="8Di-F6-QpS"/>
+                <outlet property="collectionView" destination="7XB-cZ-NbK" id="2nY-Kw-nDv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="7XB-cZ-NbK">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5F6-LK-YQQ" customClass="DraggableCollectionViewFlowLayout">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="jVV-Uy-Ihn"/>
+                        <outlet property="delegate" destination="-1" id="GZS-Vi-3Na"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7XB-cZ-NbK" secondAttribute="trailing" id="3Ji-5f-Lrm"/>
+                <constraint firstItem="7XB-cZ-NbK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TW2-f4-1DA"/>
+                <constraint firstAttribute="bottom" secondItem="7XB-cZ-NbK" secondAttribute="bottom" id="eBG-TR-irw"/>
+                <constraint firstItem="7XB-cZ-NbK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="scj-V3-fvu"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="kQa-bF-ZEp">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOs-NE-ZLl">
+                    <rect key="frame" x="0.0" y="270" width="600" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTr-f7-Hmy">
+                            <rect key="frame" x="280" y="4" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="G8R-DY-Or5"/>
+                                <constraint firstAttribute="height" constant="40" id="tVa-eQ-poK"/>
+                            </constraints>
+                            <state key="normal" image="photo_delete.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onDelete:" destination="-1" eventType="touchUpInside" id="vTq-sH-xfL"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="删除" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NJ-3h-DRO">
+                            <rect key="frame" x="279" y="43" width="42" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="42" id="KFc-Cb-aFU"/>
+                                <constraint firstAttribute="height" constant="21" id="gM0-Xk-UN4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azz-Es-2l4">
+                            <rect key="frame" x="207" y="4" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="io7-eP-6mQ"/>
+                                <constraint firstAttribute="width" constant="40" id="wOH-vm-Oqi"/>
+                            </constraints>
+                            <state key="normal" image="photo_merger.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onMerger:" destination="-1" eventType="touchUpInside" id="iZi-3I-B5s"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合并" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZf-6e-ftJ">
+                            <rect key="frame" x="216" y="43" width="22" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="22" id="QhV-yD-bhs"/>
+                                <constraint firstAttribute="height" constant="21" id="bVD-RF-isr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPz-en-x44">
+                            <rect key="frame" x="353" y="4" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="oXn-O7-5ey"/>
+                                <constraint firstAttribute="width" constant="40" id="orG-Z3-aEz"/>
+                            </constraints>
+                            <state key="normal" image="photo_moveto.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onMoveTo:" destination="-1" eventType="touchUpInside" id="smR-Ur-26l"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="移至" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aro-AL-np7">
+                            <rect key="frame" x="362" y="43" width="22" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="22" id="KeU-VM-loj"/>
+                                <constraint firstAttribute="height" constant="21" id="XVg-oY-vBb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Azz-Es-2l4" secondAttribute="bottom" constant="16" id="1KO-w7-mxm"/>
+                        <constraint firstItem="Aro-AL-np7" firstAttribute="leading" secondItem="8NJ-3h-DRO" secondAttribute="trailing" constant="41" id="3Sn-eC-Fkn"/>
+                        <constraint firstItem="Aro-AL-np7" firstAttribute="top" secondItem="dOs-NE-ZLl" secondAttribute="top" constant="43" id="6rB-lU-dLv"/>
+                        <constraint firstAttribute="bottom" secondItem="Aro-AL-np7" secondAttribute="bottom" constant="-4" id="8kT-yy-GRf"/>
+                        <constraint firstAttribute="centerX" secondItem="XTr-f7-Hmy" secondAttribute="centerX" id="9H5-NW-juO"/>
+                        <constraint firstItem="8NJ-3h-DRO" firstAttribute="leading" secondItem="uZf-6e-ftJ" secondAttribute="trailing" constant="41" id="ACZ-hO-YAK"/>
+                        <constraint firstItem="uZf-6e-ftJ" firstAttribute="top" secondItem="dOs-NE-ZLl" secondAttribute="top" constant="43" id="M5p-nt-m9y"/>
+                        <constraint firstItem="EPz-en-x44" firstAttribute="top" secondItem="dOs-NE-ZLl" secondAttribute="top" constant="4" id="RHg-lK-VWh"/>
+                        <constraint firstAttribute="bottom" secondItem="XTr-f7-Hmy" secondAttribute="bottom" constant="16" id="Skr-fY-kua"/>
+                        <constraint firstAttribute="centerX" secondItem="8NJ-3h-DRO" secondAttribute="centerX" id="d6I-bj-7Lp"/>
+                        <constraint firstAttribute="bottom" secondItem="EPz-en-x44" secondAttribute="bottom" constant="16" id="fwa-wl-IwB"/>
+                        <constraint firstAttribute="height" constant="60" id="gCw-oQ-F7C"/>
+                        <constraint firstItem="XTr-f7-Hmy" firstAttribute="leading" secondItem="Azz-Es-2l4" secondAttribute="trailing" constant="33" id="kaJ-a7-dPH"/>
+                        <constraint firstAttribute="bottom" secondItem="uZf-6e-ftJ" secondAttribute="bottom" constant="-4" id="lwa-f9-JpU"/>
+                        <constraint firstAttribute="bottom" secondItem="8NJ-3h-DRO" secondAttribute="bottom" constant="-4" id="qJL-w4-80j"/>
+                        <constraint firstItem="XTr-f7-Hmy" firstAttribute="top" secondItem="dOs-NE-ZLl" secondAttribute="top" constant="4" id="r6l-aA-gjz"/>
+                        <constraint firstItem="Azz-Es-2l4" firstAttribute="top" secondItem="dOs-NE-ZLl" secondAttribute="top" constant="4" id="v4m-kV-zkW"/>
+                        <constraint firstItem="EPz-en-x44" firstAttribute="leading" secondItem="XTr-f7-Hmy" secondAttribute="trailing" constant="33" id="xaf-r5-Aw6"/>
+                        <constraint firstItem="8NJ-3h-DRO" firstAttribute="top" secondItem="dOs-NE-ZLl" secondAttribute="top" constant="43" id="yEi-XV-zLn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dOs-NE-ZLl" secondAttribute="trailing" id="AcE-Nh-eES"/>
+                <constraint firstItem="dOs-NE-ZLl" firstAttribute="leading" secondItem="kQa-bF-ZEp" secondAttribute="leading" id="guZ-Yo-UT5"/>
+                <constraint firstAttribute="centerY" secondItem="dOs-NE-ZLl" secondAttribute="centerY" id="tRx-R9-HK5"/>
+            </constraints>
+            <point key="canvasLocation" x="369" y="1246"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="photo_delete.png" width="40" height="40"/>
+        <image name="photo_merger.png" width="40" height="40"/>
+        <image name="photo_moveto.png" width="40" height="40"/>
+    </resources>
+</document>

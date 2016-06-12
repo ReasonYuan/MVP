@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeGenderViewController" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="mBtnFemale" destination="LeS-bQ-pZb" id="qxn-v4-vJ9"/>
+                <outlet property="mBtnMale" destination="Q2g-29-FXj" id="xcK-za-Y3M"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2g-29-FXj">
+                    <rect key="frame" x="277" y="239" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="148-Xv-RSU"/>
+                        <constraint firstAttribute="width" constant="45" id="ehf-sV-5T5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <state key="normal" title="男">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.40000000000000002" green="0.73333333329999995" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnGenderClick:" destination="-1" eventType="touchUpInside" id="YYw-3H-3Sr"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjh-te-zRa">
+                    <rect key="frame" x="240" y="299" width="120" height="2"/>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.73333333329999995" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="L0u-mV-iUb"/>
+                        <constraint firstAttribute="width" constant="120" id="Vf7-Zz-bw4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeS-bQ-pZb">
+                    <rect key="frame" x="277" y="316" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="0QR-my-QWi"/>
+                        <constraint firstAttribute="width" constant="45" id="gZ2-ov-Pdh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <state key="normal" title="女">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.40000000000000002" green="0.73333333329999995" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnGenderClick:" destination="-1" eventType="touchUpInside" id="KSB-uC-9FO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="LeS-bQ-pZb" firstAttribute="top" secondItem="Xjh-te-zRa" secondAttribute="bottom" constant="15" id="P4A-fo-2qV"/>
+                <constraint firstItem="Xjh-te-zRa" firstAttribute="centerX" secondItem="LeS-bQ-pZb" secondAttribute="centerX" constant="0.5" id="aJn-RC-Iqs"/>
+                <constraint firstItem="Xjh-te-zRa" firstAttribute="top" secondItem="Q2g-29-FXj" secondAttribute="bottom" constant="15" id="iCV-DB-enr"/>
+                <constraint firstAttribute="centerX" secondItem="Xjh-te-zRa" secondAttribute="centerX" id="mhK-8L-2NF"/>
+                <constraint firstAttribute="centerY" secondItem="Xjh-te-zRa" secondAttribute="centerY" id="szf-xo-r1I"/>
+                <constraint firstItem="Q2g-29-FXj" firstAttribute="centerX" secondItem="Xjh-te-zRa" secondAttribute="centerX" constant="-0.5" id="tjG-ss-gHh"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

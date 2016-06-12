@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/icon_address_tag_unselected" />
+
+        <TextView
+            android:id="@+id/tv_item_user_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:background="@drawable/selector_img_tag_bg"
+            android:singleLine="true"
+            android:text="Tag"
+            android:textColor="#FDFFFD" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_item_user_tag_del"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/selector_btn_delete_tag"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="删除"
+        android:textSize="14sp" 
+        android:visibility="invisible"/>
+
+</LinearLayout>

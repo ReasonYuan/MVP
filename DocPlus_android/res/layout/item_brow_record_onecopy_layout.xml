@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onCancel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="#f5f7f6">
+
+            <TextView
+                android:id="@+id/tv_brow_record_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="入院记录"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/btn_expand_add_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="15dp"
+                android:text="查看更多..."
+                android:background="@drawable/selector_btn_menu_bg" 
+                android:textSize="14sp"
+                android:textColor="@color/app_emerald"/>
+        </FrameLayout>
+
+            <com.hp.android.halcyon.widgets.ClickGridView
+                android:id="@+id/gv_brow_record_types"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:numColumns="4"
+    			android:gravity="center"
+                android:listSelector="#00000000"
+        		android:stretchMode="columnWidth"
+        		android:scrollbars="none"/>
+    </LinearLayout>
+</FrameLayout>

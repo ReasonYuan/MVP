@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+       android:id="@+id/add"
+       android:layout_width="match_parent" 
+       android:layout_height="wrap_content"
+       android:textColor="@drawable/selector_text_follow_up_add_bg"
+       android:textSize="20sp"
+       android:layout_marginTop="15dp"
+       android:layout_gravity="center_vertical"
+       android:background="@color/transparent"
+       android:text="添加" />
+    <View 
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/app_emerald"
+        android:layout_gravity="center_horizontal"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_gray"
+        android:layout_marginTop="15dp"
+        android:alpha="0.3"
+        />
+</LinearLayout>

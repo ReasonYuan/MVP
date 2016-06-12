@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EFEFEF" >
+
+        <com.hp.android.halcyon.widgets.SearchView
+            android:id="@+id/sv_chose_record_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="2dp" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#b5b5b5" />
+
+    <ListView
+        android:id="@+id/lv_chose_record"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:smoothScrollbar="true" 
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#bce1da">
+        
+        <LinearLayout 
+            android:id="@+id/ll_chose_record_visualize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            
+            <ImageView 
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/visualization_icon"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可视化"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#717071"/>
+            
+        </LinearLayout>
+        
+    </FrameLayout>
+    
+</LinearLayout>

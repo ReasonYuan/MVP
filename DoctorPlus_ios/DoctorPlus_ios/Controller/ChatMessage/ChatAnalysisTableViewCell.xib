@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="114" id="KGk-i7-Jjw" customClass="ChatAnalysisTableViewCell" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yLH-NS-l0s">
+                        <rect key="frame" x="56" y="28" width="239" height="92"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nr-aT-Eys">
+                        <rect key="frame" x="56" y="28" width="239" height="92"/>
+                        <animations/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_patient_down.png" translatesAutoresizingMaskIntoConstraints="NO" id="NfF-64-m7K">
+                        <rect key="frame" x="104" y="31" width="8" height="8"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="1wn-Gj-FRr"/>
+                            <constraint firstAttribute="height" constant="8" id="RdH-Bw-5Za"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="csg-Vx-gor">
+                        <rect key="frame" x="8" y="18" width="40" height="40"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="hgA-N9-8Kh"/>
+                            <constraint firstAttribute="width" constant="40" id="p6I-AH-EYm"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trM-Sp-Ajg">
+                        <rect key="frame" x="8" y="18" width="40" height="40"/>
+                        <animations/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_patient_default_head.png" translatesAutoresizingMaskIntoConstraints="NO" id="6d5-JC-SZ4">
+                        <rect key="frame" x="61" y="23" width="35" height="35"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="3zm-8s-h2y"/>
+                            <constraint firstAttribute="width" constant="35" id="jfK-fE-cEZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ke-c2-fxk">
+                        <rect key="frame" x="104" y="42" width="176" height="15"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="tQt-m5-ovB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEb-2s-dCv">
+                        <rect key="frame" x="66" y="73" width="202" height="15"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Rrs-9A-avN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D21-E6-Xic">
+                        <rect key="frame" x="66" y="90" width="202" height="15"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="U9u-2J-b9M"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015/10/15 16:43" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXx-9V-lk6">
+                        <rect key="frame" x="56" y="12" width="100" height="10"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="ER1-m9-u5y"/>
+                            <constraint firstAttribute="width" constant="100" id="VWt-F6-1bI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_chat_patient.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cn1-ZC-eX4">
+                        <rect key="frame" x="265" y="89" width="30" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Kgd-mY-GMz"/>
+                            <constraint firstAttribute="height" constant="30" id="LUg-4p-JXX"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="qEb-2s-dCv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="58" id="0k6-AI-K8E"/>
+                    <constraint firstItem="qEb-2s-dCv" firstAttribute="top" secondItem="5Ke-c2-fxk" secondAttribute="bottom" constant="16" id="6ZV-Iu-uhj"/>
+                    <constraint firstItem="yLH-NS-l0s" firstAttribute="height" secondItem="2Nr-aT-Eys" secondAttribute="height" id="6ht-kE-kv7"/>
+                    <constraint firstItem="yLH-NS-l0s" firstAttribute="top" secondItem="6d5-JC-SZ4" secondAttribute="top" constant="5" id="6nn-7P-h3B"/>
+                    <constraint firstItem="trM-Sp-Ajg" firstAttribute="height" secondItem="csg-Vx-gor" secondAttribute="height" id="7vc-yF-i5X"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qEb-2s-dCv" secondAttribute="trailing" constant="44" id="AA0-X5-kTy"/>
+                    <constraint firstItem="D21-E6-Xic" firstAttribute="top" secondItem="qEb-2s-dCv" secondAttribute="bottom" constant="2" id="AYi-j5-FcC"/>
+                    <constraint firstItem="yLH-NS-l0s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="DTR-d2-hW8"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="yLH-NS-l0s" secondAttribute="trailing" constant="17" id="EPE-bq-2HD"/>
+                    <constraint firstItem="yLH-NS-l0s" firstAttribute="leading" secondItem="WXx-9V-lk6" secondAttribute="leading" id="FBv-cA-AXB"/>
+                    <constraint firstItem="yLH-NS-l0s" firstAttribute="leading" secondItem="6d5-JC-SZ4" secondAttribute="leading" constant="-5" id="FTf-7T-dEx"/>
+                    <constraint firstItem="5Ke-c2-fxk" firstAttribute="leading" secondItem="6d5-JC-SZ4" secondAttribute="trailing" constant="8" id="J3R-V0-Z00"/>
+                    <constraint firstItem="qEb-2s-dCv" firstAttribute="leading" secondItem="5Ke-c2-fxk" secondAttribute="leading" id="JJm-su-Gkj"/>
+                    <constraint firstItem="trM-Sp-Ajg" firstAttribute="centerY" secondItem="csg-Vx-gor" secondAttribute="centerY" id="Jf1-mE-vPe"/>
+                    <constraint firstItem="yLH-NS-l0s" firstAttribute="centerX" secondItem="2Nr-aT-Eys" secondAttribute="centerX" id="KdW-RA-Apm"/>
+                    <constraint firstItem="qEb-2s-dCv" firstAttribute="leading" secondItem="D21-E6-Xic" secondAttribute="leading" id="LcY-RO-lIB"/>
+                    <constraint firstItem="yLH-NS-l0s" firstAttribute="centerY" secondItem="2Nr-aT-Eys" secondAttribute="centerY" constant="0.5" id="M3R-Eu-prE"/>
+                    <constraint firstItem="yLH-NS-l0s" firstAttribute="width" secondItem="2Nr-aT-Eys" secondAttribute="width" id="Xe0-yJ-6PK"/>
+                    <constraint firstItem="trM-Sp-Ajg" firstAttribute="centerX" secondItem="csg-Vx-gor" secondAttribute="centerX" id="aOP-Cg-JSA"/>
+                    <constraint firstItem="yLH-NS-l0s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="aWL-zJ-f7L"/>
+                    <constraint firstItem="5Ke-c2-fxk" firstAttribute="trailing" secondItem="yLH-NS-l0s" secondAttribute="trailing" constant="-15" id="cT9-cp-01U"/>
+                    <constraint firstItem="csg-Vx-gor" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="cnd-y2-qd6"/>
+                    <constraint firstItem="WXx-9V-lk6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="dbt-cR-Ije"/>
+                    <constraint firstItem="yLH-NS-l0s" firstAttribute="leading" secondItem="csg-Vx-gor" secondAttribute="trailing" constant="8" id="fnw-Pl-EBg"/>
+                    <constraint firstItem="5Ke-c2-fxk" firstAttribute="top" secondItem="yLH-NS-l0s" secondAttribute="top" constant="14" id="hja-0a-mgX"/>
+                    <constraint firstItem="trM-Sp-Ajg" firstAttribute="width" secondItem="csg-Vx-gor" secondAttribute="width" id="lDs-gT-hve"/>
+                    <constraint firstItem="qEb-2s-dCv" firstAttribute="trailing" secondItem="D21-E6-Xic" secondAttribute="trailing" id="lZB-XT-BlD"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="yLH-NS-l0s" secondAttribute="bottom" constant="-8" id="nnn-hm-AUl"/>
+                    <constraint firstItem="NfF-64-m7K" firstAttribute="top" secondItem="WXx-9V-lk6" secondAttribute="bottom" constant="9" id="omZ-bR-CNh"/>
+                    <constraint firstItem="NfF-64-m7K" firstAttribute="leading" secondItem="6d5-JC-SZ4" secondAttribute="trailing" constant="8" id="pAv-5f-w82"/>
+                    <constraint firstItem="csg-Vx-gor" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="pJT-4i-jwg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Cn1-ZC-eX4" secondAttribute="trailing" constant="17" id="qn1-5H-rat"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Cn1-ZC-eX4" secondAttribute="bottom" constant="-8" id="tsc-ai-kWJ"/>
+                    <constraint firstItem="qEb-2s-dCv" firstAttribute="trailing" secondItem="5Ke-c2-fxk" secondAttribute="trailing" id="zdx-JO-EEG"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="DTR-d2-hW8"/>
+                        <exclude reference="JJm-su-Gkj"/>
+                        <exclude reference="zdx-JO-EEG"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="bgBtn" destination="2Nr-aT-Eys" id="rv6-Xl-X5t"/>
+                <outlet property="bgImage" destination="yLH-NS-l0s" id="7DU-vF-IKO"/>
+                <outlet property="headBtn" destination="trM-Sp-Ajg" id="T9L-iE-1L9"/>
+                <outlet property="patientDetail" destination="5Ke-c2-fxk" id="Lo6-fL-eD7"/>
+                <outlet property="patientDetail2" destination="qEb-2s-dCv" id="m4S-8m-zzT"/>
+                <outlet property="patientDetail3" destination="D21-E6-Xic" id="15J-5i-cHg"/>
+                <outlet property="recordUserId" destination="6d5-JC-SZ4" id="eJ1-I1-QtX"/>
+                <outlet property="sendTime" destination="WXx-9V-lk6" id="hAS-3M-eMM"/>
+                <outlet property="userHead" destination="csg-Vx-gor" id="ieC-nk-KCB"/>
+            </connections>
+            <point key="canvasLocation" x="410" y="318"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_chat_patient.png" width="30" height="30"/>
+        <image name="icon_patient_default_head.png" width="36" height="36"/>
+        <image name="icon_patient_down.png" width="8" height="8"/>
+    </resources>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="lTj-cR-FfW">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                    <animations/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" tag="22" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本号 V 1.8.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17J-Uc-t4k">
+                    <rect key="frame" x="210" y="456" width="59.5" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="xVh-lg-08s"/>
+                        <constraint firstAttribute="width" constant="60" id="znT-N6-Ak6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                    <color key="textColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="znT-N6-Ak6"/>
+                        </mask>
+                    </variation>
+                </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="launch_bottom_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="dC6-w0-3AL">
+                    <rect key="frame" x="173" y="436" width="134" height="12"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="8wm-BU-jMM"/>
+                        <constraint firstAttribute="width" constant="134" id="W9O-nY-UPx"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_screen_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="FkT-zf-3eb">
+                    <rect key="frame" x="154" y="108" width="172" height="164"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="164" id="0NG-R3-jbp"/>
+                        <constraint firstAttribute="width" constant="172" id="QdW-c9-KoV"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="lTj-cR-FfW" secondAttribute="bottom" id="28W-uX-oJy"/>
+                <constraint firstAttribute="bottom" secondItem="17J-Uc-t4k" secondAttribute="bottom" constant="3" id="86l-uu-ipu"/>
+                <constraint firstItem="FkT-zf-3eb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8I2-ue-Cdv"/>
+                <constraint firstItem="17J-Uc-t4k" firstAttribute="top" secondItem="dC6-w0-3AL" secondAttribute="bottom" constant="8" id="BRd-af-KHt"/>
+                <constraint firstAttribute="trailing" secondItem="lTj-cR-FfW" secondAttribute="trailing" id="HVP-ou-iQl"/>
+                <constraint firstAttribute="centerX" secondItem="17J-Uc-t4k" secondAttribute="centerX" id="LJ4-hJ-FLA"/>
+                <constraint firstItem="lTj-cR-FfW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="V2W-B8-ZZ8"/>
+                <constraint firstItem="dC6-w0-3AL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Xbz-fT-pK3"/>
+                <constraint firstItem="lTj-cR-FfW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kXN-w8-Sr9"/>
+                <constraint firstItem="FkT-zf-3eb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-50" id="odS-qX-LHO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="314" y="280"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="launch_bottom_icon.png" width="134" height="12"/>
+        <image name="launch_screen_icon.png" width="258" height="258"/>
+        <image name="loading_bg.png" width="375" height="667"/>
+    </resources>
+</document>

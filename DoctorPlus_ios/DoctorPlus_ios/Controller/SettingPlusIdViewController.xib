@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingPlusIdViewController" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="docPlusId" destination="woW-R6-iPl" id="q5Z-S7-111"/>
+                <outlet property="sureBtn" destination="yV7-Eo-IHG" id="sqR-VX-rer"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="9gr-0q-LOb">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="的同时，有效的保护自己的隐私和私人生活。" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHe-Qk-aAO">
+                    <rect key="frame" x="200" y="444" width="200" height="12"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bt-p1-LNg">
+                    <rect key="frame" x="20" y="239" width="560" height="1"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="FU8-9s-c8R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yV7-Eo-IHG">
+                    <rect key="frame" x="30" y="500" width="540" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="a8M-rl-M6b"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="确认">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sure:" destination="-1" eventType="touchUpInside" id="p1y-oy-VZ7"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="设置医加号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="woW-R6-iPl">
+                    <rect key="frame" x="40" y="212" width="540" height="17"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="U4e-LD-zhd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="仅限使用英文及数字，设定后不能修改" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8G-l2-v0r">
+                    <rect key="frame" x="40" y="247" width="187" height="14"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.56470588239999997" green="0.56470588239999997" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_doctor_plus_id.png" translatesAutoresizingMaskIntoConstraints="NO" id="cRJ-3I-SXa">
+                    <rect key="frame" x="20" y="212" width="18" height="18"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="iUl-QG-gEQ"/>
+                        <constraint firstAttribute="width" constant="18" id="p2u-xu-9Fo"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="“医加号”是您全新的身份；让您可以与患者保持联络" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miP-sS-vey">
+                    <rect key="frame" x="186" y="430" width="229" height="12"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="woW-R6-iPl" secondAttribute="centerY" constant="80" id="1ZF-OA-smm"/>
+                <constraint firstAttribute="trailing" secondItem="woW-R6-iPl" secondAttribute="trailing" constant="20" id="272-ed-oyu"/>
+                <constraint firstAttribute="trailing" secondItem="yV7-Eo-IHG" secondAttribute="trailing" constant="30" id="6uP-Ee-oDn"/>
+                <constraint firstAttribute="bottom" secondItem="yV7-Eo-IHG" secondAttribute="bottom" constant="60" id="8RZ-r7-dcu"/>
+                <constraint firstAttribute="centerX" secondItem="woW-R6-iPl" secondAttribute="centerX" id="9Fq-VF-6gW"/>
+                <constraint firstItem="woW-R6-iPl" firstAttribute="leading" secondItem="9gr-0q-LOb" secondAttribute="leading" constant="50" id="FoC-pw-clO"/>
+                <constraint firstItem="yV7-Eo-IHG" firstAttribute="top" secondItem="aHe-Qk-aAO" secondAttribute="bottom" constant="44" id="Hh6-1B-roT"/>
+                <constraint firstItem="4bt-p1-LNg" firstAttribute="top" secondItem="cRJ-3I-SXa" secondAttribute="bottom" constant="9" id="Iwg-iX-vs3"/>
+                <constraint firstItem="cRJ-3I-SXa" firstAttribute="leading" secondItem="9gr-0q-LOb" secondAttribute="leading" constant="20" id="NyY-i3-1D7"/>
+                <constraint firstItem="4bt-p1-LNg" firstAttribute="leading" secondItem="9gr-0q-LOb" secondAttribute="leading" constant="20" id="RQ4-G4-KYt"/>
+                <constraint firstItem="c8G-l2-v0r" firstAttribute="leading" secondItem="9gr-0q-LOb" secondAttribute="leading" constant="40" id="RnL-Lm-TLJ"/>
+                <constraint firstItem="c8G-l2-v0r" firstAttribute="top" secondItem="4bt-p1-LNg" secondAttribute="bottom" constant="7" id="US3-aB-ol3"/>
+                <constraint firstItem="woW-R6-iPl" firstAttribute="leading" secondItem="cRJ-3I-SXa" secondAttribute="trailing" constant="2" id="XaL-xN-QGM"/>
+                <constraint firstItem="woW-R6-iPl" firstAttribute="centerY" secondItem="cRJ-3I-SXa" secondAttribute="centerY" id="g7W-mv-4Dc"/>
+                <constraint firstAttribute="centerX" secondItem="aHe-Qk-aAO" secondAttribute="centerX" id="mod-CG-iUT"/>
+                <constraint firstItem="aHe-Qk-aAO" firstAttribute="top" secondItem="miP-sS-vey" secondAttribute="bottom" constant="2" id="nOV-Ym-pgR"/>
+                <constraint firstAttribute="centerX" secondItem="miP-sS-vey" secondAttribute="centerX" id="xLR-sF-zkm"/>
+                <constraint firstItem="yV7-Eo-IHG" firstAttribute="leading" secondItem="9gr-0q-LOb" secondAttribute="leading" constant="30" id="z4K-AR-dX5"/>
+                <constraint firstAttribute="trailing" secondItem="4bt-p1-LNg" secondAttribute="trailing" constant="20" id="zzG-pE-GsS"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="9Fq-VF-6gW"/>
+                    <exclude reference="FoC-pw-clO"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="230" y="328"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_doctor_plus_id.png" width="29" height="29"/>
+    </resources>
+</document>

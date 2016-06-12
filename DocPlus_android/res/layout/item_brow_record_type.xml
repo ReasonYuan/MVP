@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    
+    <TextView 
+        android:id="@+id/tv_brow_record_befo"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:gravity="center" 
+        android:textSize="14sp"
+        android:textColor="#E1E3E2"
+        android:background="#F5F7F6"/>
+    <TextView 
+        android:id="@+id/tv_brow_record_middle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" 
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:background="#ADDBD1"/>
+    <TextView 
+        android:id="@+id/tv_brow_record_after"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:gravity="center" 
+        android:textSize="14sp"
+        android:textColor="#E1E3E2"
+        android:background="#F5F7F6"/>
+</LinearLayout>

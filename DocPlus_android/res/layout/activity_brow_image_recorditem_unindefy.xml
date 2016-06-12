@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_h"
+        android:background="@color/app_emerald" >
+
+        <FrameLayout
+            android:id="@+id/fl_brow_takephoto_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_item_general_content_trans_bg"
+            android:clickable="true"
+            android:onClick="onTopLeftBtnClick" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_back" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_brow_takephoto_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/app_yellow"
+            android:textSize="@dimen/title_font" />
+    </FrameLayout>
+	
+    <FrameLayout 
+        android:id="@+id/gallery_takephoto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"/>
+    <!-- <Gallery
+        android:id="@+id/gallery_takephoto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+        android:spacing="3dp" /> -->
+
+        <RelativeLayout
+            android:id="@+id/rl_brow_photo_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_gray" >
+
+            <Button
+                android:id="@+id/btn_preview_photo_retake"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector_btn_emerald_bg"
+                android:onClick="onReCatch"
+                android:clickable="true"
+                android:text="重拍"
+                android:textColor="@drawable/selector_btn_white_text"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_preview_photo_apply"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/btn_preview_photo_retake"
+                android:background="@drawable/selector_btn_emerald_bg"
+                android:onClick="onDelete"
+                android:clickable="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:text="删除"
+                android:textColor="@drawable/selector_btn_white_text"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+</LinearLayout>

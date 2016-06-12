@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExplorationSearchViewController" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="fRL-pt-zg6" id="bYQ-e1-hGa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="plH-xW-05K">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="AJG-TK-6Cn"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fRL-pt-zg6">
+                    <rect key="frame" x="0.0" y="44" width="600" height="541"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="EmX-BA-KjZ"/>
+                        <outlet property="delegate" destination="-1" id="Va7-rr-s0P"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fRL-pt-zg6" secondAttribute="bottom" constant="15" id="Fau-rY-9jm"/>
+                <constraint firstItem="plH-xW-05K" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JCc-pS-fKU"/>
+                <constraint firstAttribute="trailing" secondItem="plH-xW-05K" secondAttribute="trailing" id="Kkj-pw-rm4"/>
+                <constraint firstItem="plH-xW-05K" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UQZ-AR-7yR"/>
+                <constraint firstItem="fRL-pt-zg6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wng-5B-MiS"/>
+                <constraint firstAttribute="trailing" secondItem="fRL-pt-zg6" secondAttribute="trailing" id="hxs-7U-hYW"/>
+                <constraint firstItem="fRL-pt-zg6" firstAttribute="top" secondItem="plH-xW-05K" secondAttribute="bottom" id="vUJ-rt-JdO"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

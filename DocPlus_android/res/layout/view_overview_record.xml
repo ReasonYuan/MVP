@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp" >
+
+        <com.hp.android.halcyon.view.LoadingView
+            android:id="@+id/view_overview_record_loading"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center" 
+            android:visibility="gone"/>
+        
+        <TextView 
+            android:id="@+id/tv_overview_record_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#BDBDBD"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+        
+        <ListView 
+            android:id="@+id/lv_overview_record_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:listSelector="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+        
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwitchView" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="s4e-aQ-zce" id="6Fh-aI-Gql"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="20"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s4e-aQ-zce">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="20"/>
+                    <animations/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOm-CG-bBM">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="20"/>
+                    <animations/>
+                    <connections>
+                        <action selector="onClick:" destination="-1" eventType="touchUpInside" id="UPQ-65-g6N"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZOm-CG-bBM" secondAttribute="bottom" id="LXH-7O-5pF"/>
+                <constraint firstAttribute="bottom" secondItem="s4e-aQ-zce" secondAttribute="bottom" id="U92-Pq-ftM"/>
+                <constraint firstItem="ZOm-CG-bBM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="W0i-e1-MFd"/>
+                <constraint firstItem="s4e-aQ-zce" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zrg-r0-lzq"/>
+                <constraint firstAttribute="trailing" secondItem="s4e-aQ-zce" secondAttribute="trailing" id="b0Y-g6-T5x"/>
+                <constraint firstItem="s4e-aQ-zce" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dx9-mF-r5M"/>
+                <constraint firstItem="ZOm-CG-bBM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gX9-OZ-KHa"/>
+                <constraint firstAttribute="trailing" secondItem="ZOm-CG-bBM" secondAttribute="trailing" id="xbl-qS-FVA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

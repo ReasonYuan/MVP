@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>74535DA5-2C3D-4338-9978-E783ED50E88F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Extends</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>e1398ade-e3a9-0b45-be6c-5c4c105d2e79++5158</key>
+		<string>http://115.29.232.44:19880/svn/doctorplus/trunk/MVP/DoctorPlus_ios</string>
+		<key>e1398ade-e3a9-0b45-be6c-5c4c105d2e79++8099</key>
+		<string>http://115.29.232.44:19880/svn/doctorplus/trunk/MVP/DocPlusLogic</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Extends/Extends.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>e1398ade-e3a9-0b45-be6c-5c4c105d2e79++5158</key>
+		<string>../../..</string>
+		<key>e1398ade-e3a9-0b45-be6c-5c4c105d2e79++8099</key>
+		<string>../../../../DocPlusLogic</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>e1398ade-e3a9-0b45-be6c-5c4c105d2e79++5158</key>
+		<string>http://115.29.232.44:19880/svn/doctorplus</string>
+		<key>e1398ade-e3a9-0b45-be6c-5c4c105d2e79++8099</key>
+		<string>http://115.29.232.44:19880/svn/doctorplus</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://115.29.232.44:19880/svn/doctorplus/trunk/MVP/DoctorPlus_ios/Extends/Extends.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>e1398ade-e3a9-0b45-be6c-5c4c105d2e79++5158</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>e1398ade-e3a9-0b45-be6c-5c4c105d2e79++8099</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DocPlusLogic</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>e1398ade-e3a9-0b45-be6c-5c4c105d2e79++5158</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DoctorPlus_ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

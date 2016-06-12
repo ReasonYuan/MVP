@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="vertical" 
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="108dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_close_doc_plus" />
+            
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/welcome_loading_text" />
+            
+            <!-- 以下是为内存版临时添加的，以后正式发布后去掉  -->
+            <TextView 
+                android:id="@+id/tv_server_ver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="240dp"
+                android:textSize="22sp"
+                android:textColor="#FF4858"
+                android:gravity="center_horizontal"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/welcome_vision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           	android:layout_gravity="center_horizontal"
+            android:textColor="#f3dfc3"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+</LinearLayout>

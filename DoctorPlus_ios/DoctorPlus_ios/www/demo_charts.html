@@ -1,0 +1,95 @@
+﻿<!DOCTYPE HTML>
+<html>
+<header>
+
+</header>
+<body>
+
+<div id="main" style="width:680px;height:480px;background:#334422"></div>
+<script src="../js/echarts/echarts.js"></script>
+<!-- http://echarts.baidu.com/build/dist/echarts.js -->
+<script type="text/javascript">
+	// 路径配置
+require.config({
+  paths: {
+    echarts: 'http://echarts.baidu.com/build/dist'
+  }
+});
+
+// 使用
+require(
+  [
+    'echarts',
+    'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+    'echarts/chart/line'
+  ],
+  function (ec) {
+    // 基于准备好的dom，初始化echarts图表
+    var myChart = ec.init(document.getElementById('main')); 
+    //设置数据
+    var option = {
+       //标题
+       title:{
+       		text:'销量图',
+       		subtext:'测试案例，纯属乱整'
+       },
+       //设置提示
+       tooltip:{
+       		show:true
+       },
+       //设置图例
+       legend:{
+       	data:['销量']
+       },
+
+      //设置坐标轴
+      xAxis : [
+        {
+          type : 'category',
+          data : ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子","帽子","围巾"]
+        }
+      ],
+      yAxis : [
+        {
+          type : 'value'
+        }
+      ],
+      //设置数据
+      series : [
+      	//柱状图
+        {
+          "name":"销量",
+          "type":"bar",
+          "data":[5, 20, 40, 10, 24, 20,24,32],
+        },
+        //折线图
+         {
+          "name":"销量",
+          "type":"line",
+          "data":[5, 20, 38, 10, 24, 20,24,32],
+           //绘制平均线
+           markLine : {
+             data : [
+               {type : 'average', name: '平均值'}
+             ]
+           },
+          //绘制最高最低点
+          markPoint : {
+            data : [
+              {type : 'max', name: '最大值'},
+              {type : 'min', name: '最小值'}
+            ]
+          }
+
+        }
+      ]
+    };
+
+    // 为echarts对象加载数据 
+    myChart.setOption(option); 
+  }
+);
+</script>
+
+</body>
+</html>

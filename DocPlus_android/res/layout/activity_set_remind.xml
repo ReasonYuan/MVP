@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:id="@+id/out_hiden"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_set_remind_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="添加时间提醒"
+        android:textColor="@color/app_pink"
+        android:background="@android:color/transparent"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Member"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp" >
+
+        <ImageView
+            android:id="@+id/img_set_remind_head"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/btn_add_only"
+            android:onClick="onSetMemberClick"
+            android:layout_gravity="center_vertical|top"/>
+        
+        <TextView 
+            android:id="@+id/tv_set_remind_name"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|bottom"
+            android:gravity="center"
+            android:singleLine="true"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Note"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_gender_trans_border" >
+
+        <EditText
+            android:id="@+id/edt_set_remind_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:gravity="top|left" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical" 
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_general_h"
+            android:background="@drawable/selector_btn_emerald_bg"
+            android:text="@string/btn_save"
+            android:textColor="@drawable/selector_btn_emerald_text"
+            android:textSize="@dimen/btn_text_size" 
+            android:onClick="onSaveTimer"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_general_h"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/selector_btn_back_bg"
+            android:text="@string/btn_cancel"
+            android:textColor="@drawable/selector_btn_grey_text"
+            android:textSize="@dimen/btn_text_size" 
+            android:onClick="onBackClick"/>
+    </LinearLayout>
+
+</LinearLayout>

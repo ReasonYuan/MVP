@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_tag_person"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_general_border_h"
+        android:background="@color/item_general_border_deep" />
+
+    <TextView
+        android:id="@+id/tv_patient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_general_padding"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_general_border_h"
+        android:background="@color/item_general_border_deep" />
+
+    <ScrollView
+        android:id="@+id/sv_tag_parson"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="#FFFFFF" >
+
+        <LinearLayout
+            android:id="@+id/ll_tag_person_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_general_padding_l"
+            android:layout_marginRight="@dimen/item_general_padding_l"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <com.hp.android.halcyon.widgets.FlowLayout
+                xmlns:f="http://schemas.android.com/apk/res/com.fq.android.plus"
+                android:id="@+id/fl_person_tag"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FFFFFF"
+                f:debugDraw="false"
+                f:horizontalSpacing="5dp"
+                f:orientation="horizontal"
+                f:verticalSpacing="5dp" >
+
+               <!--  添加标签  -->
+                <RelativeLayout
+                    style="@style/tag_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/et_tag_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#00000000"
+                        android:hint="@string/add_tag"
+                        android:maxLength="18" />
+
+                    <Button
+                        android:id="@+id/btn_tag_cancel_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="8dp"
+                        android:layout_toRightOf="@id/et_tag_add"
+                        android:background="#00000000"
+                        android:text="X" 
+                        android:visibility="gone"/>
+                </RelativeLayout>
+            </com.hp.android.halcyon.widgets.FlowLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_general_border_h"
+        android:background="@color/item_general_border_deep" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_general_padding_tb"
+        android:layout_marginLeft="@dimen/item_general_padding_l"
+        android:layout_marginTop="5dp"
+        android:text="@string/all_tag" />
+
+    <ScrollView
+        android:id="@+id/sv_tag_all"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#FFFFFF" >
+
+        <LinearLayout
+            android:id="@+id/ll_tag_person_add_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_general_padding_l"
+            android:layout_marginRight="@dimen/item_general_padding_l"
+            android:orientation="vertical" >
+
+            <com.hp.android.halcyon.widgets.FlowLayout
+                xmlns:f="http://schemas.android.com/apk/res/com.fq.android.plus"
+                android:id="@+id/fl_person_all_tag"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                f:debugDraw="false"
+                f:horizontalSpacing="5dp"
+                f:orientation="horizontal"
+                f:verticalSpacing="5dp" >
+            </com.hp.android.halcyon.widgets.FlowLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

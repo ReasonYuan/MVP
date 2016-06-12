@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/out_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="85dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="45dp" >
+
+            <EditText
+                android:id="@+id/et_change_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_edit_changename_bg"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#898989"
+                android:textSize="22sp" 
+                android:textCursorDrawable="@drawable/shape_cursor"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/item_general_border_h"
+                android:layout_marginTop="4dp"
+                android:background="@color/line_divide" 
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/selector_btn_emerald_bg"
+                android:onClick="onChangeNameSureClick"
+                android:text="确认修改"
+                android:textColor="@drawable/selector_btn_emerald_text"
+                android:textSize="@dimen/btn_text_size" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+ [
+  [
+   {
+   "duration":2,
+   "damping":1,
+   "translationY":64
+   }
+   ],
+  [
+   {
+   "duration":1.2,
+   "delay":2,
+   "translationY":-64
+   }
+   ]
+  ]

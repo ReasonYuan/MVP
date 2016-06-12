@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_seting_plus_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/img_setting_plus_id_icon"
+            android:layout_width="@dimen/setting_icon_image_width"
+            android:layout_height="@dimen/setting_icon_image_height"
+            android:layout_above="@+id/view_label"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/icon_doctor_plus_id" />
+
+        <EditText
+            android:id="@+id/edt_setting_plus_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/view_label"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/img_setting_plus_id_icon"
+            android:background="@null"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="设置医加号"
+            android:inputType="textVisiblePassword"
+            android:maxLength="20"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColorHint="#553f3b3a"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/view_label"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/only_en_num"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#553f3b3a" />
+
+        <TextView
+            android:id="@+id/only_en_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:text="仅限使用英文及数字，设定后不能修改"
+            android:textColor="#553f3b3a" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/only_en_num"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_label1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:text="的同时，有效的保护自己的隐私和私人生活。"
+                android:textColor="#553f3b3a" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_label1"
+                android:gravity="center_horizontal"
+                android:text="“医加号”是您全新的身份；让您可以与患者保持联络"
+                android:textColor="#553f3b3a" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_setting_plus_id"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/selector_btn_emerald_bg"
+                android:onClick="onDPNameSureClick"
+                android:text="确认"
+                android:textColor="@drawable/selector_btn_emerald_text"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

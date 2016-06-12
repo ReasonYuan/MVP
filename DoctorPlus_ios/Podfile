@@ -1,0 +1,7 @@
+platform :ios, '8.0'
+use_frameworks!
+pod 'HitalesSDK', :svn => "http://115.29.232.44:19880/svn/doctorplus/library/HitalesSDK/0.0.2"
+pod 'DataCache', :svn => "http://115.29.232.44:19880/svn/doctorplus/library/DataCache/0.0.1"
+pod 'SQLite.swift',git: 'https://github.com/stephencelis/SQLite.swift.git'
+pod 'IOSAnimation', :svn => "http://115.29.232.44:19880/svn/doctorplus/library/IOSAnimation/0.0.1"
+pod 'SnapKit','~> 0.15.0'

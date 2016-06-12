@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PatientNavigation" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="mypatientBtn" destination="C6J-lV-eIn" id="F1V-hy-pjX"/>
+                <outlet property="mypatientLabel" destination="Spy-l1-Zh1" id="eSK-2d-86f"/>
+                <outlet property="recycleBtn" destination="NpX-Cu-EoX" id="AuC-Co-Tce"/>
+                <outlet property="recycleLable" destination="ENu-rd-Ayk" id="Klm-qS-CDn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6J-lV-eIn">
+                    <rect key="frame" x="40" y="0.0" width="48" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="s29-sz-X9W"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="我的病例">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.023529411760000001" green="0.039215686270000001" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClickListener:" destination="-1" eventType="touchUpInside" id="fCs-HV-eeA"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spy-l1-Zh1">
+                    <rect key="frame" x="33" y="27" width="62" height="3"/>
+                    <color key="backgroundColor" red="0.023529411764705882" green="0.039215686274509803" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="6Z3-uP-yyX"/>
+                        <constraint firstAttribute="width" constant="62" id="Ccu-0z-ot0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpX-Cu-EoX">
+                    <rect key="frame" x="524" y="0.0" width="36" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="9wI-JN-ib4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="回收站">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.023529411760000001" green="0.039215686270000001" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClickListener:" destination="-1" eventType="touchUpInside" id="jCu-aK-1kC"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENu-rd-Ayk">
+                    <rect key="frame" x="517" y="27" width="50" height="3"/>
+                    <color key="backgroundColor" red="0.023529411760000001" green="0.039215686270000001" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="Da6-Eh-fxh"/>
+                        <constraint firstAttribute="width" constant="50" id="Pkb-kU-JgO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NpX-Cu-EoX" secondAttribute="trailing" constant="40" id="8Mj-um-sbN"/>
+                <constraint firstAttribute="bottom" secondItem="NpX-Cu-EoX" secondAttribute="bottom" id="KrT-8B-cyR"/>
+                <constraint firstAttribute="bottom" secondItem="C6J-lV-eIn" secondAttribute="bottom" id="RWj-Ms-R7A"/>
+                <constraint firstAttribute="bottom" secondItem="ENu-rd-Ayk" secondAttribute="bottom" id="SER-F0-1xW"/>
+                <constraint firstItem="C6J-lV-eIn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ShJ-nn-lxz"/>
+                <constraint firstAttribute="bottom" secondItem="Spy-l1-Zh1" secondAttribute="bottom" id="UU8-fC-7dX"/>
+                <constraint firstItem="Spy-l1-Zh1" firstAttribute="centerX" secondItem="C6J-lV-eIn" secondAttribute="centerX" id="gWn-Di-m3L"/>
+                <constraint firstItem="NpX-Cu-EoX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="imX-NN-HhJ"/>
+                <constraint firstItem="C6J-lV-eIn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="sTM-Yy-oZA"/>
+                <constraint firstItem="ENu-rd-Ayk" firstAttribute="centerX" secondItem="NpX-Cu-EoX" secondAttribute="centerX" id="xoz-PV-JEm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="278" y="88"/>
+        </view>
+    </objects>
+</document>

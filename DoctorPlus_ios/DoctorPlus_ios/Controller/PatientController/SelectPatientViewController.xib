@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectPatientViewController" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="contentTableView" destination="UvH-3a-OhU" id="2xt-fb-5ZB"/>
+                <outlet property="popView" destination="5dC-cW-Al0" id="2kK-SR-tVx"/>
+                <outlet property="searchView" destination="48k-Sa-Ejt" id="zof-ZN-JVg"/>
+                <outlet property="subTableView" destination="WL9-nP-xCp" id="xr1-Sk-GHy"/>
+                <outlet property="tableview" destination="UvH-3a-OhU" id="4x1-Rr-ujF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="48k-Sa-Ejt">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <animations/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="8Aw-jT-kH2"/>
+                    </connections>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NU-ng-j1t">
+                    <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="lZp-cy-XIC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="确认">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sureBtnClicked:" destination="-1" eventType="touchUpInside" id="vAf-LD-9Ea"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="UvH-3a-OhU">
+                    <rect key="frame" x="0.0" y="44" width="600" height="506"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rcc-gY-pTl"/>
+                        <outlet property="delegate" destination="-1" id="iBz-LO-rah"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UvH-3a-OhU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="325-gG-P8P"/>
+                <constraint firstItem="48k-Sa-Ejt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="901-TQ-XGk"/>
+                <constraint firstItem="48k-Sa-Ejt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9FD-aE-dHz"/>
+                <constraint firstAttribute="trailing" secondItem="7NU-ng-j1t" secondAttribute="trailing" id="A4Z-GE-fjC"/>
+                <constraint firstAttribute="trailing" secondItem="48k-Sa-Ejt" secondAttribute="trailing" id="DwU-TY-lBg"/>
+                <constraint firstAttribute="bottom" secondItem="7NU-ng-j1t" secondAttribute="bottom" id="GsN-f4-cea"/>
+                <constraint firstAttribute="trailing" secondItem="UvH-3a-OhU" secondAttribute="trailing" id="bZP-xr-shu"/>
+                <constraint firstItem="7NU-ng-j1t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gFw-ev-Jc6"/>
+                <constraint firstItem="7NU-ng-j1t" firstAttribute="top" secondItem="UvH-3a-OhU" secondAttribute="bottom" id="q06-Pe-BsY"/>
+                <constraint firstItem="UvH-3a-OhU" firstAttribute="top" secondItem="48k-Sa-Ejt" secondAttribute="bottom" id="ym9-hZ-f5x"/>
+            </constraints>
+            <point key="canvasLocation" x="368" y="290"/>
+        </view>
+        <view contentMode="scaleToFill" id="5dC-cW-Al0">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_contacts_popwindow.png" translatesAutoresizingMaskIntoConstraints="NO" id="8jS-Ra-OYk">
+                    <rect key="frame" x="0.0" y="0.0" width="120" height="70"/>
+                    <animations/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qd-FK-ocf">
+                    <rect key="frame" x="0.0" y="40" width="120" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="p1H-VI-lZA"/>
+                    </constraints>
+                    <state key="normal" title="新建">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="newBtn:" destination="-1" eventType="touchUpInside" id="8M2-Ka-7to"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ql0-g9-X9m">
+                    <rect key="frame" x="0.0" y="10" width="120" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="eaJ-5z-ZAd"/>
+                    </constraints>
+                    <state key="normal" title="筛选">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="filterBtn:" destination="-1" eventType="touchUpInside" id="EQ6-W8-VK9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8jS-Ra-OYk" secondAttribute="bottom" id="1gO-sK-hql"/>
+                <constraint firstAttribute="trailing" secondItem="Ql0-g9-X9m" secondAttribute="trailing" id="8Ey-E2-3zK"/>
+                <constraint firstItem="9Qd-FK-ocf" firstAttribute="top" secondItem="Ql0-g9-X9m" secondAttribute="bottom" id="8wg-oG-9pG"/>
+                <constraint firstAttribute="bottom" secondItem="9Qd-FK-ocf" secondAttribute="bottom" id="93q-8m-5PE"/>
+                <constraint firstItem="9Qd-FK-ocf" firstAttribute="leading" secondItem="5dC-cW-Al0" secondAttribute="leading" id="ACv-Vz-VTO"/>
+                <constraint firstItem="8jS-Ra-OYk" firstAttribute="leading" secondItem="5dC-cW-Al0" secondAttribute="leading" id="Dm2-QS-Xnx"/>
+                <constraint firstAttribute="trailing" secondItem="8jS-Ra-OYk" secondAttribute="trailing" id="Pnf-PR-atN"/>
+                <constraint firstItem="8jS-Ra-OYk" firstAttribute="top" secondItem="5dC-cW-Al0" secondAttribute="top" id="Tz5-bm-2Zj"/>
+                <constraint firstItem="Ql0-g9-X9m" firstAttribute="leading" secondItem="5dC-cW-Al0" secondAttribute="leading" id="fUt-J2-gsv"/>
+                <constraint firstAttribute="trailing" secondItem="9Qd-FK-ocf" secondAttribute="trailing" id="llK-PW-HjE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="280" y="774"/>
+        </view>
+        <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" style="plain" separatorStyle="default" rowHeight="25" sectionHeaderHeight="1" sectionFooterHeight="1" id="WL9-nP-xCp">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="g39-KV-jyP"/>
+                <outlet property="delegate" destination="-1" id="YDL-GK-oKZ"/>
+            </connections>
+            <point key="canvasLocation" x="1302" y="202"/>
+        </tableView>
+    </objects>
+    <resources>
+        <image name="icon_contacts_popwindow.png" width="224" height="134"/>
+    </resources>
+</document>

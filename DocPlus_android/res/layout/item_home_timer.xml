@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_home_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:background="@drawable/selector_btn_home_timer_bg"
+            android:textColor="@drawable/selector_btn_pink_login_text"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_home_timer_popu"
+            android:layout_width="15dp"
+            android:layout_height="11dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_name_popu" />
+
+        <View
+            android:id="@+id/v_home_timer_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="3dp"
+            android:background="#393836" />
+    </RelativeLayout>
+
+</LinearLayout>

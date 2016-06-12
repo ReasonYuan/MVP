@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <solid android:color="@color/edit_bg" />
+
+    <stroke
+        android:width="@dimen/item_general_border_h"
+        android:color="@color/topbar_bg_normal" />
+     
+    <corners android:radius="8dp"/>
+</shape>

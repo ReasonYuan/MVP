@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:baselineAligned="false"
+    android:background="@drawable/selector_item_general_content_trans_bg">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_weight="1" 
+        android:layout_marginLeft="30dp">
+
+        <com.hp.android.halcyon.widgets.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/item_share_friend_face"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:border_color="@color/app_emerald"
+            app:border_width="1dp" />
+
+        <TextView
+            android:id="@+id/item_share_friend_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/item_share_check_friend"
+        android:layout_width="50dp"
+        android:layout_height="60dp" 
+        android:layout_marginRight="30dp">
+
+        <ImageView
+            android:id="@+id/item_share_check_friend_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_ckb_select_friend" />
+    </FrameLayout>
+
+</LinearLayout>

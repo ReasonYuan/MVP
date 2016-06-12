@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sex">
+        <item>-</item>
+        <item>男</item>
+         <item>女</item>
+    </string-array>
+    
+    <string-array name="tab_titles">
+        <item>病历</item>
+        <item>我</item>
+    </string-array>
+    
+    <string-array name="record_type">
+        <item>入\n院</item>
+        <item>化\n验</item>
+        <item>影\n像</item>
+        <item>手\n术</item>
+        <item>出\n院</item>
+    </string-array>
+    
+</resources>

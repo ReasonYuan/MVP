@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+<script type="text/javascript" src="js/echarts/echarts.js" ></script>
+<style type="text/css">
+    html,body{
+        height:100%;
+        margin:0px;
+    }
+    body{
+        style="background-color: transparent";
+    }
+    #main {
+        width:100%;
+        height:250px;
+        MARGIN: 0px auto;
+        padding-bottom: 90px;
+        padding-top: 20px;
+        /*background: url("bg_home_chart.png");*/
+    }
+</style>
+<head >
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta charset="utf-8">
+    <title>Insight</title>
+</head>
+<body >
+<div id="main" ></div>
+
+<script type="text/javascript">
+
+    callOCFunc = function(funName,params){
+//        alert(params);
+        var url=funName+params;
+        document.location = url;
+    };
+
+    var myChart = echarts.init(document.getElementById('main'));
+    setData = function(json){
+
+        var daoxu = function (array) {
+            var tmp = [];
+            for(var i = array.length -1 ; i >=0 ;i--){
+                tmp[array.length -1 - i] = array[i];
+            }
+            return tmp;
+        }
+        var maxLength4 = function(array){
+            if(array.length > 4) {
+                array.splice(4,1);
+            }
+        }
+        var data = json;
+        var symptoms = daoxu(data.symptomList);
+        var diagnosis = daoxu(data.diagnosisList);
+        callOCFunc("diagnosis",JSON.stringify(diagnosis));
+        maxLength4(diagnosis);
+
+//        maxLength4(symptoms);
+//        alert(diagnosis);
+        var  symptomInfos = data.symptomInfos;
+        var dataSeries = [];
+        for(var key in diagnosis){
+            var diagnoname = diagnosis[key];
+            var serieValue =  {
+                type:'bar',
+                stack: '总量',
+                itemStyle : { normal: {label : { position: 'insideRight'}}},
+                data:[],
+                name:diagnoname
+            };
+//            alert(serieValue.name);
+            (function () {
+                var index = 0;
+                for(var j = 0; j < symptoms.length ; j++){
+                    for(var i = 0 ; i < symptomInfos.length;i++){
+                        var info = symptomInfos[i];
+                        if(info.symptom_name == symptoms[j] && info.diagnose_name == diagnoname ){
+                            serieValue.data[index] = info.count;
+                            break;
+                        }
+                    }
+                    index++;
+                }
+
+            })();
+            dataSeries[key] = serieValue;
+        }
+//        alert(diagnosis);
+//        alert(symptoms);
+//        alert(JSON.stringify(dataSeries));
+        myChart.setOption({
+            legend: {
+                formatter:function(text){
+                    if(text.length > 7){
+                        return text.substr(0,7)+"..."
+                    }
+
+                    return text;
+                },
+                data:diagnosis,
+                textStyle:{
+                    color:"white"
+                }
+            },
+            yAxis : [
+                {
+                    type : 'category',
+                    data : symptoms,
+                    axisLabel : {
+                        textStyle:{
+                            color:"white"
+                        }
+                    },
+                }
+            ],
+            series : dataSeries
+        });
+    }
+    option = {
+        tooltip : {
+            trigger: 'axis',
+            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+            },
+            textStyle : {
+                fontSize : 10
+            }
+        },
+        calculable :false,
+        xAxis : [
+            {
+                type : 'value',
+                axisLabel : {
+                    textStyle:{
+                        color:"white"
+                    }
+                },
+            }
+        ]
+    };
+
+    // 为echarts对象加载数据
+    myChart.setOption(option);
+//    var data = {"symptomList":["疼痛","发热","咳嗽","皮疹","口腔溃疡"],"symptomInfos":[{"symptom_name":"疼痛","diagnose_name":"系统性红斑狼疮","count":1290},{"symptom_name":"发热","diagnose_name":"系统性红斑狼疮","count":1265},{"symptom_name":"咳嗽","diagnose_name":"系统性红斑狼疮","count":669},{"symptom_name":"皮疹","diagnose_name":"系统性红斑狼疮","count":641},{"symptom_name":"口腔溃疡","diagnose_name":"系统性红斑狼疮","count":633},{"symptom_name":"发热","diagnose_name":"狼疮性肾炎","count":424},{"symptom_name":"疼痛","diagnose_name":"狼疮性肾炎","count":372},{"symptom_name":"疼痛","diagnose_name":"间质性肺炎","count":237},{"symptom_name":"皮疹","diagnose_name":"狼疮性肾炎","count":218},{"symptom_name":"咳嗽","diagnose_name":"间质性肺炎","count":214},{"symptom_name":"咳嗽","diagnose_name":"狼疮性肾炎","count":213},{"symptom_name":"口腔溃疡","diagnose_name":"狼疮性肾炎","count":213},{"symptom_name":"口腔溃疡","diagnose_name":"间质性肺炎","count":199},{"symptom_name":"皮疹","diagnose_name":"间质性肺炎","count":143},{"symptom_name":"发热","diagnose_name":"间质性肺炎","count":111},{"symptom_name":"疼痛","diagnose_name":"系统性红斑狼疮 狼疮性肾炎","count":46},{"symptom_name":"口腔溃疡","diagnose_name":"系统性红斑狼疮 狼疮性肾炎","count":21},{"symptom_name":"咳嗽","diagnose_name":"系统性红斑狼疮 狼疮性肾炎","count":19},{"symptom_name":"皮疹","diagnose_name":"系统性红斑狼疮 狼疮性肾炎","count":17},{"symptom_name":"发热","diagnose_name":"系统性红斑狼疮 狼疮性肾炎","count":15},{"symptom_name":"发热","diagnose_name":"系统性红斑狼疮狼疮性肾炎","count":14},{"symptom_name":"咳嗽","diagnose_name":"系统性红斑狼疮狼疮性肾炎","count":10},{"symptom_name":"皮疹","diagnose_name":"系统性红斑狼疮狼疮性肾炎","count":7},{"symptom_name":"口腔溃疡","diagnose_name":"系统性红斑狼疮狼疮性肾炎","count":6},{"symptom_name":"疼痛","diagnose_name":"系统性红斑狼疮狼疮性肾炎","count":5}],"diagnosisList":["系统性红斑狼疮","狼疮性肾炎","间质性肺炎","系统性红斑狼疮 狼疮性肾炎","系统性红斑狼疮狼疮性肾炎"]};
+//    setData(data);
+
+
+    myChart.on(echarts.config.EVENT.LEGEND_SELECTED,function(params){
+ //               alert(JSON.stringify(params));
+        var selected = params.selected;
+        var arrays = [];
+        for( var key in selected){
+            arrays.push(selected[key]);
+        }
+        callOCFunc("onlegendselected",JSON.stringify(selected));
+    });
+
+
+
+
+
+</script>
+
+</body>
+</html>

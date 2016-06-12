@@ -1,0 +1,46 @@
+//
+//  DocPlus.pch
+//  DocPlus_ios
+//
+//  Created by liaomin on 14-12-2.
+//  Copyright (c) 2014年 FQ. All rights reserved.
+//
+
+#ifndef DocPlus_ios_DocPlus_pch
+#define DocPlus_ios_DocPlus_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+
+
+#import "FQTexfield.h"
+#import "FQBaseViewController.h"
+#import "UIView+Toast.h"
+#import "MainViewController.h"
+
+#import "FileSystem.h"
+
+#ifndef DEBUG
+    #define DEBUG NO
+#endif
+
+#define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+#define PracticeDemo 1
+
+#define COLOR_EMERALD  [UIColor colorWithRed:98/255.0f green:192/255.0f blue:180/255.0f alpha:1]
+#define COLOR_VIOLET [UIColor colorWithRed:23/255.0f green:28/255.0f blue:96/255.0f alpha:1]
+
+#define PRINT_RECT(frame)  NSLog(@"%f,%f,%f,%f",frame.origin.x,frame.origin.y,frame.size.width,frame.size.height)
+#define PRINT_SIZE(size)  NSLog(@"%f,%f",size.width,size.height)
+#define PRINT_POINT(p)  NSLog(@"%f,%f",p.x,p.y)
+
+#endif

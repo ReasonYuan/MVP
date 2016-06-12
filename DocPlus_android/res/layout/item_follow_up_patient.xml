@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.fq.android.plus"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/selector_item_general_content_trans_bg"
+    android:orientation="horizontal" >
+
+    <com.hp.android.halcyon.widgets.CircleImageView
+        android:id="@+id/patient_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="12.5dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="12.5dp"
+        app:border_color="@color/app_emerald"
+        app:border_width="1dp" />
+
+    <TextView
+        android:id="@+id/follow_patient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:text="Jack"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+</LinearLayout>

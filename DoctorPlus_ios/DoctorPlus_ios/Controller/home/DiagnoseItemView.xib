@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiagnoseItemView" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="btnLabel" destination="clh-OY-UKU" id="lnn-3u-ULc"/>
+                <outlet property="chartContainer" destination="njG-3b-sSR" id="sf3-b4-QoJ"/>
+                <outlet property="progressLabel" destination="208-Tf-jMe" id="XjJ-rj-LKF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qiJ-7a-jf0">
+            <rect key="frame" x="0.0" y="0.0" width="128" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njG-3b-sSR">
+                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="208-Tf-jMe">
+                            <rect key="frame" x="38.5" y="54" width="50" height="20"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="aNe-hB-bhB"/>
+                                <constraint firstAttribute="height" constant="20" id="rwt-KU-jff"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="njG-3b-sSR" secondAttribute="height" multiplier="1:1" id="H18-6e-Dfq"/>
+                        <constraint firstItem="208-Tf-jMe" firstAttribute="centerY" secondItem="njG-3b-sSR" secondAttribute="centerY" id="XhN-5D-Msl"/>
+                        <constraint firstItem="208-Tf-jMe" firstAttribute="centerX" secondItem="njG-3b-sSR" secondAttribute="centerX" id="YAo-EB-CSw"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clh-OY-UKU">
+                    <rect key="frame" x="0.0" y="148" width="128" height="20"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="WSA-fJ-Zd9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="njG-3b-sSR" firstAttribute="leading" secondItem="qiJ-7a-jf0" secondAttribute="leading" id="67S-P8-Lmg"/>
+                <constraint firstItem="njG-3b-sSR" firstAttribute="top" secondItem="qiJ-7a-jf0" secondAttribute="top" id="6Zm-Jv-XC9"/>
+                <constraint firstItem="clh-OY-UKU" firstAttribute="top" secondItem="njG-3b-sSR" secondAttribute="bottom" constant="20" id="DoF-6y-PmO"/>
+                <constraint firstAttribute="trailing" secondItem="clh-OY-UKU" secondAttribute="trailing" id="L7T-3d-kYZ"/>
+                <constraint firstAttribute="trailing" secondItem="njG-3b-sSR" secondAttribute="trailing" id="Vec-xZ-x3j"/>
+                <constraint firstItem="clh-OY-UKU" firstAttribute="leading" secondItem="qiJ-7a-jf0" secondAttribute="leading" id="Yci-SV-AJi"/>
+                <constraint firstAttribute="bottom" secondItem="clh-OY-UKU" secondAttribute="bottom" id="dwj-kj-bzy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-209" y="-27"/>
+        </view>
+    </objects>
+</document>

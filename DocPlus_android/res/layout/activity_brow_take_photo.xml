@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    android:orientation="vertical" >
+
+    <!-- <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_h"
+        android:background="@color/app_emerald"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@+id/fl_brow_takephoto_back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_item_general_content_trans_bg"
+            android:clickable="true"
+            android:onClick="onTopLeftBtnClick" >
+
+            <ImageView
+                android:layout_width="51dp"
+                android:layout_height="17dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_back" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_brow_takephoto_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+        
+    </FrameLayout> -->
+
+    <Gallery
+        android:id="@+id/gallery_takephoto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:spacing="3dp" />
+
+        <!--
+         <ImageView
+            android:id="@+id/img_preview_photo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" 
+            android:layout_weight="1"/>
+        -->
+
+        <Button
+                android:id="@+id/btn_preview_photo_apply"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="onUploadClick"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:text="全部上传"
+                android:textColor="@drawable/selector_btn_white_text"
+                android:background="@drawable/selector_btn_brow_image_bg"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_preview_photo_retake"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                 android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="onDeleteClick"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:text="删除"
+                android:background="@drawable/selector_btn_brow_image_bg"
+                android:textColor="@drawable/selector_btn_white_text"
+                android:textSize="24sp" />
+
+           
+       
+</LinearLayout>

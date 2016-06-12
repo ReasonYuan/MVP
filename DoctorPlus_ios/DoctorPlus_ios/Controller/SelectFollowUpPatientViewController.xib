@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectFollowUpPatientViewController" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="vov-DH-7KW" id="Ujn-vz-lSC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEy-lu-8nI">
+                    <rect key="frame" x="0.0" y="10" width="600" height="1"/>
+                    <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="W8q-ev-V2P"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select_patient.png" translatesAutoresizingMaskIntoConstraints="NO" id="EGW-NM-u68">
+                    <rect key="frame" x="20" y="21" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Ku4-MW-Q8K"/>
+                        <constraint firstAttribute="height" constant="20" id="ZyC-XH-kbh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择患者" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nW-uk-7zI">
+                    <rect key="frame" x="60" y="20" width="79" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="79" id="IZA-ZU-tFh"/>
+                        <constraint firstAttribute="height" constant="21" id="sPD-Uc-09m"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cni-tF-Ihw">
+                    <rect key="frame" x="0.0" y="51" width="600" height="1"/>
+                    <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="yAV-LB-X2r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vov-DH-7KW">
+                    <rect key="frame" x="40" y="60" width="520" height="532"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rY1-m5-IZu"/>
+                        <outlet property="delegate" destination="-1" id="I0V-ru-skM"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wEy-lu-8nI" secondAttribute="trailing" id="9WM-qI-c8H"/>
+                <constraint firstItem="3nW-uk-7zI" firstAttribute="centerY" secondItem="EGW-NM-u68" secondAttribute="centerY" constant="-0.5" id="9hW-3r-irJ"/>
+                <constraint firstItem="wEy-lu-8nI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BtS-r0-8r9"/>
+                <constraint firstAttribute="trailing" secondItem="Cni-tF-Ihw" secondAttribute="trailing" id="Cbh-ji-7rP"/>
+                <constraint firstItem="EGW-NM-u68" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="JmV-Jz-fLm"/>
+                <constraint firstItem="Cni-tF-Ihw" firstAttribute="top" secondItem="3nW-uk-7zI" secondAttribute="bottom" constant="10" id="RkH-Pu-LZw"/>
+                <constraint firstItem="vov-DH-7KW" firstAttribute="top" secondItem="Cni-tF-Ihw" secondAttribute="bottom" constant="8" id="SET-Pg-aVe"/>
+                <constraint firstItem="wEy-lu-8nI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="UXR-iQ-0TQ"/>
+                <constraint firstItem="EGW-NM-u68" firstAttribute="top" secondItem="wEy-lu-8nI" secondAttribute="bottom" constant="10" id="YCR-KS-QrJ"/>
+                <constraint firstItem="Cni-tF-Ihw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fzM-fR-RBd"/>
+                <constraint firstAttribute="trailing" secondItem="vov-DH-7KW" secondAttribute="trailing" constant="40" id="i9y-ai-n5b"/>
+                <constraint firstItem="vov-DH-7KW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="jff-Wj-KJn"/>
+                <constraint firstItem="3nW-uk-7zI" firstAttribute="leading" secondItem="EGW-NM-u68" secondAttribute="trailing" constant="20" id="k6z-Q0-1yh"/>
+                <constraint firstAttribute="bottom" secondItem="vov-DH-7KW" secondAttribute="bottom" constant="8" id="rJ7-kA-TWr"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="select_patient.png" width="29" height="29"/>
+    </resources>
+</document>

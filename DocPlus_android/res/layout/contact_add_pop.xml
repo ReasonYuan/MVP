@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#999999"
+     >
+
+    <TextView
+        android:id="@+id/add_friends"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="添加朋友" 
+        android:background="@drawable/selector_item_general_content_trans_bg"/>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_general_border_h"
+        android:background="#55ffffff"/>
+    
+    <TextView
+        android:id="@+id/finding"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="扫一扫" 
+		android:background="@drawable/selector_item_general_content_trans_bg"/>
+
+
+</LinearLayout>

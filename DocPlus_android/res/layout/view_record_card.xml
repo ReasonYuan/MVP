@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="800dp"
+    android:background="@drawable/shape_edt_tag_bg"
+    android:orientation="vertical" ><!-- android:background="@drawable/shape_edt_tag_bg"   record_item_samp_bg-->
+
+    <View
+        android:layout_width="800dp"
+        android:layout_height="24dp"
+        android:background="#63C0B5" />
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+    
+    <TextView
+        android:id="@+id/tv_mark"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:textColor="#63C0B5"
+        android:textSize="32sp" />
+
+    <View
+        android:id="@+id/view_cut_line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:minHeight="60dp"
+        android:background="#ADDBD1" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_record_card_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#63C0B5" />
+
+        <TextView
+            android:id="@+id/tv_record_card_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+    <TextView
+        android:id="@+id/tv_record_card_time"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:textColor="#63C0B5"
+        android:textSize="12sp" />
+
+    <FrameLayout
+        android:id="@+id/fl_record_card_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#222222"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_record_card_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#D37432" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_record_card_none_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#BDBDBD"
+        android:visibility="gone" />
+
+</RelativeLayout>

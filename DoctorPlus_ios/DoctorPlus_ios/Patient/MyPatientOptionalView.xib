@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyPatientOptionalView" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="addPatientBtn" destination="XMp-c7-E6g" id="PYw-07-1ir"/>
+                <outlet property="recycleBtn" destination="X0n-6L-aR3" id="0ZN-eJ-xaz"/>
+                <outlet property="selectedAllBtn" destination="u17-x5-eHq" id="RIj-0i-ZhP"/>
+                <outlet property="shareBtn" destination="SPM-Uu-ZWg" id="7mr-2q-YZt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZf-rC-oTc">
+                    <rect key="frame" x="300" y="0.0" width="1" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="C1n-U7-cbq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0n-6L-aR3">
+                    <rect key="frame" x="168" y="80" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Lde-nZ-TEG"/>
+                        <constraint firstAttribute="width" constant="48" id="lyW-WO-V2b"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="delete.png"/>
+                    <connections>
+                        <action selector="onRecycleClickListener:" destination="-1" eventType="touchUpInside" id="q3I-oO-Pfa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPM-Uu-ZWg">
+                    <rect key="frame" x="240" y="80" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="Th2-UX-JRJ"/>
+                        <constraint firstAttribute="height" constant="48" id="yrt-by-eKN"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="share.png"/>
+                    <connections>
+                        <action selector="onShareClickListener:" destination="-1" eventType="touchUpInside" id="tKV-7q-OWp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMp-c7-E6g">
+                    <rect key="frame" x="313" y="80" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="OUj-bf-BGP"/>
+                        <constraint firstAttribute="width" constant="48" id="yqd-Ua-hhA"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="new_add_patient.png"/>
+                    <connections>
+                        <action selector="onAddPatientClickListener:" destination="-1" eventType="touchUpInside" id="2AD-WX-Uc3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u17-x5-eHq">
+                    <rect key="frame" x="385" y="80" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="27D-S8-rne"/>
+                        <constraint firstAttribute="width" constant="48" id="Ov4-YE-p9t"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="select_all.png"/>
+                    <state key="selected" backgroundImage="icon_cancel_selected_all"/>
+                    <connections>
+                        <action selector="onSelectedAllClickListener:" destination="-1" eventType="touchUpInside" id="gif-D4-nO3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="X0n-6L-aR3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="71P-fo-geP"/>
+                <constraint firstAttribute="bottom" secondItem="CZf-rC-oTc" secondAttribute="bottom" id="BTd-iS-nzH"/>
+                <constraint firstItem="u17-x5-eHq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="DbV-Hk-8w8"/>
+                <constraint firstItem="CZf-rC-oTc" firstAttribute="leading" secondItem="SPM-Uu-ZWg" secondAttribute="trailing" constant="12" id="Kx4-I7-WDN"/>
+                <constraint firstItem="SPM-Uu-ZWg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="Pv2-Re-9ef"/>
+                <constraint firstItem="XMp-c7-E6g" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="X02-el-7Jd"/>
+                <constraint firstItem="XMp-c7-E6g" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Xnu-A6-vxA"/>
+                <constraint firstItem="u17-x5-eHq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fKb-HX-rIg"/>
+                <constraint firstItem="X0n-6L-aR3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jYR-kx-GDN"/>
+                <constraint firstItem="SPM-Uu-ZWg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="mpK-CN-OMb"/>
+                <constraint firstItem="XMp-c7-E6g" firstAttribute="leading" secondItem="CZf-rC-oTc" secondAttribute="trailing" constant="12" id="my4-ND-yS2"/>
+                <constraint firstItem="SPM-Uu-ZWg" firstAttribute="leading" secondItem="X0n-6L-aR3" secondAttribute="trailing" constant="24" id="pLd-bG-QBZ"/>
+                <constraint firstItem="CZf-rC-oTc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rEr-Y3-LUa"/>
+                <constraint firstItem="u17-x5-eHq" firstAttribute="leading" secondItem="XMp-c7-E6g" secondAttribute="trailing" constant="24" id="vA0-xh-Ieg"/>
+                <constraint firstItem="CZf-rC-oTc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xUI-iF-Fci"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="jYR-kx-GDN"/>
+                    <exclude reference="mpK-CN-OMb"/>
+                    <exclude reference="Xnu-A6-vxA"/>
+                    <exclude reference="fKb-HX-rIg"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="271" y="29.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete.png" width="44" height="44"/>
+        <image name="icon_cancel_selected_all" width="8" height="8"/>
+        <image name="new_add_patient.png" width="44" height="44"/>
+        <image name="select_all.png" width="44" height="44"/>
+        <image name="share.png" width="44" height="44"/>
+    </resources>
+</document>

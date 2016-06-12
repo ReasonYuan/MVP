@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no" />
+            <title>echarts图形插件使用</title>
+            
+            <!--<script type="text/javascript" src="http://echarts.baidu.com/build/dist/echarts.js"></script>-->
+            <script type="text/javascript" src="js/echarts/echarts.js"></script>
+            <script src="js/jquery.min.js"></script>
+            </head>
+    
+    <body>
+        <div id="main" style="height:280px;"></div>
+        <script type="text/javascript">
+            //			require.config({
+            //				paths: {
+            //					echarts: 'http://echarts.baidu.com/build/dist'
+            //				}
+            //			});
+            require.config({
+                           paths: {
+                           echarts: 'js/echarts/'
+                           }
+                           });
+                           require(
+                                   [
+                                    'echarts',
+                                    'echarts/chart/map'
+                                    ],
+                                   function(ec) {
+                                   require('echarts/util/mapData/params').params.continent = {
+                                   getGeoJson: function(callback) {
+                                   $.getJSON('js/geoJson/area.geo.json', callback);
+                                   }
+                                   }
+                                   var myChart = ec.init(document.getElementById('main'));
+                                   option = {
+                                   dataRange: {
+                                   min: 0,
+                                   max: 600,
+                                   show: false,
+                                   realtime: true,
+
+                                   color: ['orangered', 'yellow', 'lightskyblue']
+                                   },
+                                   series: [{
+                                            name: '2013年出境目的地（洲际统计）',
+                                            type: 'map',
+                                            mapType: 'continent', // 自定义扩展图表类型
+                                            itemStyle: {
+                                            normal: {
+                                            label: {
+                                            show: true
+                                            }
+                                            },
+                                            //								emphasis: {
+                                            //									label: {
+                                            //										show: true
+                                            //									}
+                                            //								}
+                                            },
+                                            data: [{
+                                                   name: '西北地区',
+                                                   value: 267.69
+                                                   }, {
+                                                   name: '西南地区',
+                                                   value: 592.09
+                                                   }, {
+                                                   name: '华南地区',
+                                                   value: 183.62
+                                                   }, {
+                                                   name: '华东地区',
+                                                   value: 403.63
+                                                   }, {
+                                                   name: '华中地区',
+                                                   value: 300.41
+                                                   }, {
+                                                   name: '华北地区',
+                                                   value: 100.41
+                                                   }, {
+                                                   name: '东北地区',
+                                                   value: 122.5837
+                                                   }],
+                                            }]
+                                   };
+                                   myChart.setOption(option);
+                                   }
+                                   );
+            </script>
+    </body>
+    
+</html>

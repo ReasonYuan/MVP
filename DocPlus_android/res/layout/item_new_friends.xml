@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" >
+
+    <LinearLayout
+        android:id="@+id/head_li"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/shape_oval_head"
+            android:padding="1dp" >
+
+            <com.hp.android.halcyon.widgets.CircleImageView
+                android:id="@+id/new_head_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@color/app_head_pink" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:singleLine="true"
+                android:text="成吉思汗陵都"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/patient_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="患者 来源:"
+                    android:textColor="#A2A2A2"
+                    android:textSize="13sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/which_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:singleLine="true"
+                    android:text="XXX医生推荐"
+                    android:textColor="#A2A2A2"
+                    android:textSize="13sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp" >
+
+            <LinearLayout
+                android:id="@+id/add_linear_patient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <!--
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="2dp"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/money_accept"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/selector_btn_add_friend_pink_bg"
+                        android:gravity="center"
+                        android:text="收费"
+                        android:textColor="@drawable/selector_btn_add_friend_pink_text"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:id="@+id/free_accept"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/selector_btn_add_friend_green_bg"
+                        android:gravity="center"
+                        android:text="免费"
+                        android:textColor="@drawable/selector_btn_add_friend_green_text"
+                        android:textSize="25sp" />
+                </LinearLayout>
+                -->
+
+                <Button
+                    android:id="@+id/patient_accept"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/selector_btn_add_friend_pink_bg"
+                    android:gravity="center"
+                    android:text="接受"
+                    android:textColor="@drawable/selector_btn_add_friend_pink_text"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/patient_refuse"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector_btn_add_friend_gray_bg"
+                    android:gravity="center"
+                    android:text="拒绝"
+                    android:textColor="@drawable/selector_btn_add_friend_gray_text"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_linear_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/add_other"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/selector_btn_add_friend_black_bg"
+                    android:gravity="center"
+                    android:text="接受"
+                    android:textColor="@drawable/selector_btn_add_friend_black_text"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/other_refuse"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/selector_btn_add_friend_gray_bg"
+                    android:gravity="center"
+                    android:text="拒绝"
+                    android:textColor="@drawable/selector_btn_add_friend_gray_text"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="等待..."
+                android:textColor="#A2A2A2"
+                android:textSize="15sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

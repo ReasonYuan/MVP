@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecycleOptionalView" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteBtn" destination="uRb-7G-MWu" id="Q59-Hi-Efe"/>
+                <outlet property="restoreBtn" destination="AmR-vw-Slc" id="9AL-sR-kZ1"/>
+                <outlet property="selectBtn" destination="hZq-x4-6gm" id="zJW-j9-2m3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRb-7G-MWu">
+                    <rect key="frame" x="204" y="80" width="48" height="48"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="oEf-46-bNb"/>
+                        <constraint firstAttribute="width" constant="48" id="qwK-8S-v6X"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="delete.png"/>
+                    <connections>
+                        <action selector="onDeleteRecycleItemClickListener:" destination="-1" eventType="touchUpInside" id="Jkz-z0-O65"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmR-vw-Slc">
+                    <rect key="frame" x="276" y="80" width="48" height="48"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="OBg-vH-ELb"/>
+                        <constraint firstAttribute="width" constant="48" id="tkv-eg-7th"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="resume.png"/>
+                    <connections>
+                        <action selector="onRestoreRecycleItemClickListener:" destination="-1" eventType="touchUpInside" id="PNw-kM-7pO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZq-x4-6gm">
+                    <rect key="frame" x="348" y="80" width="48" height="48"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="01l-8t-y4H"/>
+                        <constraint firstAttribute="width" constant="48" id="Ujq-gz-7gb"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="select_all.png"/>
+                    <state key="selected" backgroundImage="icon_cancel_selected_all.png"/>
+                    <connections>
+                        <action selector="onSelectedAllRecycleItemClickListener:" destination="-1" eventType="touchUpInside" id="7q6-mY-vYo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="AmR-vw-Slc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="2qw-pE-OsZ"/>
+                <constraint firstItem="hZq-x4-6gm" firstAttribute="leading" secondItem="AmR-vw-Slc" secondAttribute="trailing" constant="24" id="Fd8-WJ-3ZQ"/>
+                <constraint firstItem="hZq-x4-6gm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="SeO-8p-Bd9"/>
+                <constraint firstItem="AmR-vw-Slc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="asm-I1-GIj"/>
+                <constraint firstItem="AmR-vw-Slc" firstAttribute="leading" secondItem="uRb-7G-MWu" secondAttribute="trailing" constant="24" id="jGQ-i4-EkX"/>
+                <constraint firstItem="uRb-7G-MWu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="zBg-Dq-4vB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="212" y="130.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete.png" width="44" height="44"/>
+        <image name="icon_cancel_selected_all.png" width="44" height="44"/>
+        <image name="resume.png" width="44" height="44"/>
+        <image name="select_all.png" width="44" height="44"/>
+    </resources>
+</document>

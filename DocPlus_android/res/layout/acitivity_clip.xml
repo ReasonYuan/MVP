@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@android:color/white"
+    >
+    <ImageView
+        android:id="@+id/src_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"
+         />
+
+    <com.hp.android.halcyon.camerahelp.ClipView
+        android:id="@+id/clipview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        
+        />
+
+ <LinearLayout
+        android:id="@+id/gl_modify_avatar_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        android:padding="2dp" >
+
+        <Button
+            android:id="@+id/gl_modify_avatar_rotate_left"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gl_rotate_left"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/gl_modify_avatar_save"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_emerald_bg"
+            android:text="选取" 
+            android:textSize="20sp"
+            android:textColor="@drawable/selector_btn_emerald_text"/>
+
+        <Button
+            android:id="@+id/gl_modify_avatar_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_white_bg"
+            android:text="取消" 
+            android:textSize="20sp"
+            android:textColor="@drawable/selector_btn_grey_text"/>
+
+        <Button
+            android:id="@+id/gl_modify_avatar_rotate_right"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gl_rotate_right"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

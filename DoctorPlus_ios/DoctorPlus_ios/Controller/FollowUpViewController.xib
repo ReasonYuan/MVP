@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FollowUpViewController" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="mManageBtn" destination="10n-1v-sAz" id="vqj-f5-YfA"/>
+                <outlet property="mSendBtn" destination="O7z-ll-P3G" id="h1T-EA-YuP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ct-Sp-Hzv">
+                    <rect key="frame" x="201" y="192" width="198" height="217"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7z-ll-P3G">
+                            <rect key="frame" x="59" y="20" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="ZJJ-h0-Qwh"/>
+                                <constraint firstAttribute="height" constant="80" id="qHG-3W-J9M"/>
+                            </constraints>
+                            <state key="normal" title="发送随访">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onSendBtnClick" destination="-1" eventType="touchUpInside" id="1lm-43-zdM"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fR6-Ds-Pxr">
+                            <rect key="frame" x="34" y="108" width="130" height="1"/>
+                            <color key="backgroundColor" red="0.4039215686" green="0.72941176470000002" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="HOr-l0-wXS"/>
+                                <constraint firstAttribute="height" constant="1" id="Oj8-rm-t47"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10n-1v-sAz">
+                            <rect key="frame" x="59" y="117" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="crA-To-16O"/>
+                                <constraint firstAttribute="width" constant="80" id="eAz-j3-4IG"/>
+                            </constraints>
+                            <state key="normal" title="管理随访">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onManageBtnClick" destination="-1" eventType="touchUpInside" id="FV0-wc-eTz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="fR6-Ds-Pxr" secondAttribute="centerY" id="6OA-IB-tQb"/>
+                        <constraint firstItem="O7z-ll-P3G" firstAttribute="top" secondItem="fR6-Ds-Pxr" secondAttribute="top" constant="-88" id="8NC-fR-mRn"/>
+                        <constraint firstItem="fR6-Ds-Pxr" firstAttribute="bottom" secondItem="10n-1v-sAz" secondAttribute="bottom" constant="-88" id="9wF-Zj-LJG"/>
+                        <constraint firstItem="fR6-Ds-Pxr" firstAttribute="centerX" secondItem="10n-1v-sAz" secondAttribute="centerX" id="Dur-on-3zM"/>
+                        <constraint firstItem="O7z-ll-P3G" firstAttribute="centerX" secondItem="fR6-Ds-Pxr" secondAttribute="centerX" id="RIT-g2-6Oc"/>
+                        <constraint firstAttribute="width" constant="198" id="Xab-Xy-uWE"/>
+                        <constraint firstAttribute="centerX" secondItem="fR6-Ds-Pxr" secondAttribute="centerX" id="aio-MB-UyL"/>
+                        <constraint firstItem="fR6-Ds-Pxr" firstAttribute="top" secondItem="O7z-ll-P3G" secondAttribute="bottom" constant="8" id="feu-qc-GQG"/>
+                        <constraint firstAttribute="height" constant="217" id="mvd-Lz-tar"/>
+                        <constraint firstItem="10n-1v-sAz" firstAttribute="top" secondItem="fR6-Ds-Pxr" secondAttribute="bottom" constant="8" id="ypa-WW-rJk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0Ct-Sp-Hzv" secondAttribute="trailing" constant="201" id="G1m-gv-Vy0"/>
+                <constraint firstAttribute="centerY" secondItem="0Ct-Sp-Hzv" secondAttribute="centerY" id="O6R-JB-OpO"/>
+                <constraint firstAttribute="centerX" secondItem="0Ct-Sp-Hzv" secondAttribute="centerX" id="gV4-92-OH9"/>
+                <constraint firstItem="0Ct-Sp-Hzv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="201" id="mVN-zd-bxs"/>
+                <constraint firstAttribute="bottom" secondItem="0Ct-Sp-Hzv" secondAttribute="bottom" constant="228" id="t8S-SY-MCk"/>
+                <constraint firstItem="0Ct-Sp-Hzv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="155" id="xWT-bN-zec"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="G1m-gv-Vy0"/>
+                    <exclude reference="mVN-zd-bxs"/>
+                    <exclude reference="t8S-SY-MCk"/>
+                    <exclude reference="xWT-bN-zec"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="140" y="156"/>
+        </view>
+    </objects>
+</document>

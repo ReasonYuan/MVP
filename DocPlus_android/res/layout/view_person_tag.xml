@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.hp.android.halcyon.widgets.FlowLayout
+        xmlns:f="http://schemas.android.com/apk/res/com.fq.android.plus"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        f:debugDraw="false"
+        f:horizontalSpacing="5dp"
+        f:orientation="horizontal"
+        f:verticalSpacing="5dp" >
+
+        <TextView
+            android:id="@+id/view_person_tag_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn_tag_personal_bg"
+            android:maxLength="18"
+            android:padding="5dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:id="@+id/view_person_tag_del"
+            android:layout_width="30dp"
+            android:layout_height="30dp" 
+            android:visibility="gone"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_delete_tag" />
+        </FrameLayout>
+    </com.hp.android.halcyon.widgets.FlowLayout>
+
+</LinearLayout>

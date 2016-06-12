@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VisualChoosePatientViewController" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="patientTableView" destination="QPl-ZM-Jm8" id="xad-tQ-FvT"/>
+                <outlet property="surveyDialog" destination="XCC-sj-lJh" id="Ex3-Rn-qTg"/>
+                <outlet property="surveyNotice" destination="Jna-cB-7Zn" id="wbg-IG-3Lx"/>
+                <outlet property="surveyPatientTableView" destination="PTt-0X-wdX" id="vFU-8L-j7k"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="HHU-7X-5dm">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QPl-ZM-Jm8">
+                    <rect key="frame" x="20" y="74" width="560" height="496"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="bPQ-dP-Ojc"/>
+                        <outlet property="delegate" destination="-1" id="qdH-8T-IQS"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" placeholder="搜索" translatesAutoresizingMaskIntoConstraints="NO" id="eSl-Tq-SCv">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="o7u-Xj-okF"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="QN6-gg-jk7"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QPl-ZM-Jm8" secondAttribute="bottom" constant="30" id="Egp-xE-zKJ"/>
+                <constraint firstAttribute="trailing" secondItem="QPl-ZM-Jm8" secondAttribute="trailing" constant="20" id="MTP-sP-Ax3"/>
+                <constraint firstItem="QPl-ZM-Jm8" firstAttribute="top" secondItem="eSl-Tq-SCv" secondAttribute="bottom" constant="30" id="ULt-85-Je0"/>
+                <constraint firstItem="eSl-Tq-SCv" firstAttribute="leading" secondItem="HHU-7X-5dm" secondAttribute="leading" id="XzH-uQ-xx7"/>
+                <constraint firstItem="eSl-Tq-SCv" firstAttribute="top" secondItem="HHU-7X-5dm" secondAttribute="top" id="gTY-4N-MRq"/>
+                <constraint firstItem="QPl-ZM-Jm8" firstAttribute="leading" secondItem="HHU-7X-5dm" secondAttribute="leading" constant="20" id="n0L-aD-UvP"/>
+                <constraint firstAttribute="trailing" secondItem="eSl-Tq-SCv" secondAttribute="trailing" id="osx-Yf-4Fh"/>
+            </constraints>
+            <point key="canvasLocation" x="483" y="211"/>
+        </view>
+        <view contentMode="scaleToFill" id="XCC-sj-lJh">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="PTt-0X-wdX">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="180"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="uKW-aj-6HP"/>
+                        <outlet property="delegate" destination="-1" id="lB9-sh-G67"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jna-cB-7Zn">
+                    <rect key="frame" x="65" y="80" width="150" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.64705882349999999" green="0.65490196079999996" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Jna-cB-7Zn" firstAttribute="leading" secondItem="XCC-sj-lJh" secondAttribute="leading" constant="65" id="1EL-al-1Kg"/>
+                <constraint firstItem="PTt-0X-wdX" firstAttribute="leading" secondItem="XCC-sj-lJh" secondAttribute="leading" id="6ne-WQ-qUH"/>
+                <constraint firstAttribute="bottom" secondItem="Jna-cB-7Zn" secondAttribute="bottom" constant="80" id="Ova-bY-4Aq"/>
+                <constraint firstAttribute="trailing" secondItem="Jna-cB-7Zn" secondAttribute="trailing" constant="65" id="Sce-35-WnK"/>
+                <constraint firstItem="Jna-cB-7Zn" firstAttribute="top" secondItem="XCC-sj-lJh" secondAttribute="top" constant="80" id="gEM-m6-bCM"/>
+                <constraint firstAttribute="trailing" secondItem="PTt-0X-wdX" secondAttribute="trailing" id="iuW-jj-JE3"/>
+                <constraint firstItem="PTt-0X-wdX" firstAttribute="top" secondItem="XCC-sj-lJh" secondAttribute="top" id="kFn-nk-hg4"/>
+                <constraint firstAttribute="bottom" secondItem="PTt-0X-wdX" secondAttribute="bottom" id="naz-qw-JiW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="976" y="256"/>
+        </view>
+    </objects>
+</document>

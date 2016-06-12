@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectFollowUpTemplateViewController" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="nkq-UY-yzS" id="X4r-1N-jIw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="       请选择要发送的模版" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAU-2E-oH0">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="YDE-xw-RkW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nkq-UY-yzS">
+                    <rect key="frame" x="50" y="35" width="500" height="565"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Aca-X5-sMT"/>
+                        <outlet property="delegate" destination="-1" id="IBb-2b-AIT"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JAU-2E-oH0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Gtd-Y0-beO"/>
+                <constraint firstAttribute="bottom" secondItem="nkq-UY-yzS" secondAttribute="bottom" id="IgY-54-568"/>
+                <constraint firstItem="JAU-2E-oH0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="S5M-tO-rOx"/>
+                <constraint firstAttribute="trailing" secondItem="JAU-2E-oH0" secondAttribute="trailing" id="VqB-jQ-HsR"/>
+                <constraint firstItem="nkq-UY-yzS" firstAttribute="top" secondItem="JAU-2E-oH0" secondAttribute="bottom" constant="5" id="Xb1-eU-2D6"/>
+                <constraint firstItem="nkq-UY-yzS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="ZdY-PX-jdU"/>
+                <constraint firstAttribute="trailing" secondItem="nkq-UY-yzS" secondAttribute="trailing" constant="50" id="y25-m4-T5c"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

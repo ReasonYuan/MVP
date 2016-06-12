@@ -1,0 +1,31 @@
+﻿{
+    "response_code": 0,
+    "msg": "find hospital successfully",
+    "results": [
+        {
+            "name": "第一人民医院",
+            "id": 281,
+            "city_id": "4"
+        },
+        {
+            "name": "华西医院",
+            "id": 282,
+            "city_id": "4"
+        },
+        {
+            "name": "三医院",
+            "id": 283,
+            "city_id": "4"
+        },
+        {
+            "name": "四医院",
+            "id": 284,
+            "city_id": "4"
+        },
+        {
+            "name": "九医院",
+            "id": 285,
+            "city_id": "4"
+        }
+    ]
+}

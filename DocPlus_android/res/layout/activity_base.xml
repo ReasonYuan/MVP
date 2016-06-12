@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical" 
+        android:background="@color/app_emerald">
+
+        <RelativeLayout
+            android:id="@+id/rl_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/topbar_h" >
+
+            <FrameLayout
+                android:id="@+id/fl_topbar_left"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/selector_btn_topbar_bg"
+                android:clickable="true"
+                android:onClick="onTopLeftBtnClick" >
+
+                <ImageView
+                    android:id="@+id/img_topbar_left"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_back" />
+
+                <TextView
+                    android:id="@+id/tv_topbar_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLines="2"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_btn_white_text"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_topbar_left2"
+                android:layout_width="@dimen/topbar_h"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/fl_topbar_left"
+                android:background="@drawable/selector_btn_topbar_bg"
+                android:clickable="true"
+                android:onClick="onTopLeftBtn2Click"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_topbar_left2"
+                    android:layout_width="22dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_back"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_topbar_left2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLines="2"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_btn_white_text"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_topbar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:maxWidth="180dp"
+                android:singleLine="true"
+                android:textColor="@color/app_yellow"
+                android:textSize="@dimen/title_font"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/fl_topbar_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="60dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_btn_topbar_bg"
+                android:clickable="true"
+                android:onClick="onTopRightBtnClick"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_topbar_right"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_add"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_topbar_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_btn_green_text2"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_topbar_right2"
+                android:layout_width="@dimen/topbar_h"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/fl_topbar_right"
+                android:background="@drawable/selector_btn_topbar_bg"
+                android:clickable="true"
+                android:onClick="onTopRightBtnClick2"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_topbar_right2"
+                    android:layout_width="22dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_add"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_topbar_right2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@drawable/selector_btn_white_text"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_topbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_topbar_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/topbar_title_bg"
+                android:gravity="center"
+                android:textColor="@color/topbar_text_title"
+                android:textSize="24sp" />
+
+            <View
+                android:id="@+id/v_base_title_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/line_divide" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/v_title_topbar_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/topbar_h"
+            android:background="#00000000" />
+
+        <!-- <View
+            android:id="@+id/v_title_place_view"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="#00000000"
+            android:visibility="gone" /> -->
+
+        <FrameLayout
+            android:id="@+id/fl_parent_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout> 
+
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/shape_ovl_take_photo_number_bg" android:state_pressed="true"/>
+    
+    <item android:state_enabled="false" android:drawable="@android:color/transparent"/>
+   	
+    <item android:drawable="@drawable/shape_ovl_take_photo_number_bg"/>
+
+</selector>

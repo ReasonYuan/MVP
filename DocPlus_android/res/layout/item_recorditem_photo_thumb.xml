@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="2dp" 
+        android:layout_marginRight="2dp">
+
+        <com.hp.android.halcyon.widgets.PhotoView
+            android:id="@+id/iv_brow_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_photo_thumb_bg"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/tv_brow_photo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</FrameLayout>

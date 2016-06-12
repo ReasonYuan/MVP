@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp" >
+
+    <View
+        android:id="@+id/item_phu_header_view"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@android:color/transparent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_phu_unrecong_count"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/home_medical_library_num"
+            android:gravity="center"
+            android:textColor="#DADFDB"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/img_phu_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_img_patient_have_unrec" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/item_phu_share_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:ellipsize="middle"
+                    android:maxWidth="100dp"
+                    android:singleLine="true"
+                    android:textColor="@color/app_emerald"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/view_phu_share_from_cutline"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#B5B5B5"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/item_phu_create_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:textColor="#9f9fa0"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/view_phu_create_time_cutline"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#B5B5B5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="病历数"
+                    android:textColor="#9f9fa0"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/item_phu_record_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="#9f9fa0"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDBDBD"/>
+            
+            <TextView
+                android:id="@+id/item_tv_phu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/item_phu_from_type"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:singleLine="true"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

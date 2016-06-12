@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UnnormalExamUIView" customModule="DoctorPlus_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="backToAttachmentBtn" destination="Zrx-R2-uoy" id="KXU-1U-6cx"/>
+                <outlet property="backToPatientBtn" destination="vlK-mU-g0q" id="VuM-fO-kSv"/>
+                <outlet property="editTableView" destination="TzM-8f-QMH" id="yC8-qp-URK"/>
+                <outlet property="lookImageBtn" destination="t1j-z9-CJC" id="2W4-u3-pxP"/>
+                <outlet property="scrollView" destination="NCZ-dy-znF" id="kyI-2d-byU"/>
+                <outlet property="tipsLabel" destination="oDe-gT-Y3O" id="Km9-y2-Qie"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TzM-8f-QMH">
+                    <rect key="frame" x="-40" y="65" width="39" height="535"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="MmI-FO-mUz"/>
+                        <outlet property="delegate" destination="-1" id="1Do-vQ-m7a"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂时无法识别" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDe-gT-Y3O">
+                    <rect key="frame" x="175" y="14" width="250" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Q9x-cH-pAz"/>
+                        <constraint firstAttribute="width" constant="250" id="i4a-bj-d6T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.09608205219072441" blue="0.11312425606976795" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1j-z9-CJC">
+                    <rect key="frame" x="551" y="32" width="30" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="MsZ-9Q-fEa"/>
+                        <constraint firstAttribute="width" constant="30" id="gnt-mq-uFP"/>
+                    </constraints>
+                    <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="btn_lookimage.png"/>
+                    <state key="selected">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onLookImageClicked:" destination="-1" eventType="touchUpInside" id="YAk-nw-ZZl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zrx-R2-uoy">
+                    <rect key="frame" x="506" y="32" width="30" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Nb9-bM-F1a"/>
+                        <constraint firstAttribute="height" constant="30" id="wc7-9o-vCx"/>
+                    </constraints>
+                    <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="btn_add_attachment.png"/>
+                    <connections>
+                        <action selector="backToAttachmentClick:" destination="-1" eventType="touchUpInside" id="z26-rB-nVw"/>
+                        <action selector="onToPatientClicked:" destination="-1" eventType="touchUpInside" id="ca7-Y0-V0d"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NCZ-dy-znF">
+                    <rect key="frame" x="0.0" y="65" width="600" height="535"/>
+                    <animations/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlK-mU-g0q">
+                    <rect key="frame" x="459" y="32" width="30" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="p2V-0l-lxV"/>
+                        <constraint firstAttribute="width" constant="30" id="xpI-ui-ZhD"/>
+                    </constraints>
+                    <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="btn_back_patient.png"/>
+                    <connections>
+                        <action selector="onToPatientClicked:" destination="-1" eventType="touchUpInside" id="dH3-49-hNG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NCZ-dy-znF" secondAttribute="trailing" id="66k-rT-wAY"/>
+                <constraint firstItem="t1j-z9-CJC" firstAttribute="leading" secondItem="vlK-mU-g0q" secondAttribute="trailing" constant="62" id="8Wr-9L-AFC"/>
+                <constraint firstItem="NCZ-dy-znF" firstAttribute="leading" secondItem="TzM-8f-QMH" secondAttribute="trailing" constant="1" id="Bk0-5D-Pqw"/>
+                <constraint firstItem="vlK-mU-g0q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="IQr-aB-hRJ"/>
+                <constraint firstItem="TzM-8f-QMH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-40" id="NpF-h0-Xqg"/>
+                <constraint firstAttribute="bottom" secondItem="NCZ-dy-znF" secondAttribute="bottom" id="Og6-3G-t62"/>
+                <constraint firstItem="vlK-mU-g0q" firstAttribute="leading" secondItem="Zrx-R2-uoy" secondAttribute="trailing" constant="-77" id="Sr9-ow-gCw"/>
+                <constraint firstItem="TzM-8f-QMH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="65" id="StF-UX-j6z"/>
+                <constraint firstAttribute="trailing" secondItem="t1j-z9-CJC" secondAttribute="trailing" constant="19" id="b0y-Hz-q21"/>
+                <constraint firstItem="t1j-z9-CJC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="fXY-JL-C2v"/>
+                <constraint firstItem="Zrx-R2-uoy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="gep-G2-thh"/>
+                <constraint firstAttribute="bottom" secondItem="TzM-8f-QMH" secondAttribute="bottom" id="pxF-7I-aCJ"/>
+                <constraint firstItem="oDe-gT-Y3O" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="rcq-Vu-4Qy"/>
+                <constraint firstItem="NCZ-dy-znF" firstAttribute="leading" secondItem="TzM-8f-QMH" secondAttribute="trailing" constant="1" id="rkz-nR-0jj"/>
+                <constraint firstAttribute="centerX" secondItem="oDe-gT-Y3O" secondAttribute="centerX" id="t0V-mh-cjU"/>
+                <constraint firstItem="NCZ-dy-znF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uK3-6d-Yj5"/>
+                <constraint firstItem="NCZ-dy-znF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="65" id="vuH-3v-i2C"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_add_attachment.png" width="32" height="32"/>
+        <image name="btn_back_patient.png" width="32" height="32"/>
+        <image name="btn_lookimage.png" width="32" height="32"/>
+    </resources>
+</document>

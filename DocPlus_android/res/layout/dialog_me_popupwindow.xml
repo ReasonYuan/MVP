@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_pop_me"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_emerald" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_photo_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:alpha="0.8"
+            android:gravity="center"
+            android:text="请选取获取图片的方式"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:visibility="gone" />
+        <!-- 相机 -->
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/selector_img_camera" />
+
+            <View
+                android:id="@+id/btn_me_carmera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_rectangle_head_bg" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="90dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/app_emerald" />
+
+        <!-- 从相册选择 -->
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/selector_img_album" />
+
+            <View
+                android:id="@+id/btn_me_album"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_rectangle_head_bg" />
+        </FrameLayout>
+    </LinearLayout>
+    <!-- 取消 -->
+
+    <Button
+        android:id="@+id/btn_me_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="@dimen/item_detailinfo_padding_l"
+        android:background="@drawable/selector_btn_emerald_bg"
+        android:text="取消"
+        android:textColor="@drawable/selector_btn_emerald_text"
+        android:textSize="24sp" />
+
+</LinearLayout>

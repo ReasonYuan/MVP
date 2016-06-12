@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PersionChart" customModule="Care" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="persion_chart_organ@3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="j0i-vx-Fk7">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="persion_chart_blood@3x.png.png" translatesAutoresizingMaskIntoConstraints="NO" id="uMk-bV-38D">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="j0i-vx-Fk7" secondAttribute="bottom" id="8NL-qC-rxz"/>
+                <constraint firstAttribute="trailing" secondItem="j0i-vx-Fk7" secondAttribute="trailing" id="TgO-Qk-DlA"/>
+                <constraint firstItem="j0i-vx-Fk7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UDf-03-400"/>
+                <constraint firstItem="uMk-bV-38D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="X6n-tF-8sh"/>
+                <constraint firstAttribute="trailing" secondItem="uMk-bV-38D" secondAttribute="trailing" id="iZ9-Kn-hcM"/>
+                <constraint firstItem="j0i-vx-Fk7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pjx-aQ-gOw"/>
+                <constraint firstItem="uMk-bV-38D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yAi-XL-nU5"/>
+                <constraint firstAttribute="bottom" secondItem="uMk-bV-38D" secondAttribute="bottom" id="yOW-Kk-oaG"/>
+            </constraints>
+            <connections>
+                <outlet property="blood" destination="uMk-bV-38D" id="h1O-MB-BgI"/>
+                <outlet property="image" destination="j0i-vx-Fk7" id="J1H-zk-e8H"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="persion_chart_blood@3x.png.png" width="354" height="790"/>
+        <image name="persion_chart_organ@3x.png" width="354" height="790"/>
+    </resources>
+</document>

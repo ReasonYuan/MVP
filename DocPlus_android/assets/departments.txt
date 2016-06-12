@@ -1,0 +1,591 @@
+﻿	{
+       "response_code": "0",
+       "msg": "获取科室信息成功！",
+       "results":
+       [
+           {
+               "version": null,
+               "dept_id": 1,
+               "dept_name": "外科",
+               "child":
+               [
+                   {
+                       "version": null,
+                       "dept_id": 2,
+                       "dept_name": "泌尿科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 3,
+                       "dept_name": "胸外科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 4,
+                       "dept_name": "普通外科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 5,
+                       "dept_name": "乳腺外科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 6,
+                       "dept_name": "血管外科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 7,
+                       "dept_name": "神经外科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 8,
+                       "dept_name": "烧伤外科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 9,
+                       "dept_name": "整形外科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 10,
+                       "dept_name": "移植外科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 11,
+                       "dept_name": "显微外科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 12,
+                       "dept_name": "胰腺外科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 13,
+                       "dept_name": "心外科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 14,
+                       "dept_name": "肝外科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 15,
+                       "dept_name": "肛肠外科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 16,
+                       "dept_name": "胃肠外科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 17,
+                       "dept_name": "其他",
+                       "child":
+                       [
+                       ]
+                   }
+               ]
+           },
+           {
+               "version": null,
+               "dept_id": 18,
+               "dept_name": "内科",
+               "child":
+               [
+                   {
+                       "version": null,
+                       "dept_id": 19,
+                       "dept_name": "呼吸内科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 20,
+                       "dept_name": "消化内科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 21,
+                       "dept_name": "肾脏内科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 22,
+                       "dept_name": "血液内科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 23,
+                       "dept_name": "感染科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 24,
+                       "dept_name": "风湿免疫科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 25,
+                       "dept_name": "神经内科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 26,
+                       "dept_name": "变态反应病科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 27,
+                       "dept_name": "老年病科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 28,
+                       "dept_name": "普通内科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 29,
+                       "dept_name": "心内科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 30,
+                       "dept_name": "内分泌科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 31,
+                       "dept_name": "肝内科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 32,
+                       "dept_name": "其他",
+                       "child":
+                       [
+                       ]
+                   }
+               ]
+           },
+           {
+               "version": null,
+               "dept_id": 33,
+               "dept_name": "儿科",
+               "child":
+               [
+                   {
+                       "version": null,
+                       "dept_id": 34,
+                       "dept_name": "儿内科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 35,
+                       "dept_name": "儿外科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 36,
+                       "dept_name": "新生儿科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 37,
+                       "dept_name": "其他",
+                       "child":
+                       [
+                       ]
+                   }
+               ]
+           },
+           {
+               "version": null,
+               "dept_id": 38,
+               "dept_name": "妇产科",
+               "child":
+               [
+                   {
+                       "version": null,
+                       "dept_id": 39,
+                       "dept_name": "妇科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 40,
+                       "dept_name": "产科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 41,
+                       "dept_name": "妇产内分泌科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 42,
+                       "dept_name": "其他",
+                       "child":
+                       [
+                       ]
+                   }
+               ]
+           },
+           {
+               "version": null,
+               "dept_id": 43,
+               "dept_name": "皮肤性病科",
+               "child":
+               [
+                   {
+                       "version": null,
+                       "dept_id": 44,
+                       "dept_name": "皮肤性病科",
+                       "child":
+                       [
+                       ]
+                   }
+               ]
+           },
+           {
+               "version": null,
+               "dept_id": 45,
+               "dept_name": "肿瘤科",
+               "child":
+               [
+                   {
+                       "version": null,
+                       "dept_id": 46,
+                       "dept_name": "肿瘤科",
+                       "child":
+                       [
+                       ]
+                   }
+               ]
+           },
+           {
+               "version": null,
+               "dept_id": 47,
+               "dept_name": "中医科",
+               "child":
+               [
+                   {
+                       "version": null,
+                       "dept_id": 48,
+                       "dept_name": "针灸科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 49,
+                       "dept_name": "推拿科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 50,
+                       "dept_name": "中医科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 51,
+                       "dept_name": "其他",
+                       "child":
+                       [
+                       ]
+                   }
+               ]
+           },
+           {
+               "version": null,
+               "dept_id": 52,
+               "dept_name": "营养科",
+               "child":
+               [
+                   {
+                       "version": null,
+                       "dept_id": 53,
+                       "dept_name": "营养科",
+                       "child":
+                       [
+                       ]
+                   }
+               ]
+           },
+           {
+               "version": null,
+               "dept_id": 54,
+               "dept_name": "骨科",
+               "child":
+               [
+                   {
+                       "version": null,
+                       "dept_id": 55,
+                       "dept_name": "骨科",
+                       "child":
+                       [
+                       ]
+                   }
+               ]
+           },
+           {
+               "version": null,
+               "dept_id": 56,
+               "dept_name": "精神及心理科",
+               "child":
+               [
+                   {
+                       "version": null,
+                       "dept_id": 57,
+                       "dept_name": "精神及心理科",
+                       "child":
+                       [
+                       ]
+                   }
+               ]
+           },
+           {
+               "version": null,
+               "dept_id": 58,
+               "dept_name": "重症医学科",
+               "child":
+               [
+                   {
+                       "version": null,
+                       "dept_id": 59,
+                       "dept_name": "重症医学科",
+                       "child":
+                       [
+                       ]
+                   }
+               ]
+           },
+           {
+               "version": null,
+               "dept_id": 60,
+               "dept_name": "眼科",
+               "child":
+               [
+                   {
+                       "version": null,
+                       "dept_id": 61,
+                       "dept_name": "眼科",
+                       "child":
+                       [
+                       ]
+                   }
+               ]
+           },
+           {
+               "version": null,
+               "dept_id": 62,
+               "dept_name": "耳鼻咽喉及头颈科",
+               "child":
+               [
+                   {
+                       "version": null,
+                       "dept_id": 63,
+                       "dept_name": "耳鼻咽喉头颈科",
+                       "child":
+                       [
+                       ]
+                   }
+               ]
+           },
+           {
+               "version": null,
+               "dept_id": 64,
+               "dept_name": "口腔科",
+               "child":
+               [
+                   {
+                       "version": null,
+                       "dept_id": 65,
+                       "dept_name": "口腔科",
+                       "child":
+                       [
+                       ]
+                   }
+               ]
+           },
+           {
+               "version": null,
+               "dept_id": 66,
+               "dept_name": "麻醉科及疼痛医学",
+               "child":
+               [
+                   {
+                       "version": null,
+                       "dept_id": 67,
+                       "dept_name": "麻醉科及疼痛医学",
+                       "child":
+                       [
+                       ]
+                   }
+               ]
+           },
+           {
+               "version": null,
+               "dept_id": 68,
+               "dept_name": "医学影像科",
+               "child":
+               [
+                   {
+                       "version": null,
+                       "dept_id": 69,
+                       "dept_name": "放射科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 70,
+                       "dept_name": "核医学科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 71,
+                       "dept_name": "超声诊断科",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 72,
+                       "dept_name": "心超诊断",
+                       "child":
+                       [
+                       ]
+                   },
+                   {
+                       "version": null,
+                       "dept_id": 73,
+                       "dept_name": "其他",
+                       "child":
+                       [
+                       ]
+                   }
+               ]
+           }
+       ]
+    }
